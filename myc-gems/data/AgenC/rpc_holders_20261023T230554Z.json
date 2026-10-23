@@ -1,0 +1,886 @@
+{
+ "fetched_utc": "20261023T230554Z",
+ "rpc": "https://api.mainnet-beta.solana.com",
+ "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+ "note": "token accounts = Rugcheck topHolders list; balances/owners re-read on-chain",
+ "getTokenSupply": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460623456
+  },
+  "value": {
+   "amount": "999931696454253",
+   "decimals": 6,
+   "uiAmount": 999931696.454253,
+   "uiAmountString": "999931696.454253"
+  }
+ },
+ "mintAccount": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460623464
+  },
+  "value": {
+   "data": {
+    "parsed": {
+     "info": {
+      "decimals": 6,
+      "extensions": [
+       {
+        "extension": "metadataPointer",
+        "state": {
+         "authority": null,
+         "metadataAddress": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump"
+        }
+       },
+       {
+        "extension": "tokenMetadata",
+        "state": {
+         "additionalMetadata": [],
+         "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+         "name": "AgenC",
+         "symbol": "AgenC",
+         "updateAuthority": null,
+         "uri": "https://ipfs.io/ipfs/bafkreidcjeo6y7shmaedcorc3pq7ejwvfneukjus2agfbcox57otdf7y4u"
+        }
+       }
+      ],
+      "freezeAuthority": null,
+      "isInitialized": true,
+      "mintAuthority": null,
+      "supply": "999931696454253"
+     },
+     "type": "mint"
+    },
+    "program": "spl-token-2022",
+    "space": 408
+   },
+   "executable": false,
+   "lamports": 44242035185,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "rentEpoch": 18446744073709551615,
+   "space": 408
+  }
+ },
+ "tokenAccounts": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460623472
+  },
+  "value": [
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "FtVq2huUhU33TNmEbmEQb4kwDEfZeU9tFvBgk7mwWnBx",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "381453987575994",
+        "decimals": 6,
+        "uiAmount": 381453987.575994,
+        "uiAmountString": "381453987.575994"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 1513840,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "BUMh6YebpBvAh4by4oTGJUvzQ9CvH6dqPgrZvXFDMwC1",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "84276956890164",
+        "decimals": 6,
+        "uiAmount": 84276956.890164,
+        "uiAmountString": "84276956.890164"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074083,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "B3cLCGSucGGAxwNcVq78cWh8UrdJipqx7xwdcKZLGGbd",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "72910618898013",
+        "decimals": 6,
+        "uiAmount": 72910618.898013,
+        "uiAmountString": "72910618.898013"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 165
+    },
+    "executable": false,
+    "lamports": 2039280,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 165
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "7rEq6KFiEDDWoADCKxJLgmoE3rNegDeZwjq4JQG9craJ",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "17196550066889",
+        "decimals": 6,
+        "uiAmount": 17196550.066889,
+        "uiAmountString": "17196550.066889"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 1513840,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "ERNXQw7zcbb7RHYsgPEo7nLuDfkGrhPkehzzpqFonc6L",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "13379921803464",
+        "decimals": 6,
+        "uiAmount": 13379921.803464,
+        "uiAmountString": "13379921.803464"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "D5Jr75gdBLmpZjiVuQ3ZEVd9KFrZcxZXueGbGauiWFp7",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "11969877777754",
+        "decimals": 6,
+        "uiAmount": 11969877.777754,
+        "uiAmountString": "11969877.777754"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "4RUhoDRL7cgqcK9AzsQF2QUr447mwE2FQEmbH8SjwwVk",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "11083633607730",
+        "decimals": 6,
+        "uiAmount": 11083633.60773,
+        "uiAmountString": "11083633.60773"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "HU3bakNZ3ZnfbgwgnF3Y9jQ9tF49F5XBboDgCCzEN2kE",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "9088588000000",
+        "decimals": 6,
+        "uiAmount": 9088588.0,
+        "uiAmountString": "9088588"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "EdPEW7CGdkaidQVW89T2y3T7tBMZW74yhhR1ZY7iGUJc",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "9006750714949",
+        "decimals": 6,
+        "uiAmount": 9006750.714949,
+        "uiAmountString": "9006750.714949"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "eKFDDUu7mXEpN7hU3WMEPURBqVvxx7MK8eXQ9xPaKy9",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "8504103822679",
+        "decimals": 6,
+        "uiAmount": 8504103.822679,
+        "uiAmountString": "8504103.822679"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "FwX5Qoxf6hWsTVTPKBRkhaDJHEcpGafRLTz7sHSRUL6Q",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "8112058232598",
+        "decimals": 6,
+        "uiAmount": 8112058.232598,
+        "uiAmountString": "8112058.232598"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "9WAuHHeF46Dws4Mym3u8yq8CVm1MK9ZTrgn8WCTLwoLx",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "7969674737401",
+        "decimals": 6,
+        "uiAmount": 7969674.737401,
+        "uiAmountString": "7969674.737401"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "Hb2X9VfhbKiLWubUDdakgXhgFDtPCgneRK1BPMxEVjVY",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "7589301332484",
+        "decimals": 6,
+        "uiAmount": 7589301.332484,
+        "uiAmountString": "7589301.332484"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 1887234,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "DwnJqFVzJjWZQUBRV4muNmEaqE7A83SA1qw3UprGDugU",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "7563479215155",
+        "decimals": 6,
+        "uiAmount": 7563479.215155,
+        "uiAmountString": "7563479.215155"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "HQdtxgaZCn3iNfJ65ouNyeUFf8ooo3dTukEj1qoD2kEU",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "7415543705590",
+        "decimals": 6,
+        "uiAmount": 7415543.70559,
+        "uiAmountString": "7415543.70559"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 1513840,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "GmeZFSwXQ4vWdD2p87e87qSbPNEME97oGcxg75PnTrWz",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "6571591281301",
+        "decimals": 6,
+        "uiAmount": 6571591.281301,
+        "uiAmountString": "6571591.281301"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "GVg53PS9FA5Y7gvvuSPVJzfxxCQSHTpChKNb5Tp4m8JW",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "6250392773247",
+        "decimals": 6,
+        "uiAmount": 6250392.773247,
+        "uiAmountString": "6250392.773247"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "AMYHGzRrRxxsRi4Tbu6ZfhrkFkmqRQaZguaufxdYZPDC",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "6159614941370",
+        "decimals": 6,
+        "uiAmount": 6159614.94137,
+        "uiAmountString": "6159614.94137"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "A2eUrN938Uxm9RkxBGn735wHcTtprQwojKE1yXZRzvcj",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "6123396122683",
+        "decimals": 6,
+        "uiAmount": 6123396.122683,
+        "uiAmountString": "6123396.122683"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   },
+   {
+    "data": {
+     "parsed": {
+      "info": {
+       "extensions": [
+        {
+         "extension": "immutableOwner"
+        }
+       ],
+       "isNative": false,
+       "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+       "owner": "G6gZB5jj9jdX79hZ7REZesZ2uw7v2fci5wqhNXYWikbx",
+       "state": "initialized",
+       "tokenAmount": {
+        "amount": "6104234857654",
+        "decimals": 6,
+        "uiAmount": 6104234.857654,
+        "uiAmountString": "6104234.857654"
+       }
+      },
+      "type": "account"
+     },
+     "program": "spl-token-2022",
+     "space": 170
+    },
+    "executable": false,
+    "lamports": 2074080,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 170
+   }
+  ]
+ },
+ "ownerAccounts": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460623481
+  },
+  "value": [
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 101742470838,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 2985992,
+    "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+    "rentEpoch": 18446744073709551615,
+    "space": 301
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 2039280,
+    "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "rentEpoch": 18446744073709551615,
+    "space": 165
+   },
+   null,
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 132054702529,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 1007568633,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 1238885560,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 101075473,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 54690983,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   null,
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 144937970,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 7182720,
+    "owner": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+    "rentEpoch": 18446744073709551615,
+    "space": 904
+   },
+   null,
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 29192049,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 1805657,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 262376258,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 2872226475,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 26322327,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 6201290,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   },
+   {
+    "data": [
+     "",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 60594609,
+    "owner": "11111111111111111111111111111111",
+    "rentEpoch": 18446744073709551615,
+    "space": 0
+   }
+  ]
+ }
+}

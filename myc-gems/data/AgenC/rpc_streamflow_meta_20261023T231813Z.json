@@ -1,0 +1,71 @@
+{
+ "fetched_utc": "20261023T231813Z",
+ "metadata": "EeobiAMPXJxT43TpGVJP2r183Yfj4KU3ZQ5ChrF1qUWJ",
+ "account": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460626952
+  },
+  "value": {
+   "data": [
+    "BAAAAAAAAAAEf8U+agAAAAAiutibGhYAAAAAAAAAAAAAt/gfbAAAAABOErdqAAAAAN001ZIZwv+p4uGOih6K9kUnocUWW25mC5RYw2s0/sk3XwVDB6oi3yYTKdgwO0dAbS1ScSECUVY15mkmtqBplFTdNNWSGcL/qeLhjooeivZFJ6HFFltuZguUWMNrNP7JN18FQweqIt8mEynYMDtHQG0tUnEhAlFWNeZpJragaZRUSdPexMkDlI9N1XONskD4i0D+W2BRo12XAT2P8BO/zW+VP/rNdbOHMl7UVkAiE9pIK5aJBP1NghlQorXgS6Y9fEHl5R1mQ0ba9Ai8PKVNKf8XMsMfSRvbApBNvbh6jHDC6XxsfGcpqRlTDJbNRmga72kP7OwNYVWLYNi5o16Tzw8AAAAAAAAAAAAAAAAAAAAAAAAAAN001ZIZwv+p4uGOih6K9kUnocUWW25mC5RYw2s0/sk3XwVDB6oi3yYTKdgwO0dAbS1ScSECUVY15mkmtqBplFQAAAAAAAAAAAAAAAAAAAAAAAAAAH/FPmoAAAAAf+hib2pYAACaGSgAAAAAALbo8jNeBwAAf8U+agAAAAAAAAAAAAAAAAAAAQAAAUZvdW5kZXIgYWxsb2NhdGlvbgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACaGSgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaIkJAYCy5g4BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "base64"
+   ],
+   "executable": false,
+   "lamports": 8574720,
+   "owner": "strmRqUCoQUgGUan5YhzUZa6KqdzwX5L6FpUxfmKg5m",
+   "rentEpoch": 18446744073709551615,
+   "space": 1104
+  }
+ },
+ "decoded": {
+  "magic": 4,
+  "version": 4,
+  "created_at": 1782498687,
+  "withdrawn_amount": 24303539632674,
+  "canceled_at": 0,
+  "end_time": 1814034615,
+  "last_withdrawn_at": 1790382670,
+  "sender": "FtVq2huUhU33TNmEbmEQb4kwDEfZeU9tFvBgk7mwWnBx",
+  "sender_tokens": "7PvPKjzpZjLvqcYRB28aw3TRaUZmottoFev8VnjL1qyu",
+  "recipient": "FtVq2huUhU33TNmEbmEQb4kwDEfZeU9tFvBgk7mwWnBx",
+  "recipient_tokens": "7PvPKjzpZjLvqcYRB28aw3TRaUZmottoFev8VnjL1qyu",
+  "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+  "escrow_tokens": "B3cLCGSucGGAxwNcVq78cWh8UrdJipqx7xwdcKZLGGbd",
+  "streamflow_treasury": "5SEpbdjFK5FxwTvfsGMXVQTD2v4M2c5tyRTxhdsPkgDw",
+  "streamflow_treasury_tokens": "GiS31NjqebzFdwb4eDuYRKJmc3yzqZfPJ7ESMYHaFzvA",
+  "streamflow_fee_total": 0,
+  "streamflow_fee_withdrawn": 0,
+  "streamflow_fee_percent": 0.0,
+  "partner": "FtVq2huUhU33TNmEbmEQb4kwDEfZeU9tFvBgk7mwWnBx",
+  "partner_tokens": "7PvPKjzpZjLvqcYRB28aw3TRaUZmottoFev8VnjL1qyu",
+  "partner_fee_total": 0,
+  "partner_fee_withdrawn": 0,
+  "partner_fee_percent": 0.0,
+  "start_time": 1782498687,
+  "net_amount_deposited": 97214158530687,
+  "period": 2627994,
+  "amount_per_period": 8101179877558,
+  "cliff": 1782498687,
+  "cliff_amount": 0,
+  "cancelable_by_sender": false,
+  "cancelable_by_recipient": false,
+  "automatic_withdrawal": true,
+  "transferable_by_sender": false,
+  "transferable_by_recipient": false,
+  "can_topup": true,
+  "stream_name": "Founder allocation",
+  "withdraw_frequency": 2627994,
+  "created_at_iso": "2026-06-26T18:31:27+00:00",
+  "canceled_at_iso": null,
+  "end_time_iso": "2027-06-26T18:30:15+00:00",
+  "last_withdrawn_at_iso": "2026-09-26T00:31:10+00:00",
+  "start_time_iso": "2026-06-26T18:31:27+00:00",
+  "cliff_iso": "2026-06-26T18:31:27+00:00",
+  "withdrawn_amount_ui": 24303539.632674,
+  "net_amount_deposited_ui": 97214158.530687,
+  "amount_per_period_ui": 8101179.877558,
+  "cliff_amount_ui": 0.0,
+  "period_days": 30.416597222222222
+ }
+}

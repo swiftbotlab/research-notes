@@ -1,0 +1,92 @@
+{
+ "research_window_utc": "2026-10-23T23:01Z/2026-10-23T23:35Z",
+ "method": {
+  "market_cap": "CoinGecko circulating market cap (circulating = total supply for all three, so equal to FDV)",
+  "volume_liquidity": "DexScreener token-pairs, distinct pools quoted in SOL or USDC, each pool counted once",
+  "holders": "top-10 token accounts by balance after excluding verified LP vaults and burn accounts; % of current total supply"
+ },
+ "picks": [
+  {
+   "name": "AgenC",
+   "ticker": "AgenC",
+   "mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+   "market_cap_usd": 778622,
+   "market_cap_source": "CoinGecko 2026-10-23T23:00:57Z",
+   "dex_volume_24h_usd": 57771,
+   "dex_liquidity_usd": 137913,
+   "main_pool": "BUMh6YebpBvAh4by4oTGJUvzQ9CvH6dqPgrZvXFDMwC1",
+   "main_pool_liquidity_usd": 129096,
+   "dexscreener_fetch": "2026-10-23T23:01:34Z",
+   "first_pool_utc": "2026-02-24T23:49:48Z",
+   "top10_ex_lp_burn_pct": 54.27,
+   "excluded": {
+    "D8RYtb57B3UmEJEGmQ4DPP7SBpGVkzaxQPLixyFLHjB4": "PumpSwap pool vault 8.43%",
+    "4vcJfHLqe6Erj2huazg2qz2dMp47pcSiyL3iWQkHPRLX": "Meteora DLMM reserve 0.80%"
+   },
+   "lp": "main PumpSwap pool LP mint FyNyhqvh9QRnt2WGARF8DytBDTzw1pwzQMb4MsjMpatE supply 0 (100% burned); ~$9.1k in other pools unlocked",
+   "mint_authority": null,
+   "freeze_authority": null
+  },
+  {
+   "name": "Pod the Squire",
+   "ticker": "SQUIRE",
+   "mint": "EN2nnxrg8uUi6x2sJkzNPd2eT6rB9rdSoQNNaENA4RZA",
+   "market_cap_usd": 757135,
+   "market_cap_source": "CoinGecko 2026-10-23T23:17:06Z",
+   "dex_volume_24h_usd": 26643,
+   "dex_liquidity_usd": 157891,
+   "main_pool": "4CPVihvjKUUsXq3HFrS8wniUKffbpDqz2h6jHKjeXoYD",
+   "main_pool_liquidity_usd": 126122,
+   "dexscreener_fetch": "2026-10-23T23:17:03Z",
+   "first_pool_utc": "2026-03-18T23:02:07Z",
+   "top10_ex_lp_burn_pct": 22.823,
+   "excluded": {
+    "GSGhkpgYx4NMTyQ8nM2zZZ2ye9Z5QnTkgPEwkDp27g4T": "PumpSwap pool vault 8.32%",
+    "BG8qUPrcme7xAFWvTredz5HHWZsFkiSJFabNUDfkJLJ": "Meteora DLMM SQUIRE/USDC reserve 3.30%"
+   },
+   "lp": "main PumpSwap pool LP mint G9Wtj1ck1szY9PjbBko9UFGfW6aQ9NQ1fMzPBBziR7hF supply 0 (100% burned); Meteora DLMM ~$31.8k unlocked",
+   "mint_authority": null,
+   "freeze_authority": null
+  },
+  {
+   "name": "chAtoshI",
+   "ticker": "CHATOSHI",
+   "mint": "Bhu2wBWxfWkRJ6pFn5NodnEvMCqj9DLfCU5qMvt7pump",
+   "market_cap_usd": 507483,
+   "market_cap_source": "CoinGecko 2026-10-23T23:34:53Z",
+   "dex_volume_24h_usd": 26925,
+   "dex_liquidity_usd": 331213,
+   "main_pool": "9frEnxkurDtvW1eshy116LrwgTtA8kDJyUZ1kengR92t",
+   "main_pool_liquidity_usd": 144260,
+   "dexscreener_fetch": "2026-10-23T23:34:53Z",
+   "first_pool_utc": "2025-01-13T03:26:39Z",
+   "top10_ex_lp_burn_pct": 15.842,
+   "excluded": {
+    "F594veMrVJbwyHbUKWWkKLq3xomg4SFb8YukXGBwmgvg": "Raydium AMM v4 vault 14.16%",
+    "1V4N5ffUj65zdxJTneEsWUHuBgz8dNmUcinY18zbooG": "Raydium CLMM HQ7Y vault 11.15%",
+    "HbjcN5Eb7yJDzoKLYymtF4PFvvRcs45EExnk2464R1Fa": "Raydium CLMM Fi4h vault 4.71%",
+    "8FuyJtMMULqXXv9TtntHBKpDp5qQ6GpBENARkfckriCF": "Raydium CPMM vault 3.36%"
+   },
+   "lp": "~32% of liquidity value burned or permanently locked, ~62% unlocked, ~5% unattributed CLMM balances; main AMM v4 pool LP 55.65% burned",
+   "mint_authority": null,
+   "freeze_authority": null
+  }
+ ],
+ "mycelium_allocation": {
+  "source": "Mycelium MCP get_mycelium_allocation",
+  "updatedAt": "2026-10-23T22:42:09.014Z",
+  "totalUsd": 29277.87,
+  "assets": [
+   "KNOTS",
+   "PRCL",
+   "GABLE",
+   "SOL",
+   "KINS",
+   "DREAMS",
+   "GUAC",
+   "STREAM",
+   "JUBJUB",
+   "USDC"
+  ]
+ }
+}

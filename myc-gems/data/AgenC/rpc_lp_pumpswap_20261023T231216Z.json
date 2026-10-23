@@ -1,0 +1,74 @@
+{
+ "fetched_utc": "20261023T231216Z",
+ "pool": "BUMh6YebpBvAh4by4oTGJUvzQ9CvH6dqPgrZvXFDMwC1",
+ "poolAccount": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460625261
+  },
+  "value": {
+   "data": [
+    "8ZptBBGxbbz/AACDQ9ti9MD6+8w5yGnjP9jS6jou23f9TfJWspMFP9CUz0nT3sTJA5SPTdVzjbJA+ItA/ltgUaNdlwE9j/ATv81vBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHedP4UJg24PnL0kzKs8qTDn5tVQc9tMRI/5ZF6M4BVl7QzET2tFyF7G0K7KpqFHujp4snEZnXPEwTkwnPyoeofqCUeYMSXeTI1DaJj007a7iJqnrmji+6C8yXblf5kwvuAQ2tZ0AMAAOjKuXcEA+TA53jUYHxhifk0kfz6t8b8NOY6Q2DTINLwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+    "base64"
+   ],
+   "executable": false,
+   "lamports": 2985992,
+   "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+   "rentEpoch": 18446744073709551615,
+   "space": 301
+  }
+ },
+ "decoded": {
+  "creator": "9qQRSoRiSTw8JPfS77MrCFVs48FjaHHJDrkSUDFMUK3U",
+  "base_mint": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+  "quote_mint": "So11111111111111111111111111111111111111112",
+  "lp_mint": "FyNyhqvh9QRnt2WGARF8DytBDTzw1pwzQMb4MsjMpatE",
+  "pool_base_token_account": "D8RYtb57B3UmEJEGmQ4DPP7SBpGVkzaxQPLixyFLHjB4",
+  "pool_quote_token_account": "CKNKdNtVjZSyvaeWCHXVGv7RdwCM7iinFkdEbfUjiXdt",
+  "lp_supply": 4193388282752,
+  "coin_creator": "GfisqKKYAN3fFUkzLFpQenr1L3PhdJVBMkYE4LvndS87",
+  "owner_program": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA"
+ },
+ "lpMintSupply": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460625267
+  },
+  "value": {
+   "amount": "0",
+   "decimals": 9,
+   "uiAmount": 0.0,
+   "uiAmountString": "0"
+  }
+ },
+ "lpMintInfo": {
+  "context": {
+   "apiVersion": "4.3.2",
+   "slot": 460625274
+  },
+  "value": {
+   "data": {
+    "parsed": {
+     "info": {
+      "decimals": 9,
+      "freezeAuthority": null,
+      "isInitialized": true,
+      "mintAuthority": "BUMh6YebpBvAh4by4oTGJUvzQ9CvH6dqPgrZvXFDMwC1",
+      "supply": "0"
+     },
+     "type": "mint"
+    },
+    "program": "spl-token-2022",
+    "space": 82
+   },
+   "executable": false,
+   "lamports": 1461600,
+   "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+   "rentEpoch": 18446744073709551615,
+   "space": 82
+  }
+ },
+ "lpLargest": {
+  "_error": "{'error': 'HTTP Error 429: Too Many Requests'}"
+ }
+}

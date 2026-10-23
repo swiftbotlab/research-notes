@@ -1,0 +1,32 @@
+{
+ "rpc": "https://api.mainnet-beta.solana.com",
+ "method": "getAccountInfo",
+ "params": [
+  "4CPVihvjKUUsXq3HFrS8wniUKffbpDqz2h6jHKjeXoYD",
+  {
+   "encoding": "base64"
+  }
+ ],
+ "fetched_utc": "20261023T231051Z",
+ "response": {
+  "jsonrpc": "2.0",
+  "result": {
+   "context": {
+    "apiVersion": "4.3.2",
+    "slot": 460624860
+   },
+   "value": {
+    "data": [
+     "8ZptBBGxbbz/AAA/fPvAPjFYK4G0xZ0btE6yScyE7E5EQcVhPceJKoiTjMaLJoRGKABBWo6acd0eGw+YxDKp3tEBVYgmPz9KNQuRBpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAHhDb/HI2wms+fm4FiIfN8jaNGpbivyQbS0hmWbvj37ZuVYlEaIjBQf76u0Tr/agmz7N+zFht2eAzyhdoDbldokSBIy4ZeEzCvGPsSjJVBJlVXxC1UCgir0KnyDKAhTFt2OZGtZ0AMAAIfa5MeUwHZAvPXoeY0/Jd5CVKFQEYNsGYFbs5PTiRYLAAAMwMj/////////////////AAAAAAAAAAAAAELIAQAAAAAAsnc1AAAAAAAAAAAAAAAAAAAAAAAAAA==",
+     "base64"
+    ],
+    "executable": false,
+    "lamports": 2985840,
+    "owner": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+    "rentEpoch": 18446744073709551615,
+    "space": 301
+   }
+  },
+  "id": 1
+ }
+}

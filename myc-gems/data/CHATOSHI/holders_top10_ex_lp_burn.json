@@ -1,0 +1,122 @@
+{
+ "source": "rpc_getProgramAccounts_token_mint_20261023T232116Z.json",
+ "supply_raw": 888885910522243,
+ "excluded": [
+  {
+   "token_account": "F594veMrVJbwyHbUKWWkKLq3xomg4SFb8YukXGBwmgvg",
+   "owner": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
+   "raw": 125894571846950,
+   "pct": 14.163186788840397,
+   "reason": "Raydium AMM v4 9frEnx CHATOSHI vault (owner 5Q544 Raydium Authority V4)"
+  },
+  {
+   "token_account": "1V4N5ffUj65zdxJTneEsWUHuBgz8dNmUcinY18zbooG",
+   "owner": "HQ7YbCer5bBwNpY8NhUsp1g9LgTStrnagKdUp3nYKaTf",
+   "raw": 99097571359290,
+   "pct": 11.1485141328281,
+   "reason": "Raydium CLMM HQ7Y token_vault_0 (owner = pool HQ7Y)"
+  },
+  {
+   "token_account": "HbjcN5Eb7yJDzoKLYymtF4PFvvRcs45EExnk2464R1Fa",
+   "owner": "Fi4heUrWk3J8S8ekYzqh72CcgXMWT61WVZBSdRPo1ADX",
+   "raw": 41893450715856,
+   "pct": 4.713028997303213,
+   "reason": "Raydium CLMM Fi4h token_vault_0 (owner = pool Fi4h)"
+  },
+  {
+   "token_account": "8FuyJtMMULqXXv9TtntHBKpDp5qQ6GpBENARkfckriCF",
+   "owner": "GpMZbSM2GgvTKHJirzeGfMFoaZ8UR2X7F4v8vHTvxFbL",
+   "raw": 29856450251840,
+   "pct": 3.3588619077445583,
+   "reason": "Raydium CPMM CB7CeS token_1_vault (owner GpMZ CPMM authority)"
+  },
+  {
+   "token_account": "G4Jfz2CV9bynVqKghDa6xexLk7nDc3p3y7EV4uPvFJXs",
+   "owner": "JBwuyZai99UaNedXXxihdJiZ4cJdotJZnSxBsCz1inja",
+   "raw": 1310707740878,
+   "pct": 0.14745511492109556,
+   "reason": "PumpSwap JBwuyZai pool_base_token_account"
+  },
+  {
+   "token_account": "DpmuPn3t42kMhLDxQM7At78zECJyddp15aA43U9gHGvL",
+   "owner": "3FKtJEs2pxbFNQiqU2meRzr565yg2cCMU46HvMuAPHN3",
+   "raw": 310530248264,
+   "pct": 0.03493476998432292,
+   "reason": "Raydium CLMM 3FKtJE token_vault_0"
+  }
+ ],
+ "top10": [
+  {
+   "rank": 1,
+   "token_account": "5kufYVXdVUhaWJLMQM42UpRm7zBLUREHpnQV538mT3FQ",
+   "owner": "8Tuk1YgeZeHfpKs5W5oLyKTLo5ZctHhyTRPNHp8DWfsK",
+   "raw": 44736989540417,
+   "pct": 5.032928186940536
+  },
+  {
+   "rank": 2,
+   "token_account": "8Xndn6hQzrUGPvCgDqJSuP9N9twhgveKjM9KP89d3tq3",
+   "owner": "6fFw5Ty7iaSdLNJPDYzgQVu4EStWZCUUQdtSwreN4kiP",
+   "raw": 21632869143003,
+   "pct": 2.433705933114987
+  },
+  {
+   "rank": 3,
+   "token_account": "6aAyD3c8fNeU3Wk6L4H6EjAka2FumbhXwYRrypeiLXxc",
+   "owner": "8XbyPkwDu4cmDN375V2qAAohQPSn85KjWAnPTHQw8FBf",
+   "raw": 13034349810532,
+   "pct": 1.4663692669933297
+  },
+  {
+   "rank": 4,
+   "token_account": "dSoBosHGUTNS7RZzhotFhpz3HNkqGx3MojQ6Xb73aUV",
+   "owner": "AJvYyJdHSSYSr1Fnjdg52MAadSYfKEBUYNDWbgUV6i2p",
+   "raw": 10819481278751,
+   "pct": 1.2171957222715208
+  },
+  {
+   "rank": 5,
+   "token_account": "5AT5jWSb8HWXfTznq27K3nt97SB6XXk3phQEaZkfBZTL",
+   "owner": "LeBeQHUPkDH4qVDHR7DD16LMv3LhnwtnnozhLCgJq49",
+   "raw": 10439807248906,
+   "pct": 1.1744822507955321
+  },
+  {
+   "rank": 6,
+   "token_account": "92UZEZ22bBoVwfMpRWrq6xBFCQhQhKiNcxwBaoJnAedk",
+   "owner": "FdmyppwXDnQGyaDKQp7yYUN7cUPZZV18eB48ff6d2Bow",
+   "raw": 10088946932132,
+   "pct": 1.135010332901383
+  },
+  {
+   "rank": 7,
+   "token_account": "66b9CgwuWXUL7dZMBQAAzzj7grRYfrK2z62xFsBBVJat",
+   "owner": "Ah3UKHiwn1veo2LNMRf1JfXPB7RqnP5bPFeZ4oKhtwd1",
+   "raw": 9368958852598,
+   "pct": 1.0540114025537315
+  },
+  {
+   "rank": 8,
+   "token_account": "ndEaMi6bMPbp9RDSnPJ8dQAE5qZ6aqrLZRiSfMU15pd",
+   "owner": "99pXhgbFtehco1MwmfbgYdCj5zyu4omv65BMaGd7KxBe",
+   "raw": 7261414382898,
+   "pct": 0.8169118552719252
+  },
+  {
+   "rank": 9,
+   "token_account": "AW7bBNXM53gb3KnG6H2pdT3tDhrRXWoX3NTP2fczza58",
+   "owner": "23dnMWyPNZzooUb9FzAFvUtvx1Key5soMZdLfTiFXdx6",
+   "raw": 6780927408432,
+   "pct": 0.7628568895245548
+  },
+  {
+   "rank": 10,
+   "token_account": "BBcgaZwzXG3ooUkc2iL8gkKJhUPxSKUCwq3sVgoGPpXc",
+   "owner": "3TmTfHMrDmARcqCuDr2Kpkjw1BA1CcjS3zU93EeviX5R",
+   "raw": 6656881203284,
+   "pct": 0.7489016446860896
+  }
+ ],
+ "top10_pct": 15.842373485053589,
+ "owner_aggregated_top10_pct": 15.842373485053589
+}
