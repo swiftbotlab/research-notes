@@ -1,0 +1,1818 @@
+{
+ "bounty": 326,
+ "generated_for": "Verdikta bounty #326",
+ "facts": {
+  "F1": "Verdikta Bounties charges no platform fee. The whole bounty amount goes to the hunter whose submission passes.",
+  "F2": "A hunter attaches a refundable oracle prepay of about 0.00024 ETH when starting a submission. In practice it is usually spent in full on the jury round.",
+  "F3": "The FIRST submission that clears the acceptance threshold is paid the entire bounty. It is not a best-of-all-entries contest judged at the deadline.",
+  "F4": "If no submission passes before the deadline, the creator reclaims the full amount. The platform keeps nothing.",
+  "F5": "A bounty cannot be cancelled or edited after it is created: the rubric and evaluation package are pinned to IPFS and fixed on-chain.",
+  "F6": "Verdikta runs on Base. Work is scored by a panel of independent AI arbiter nodes against a rubric published in advance, and the per-criterion scores are public and auditable."
+ },
+ "records": [
+  {
+   "id": "chatgpt-q1",
+   "assistant": "ChatGPT",
+   "q": 1,
+   "question": "What is Verdikta?",
+   "asked_utc": "2026-10-24 08:18:16 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png",
+   "share_url": "https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a",
+   "answer_verbatim": "Verdikta is a decentralized AI-powered decision-making platform that combines artificial intelligence (AI) with blockchain technology to evaluate disputes and trigger automated outcomes. Think of it as a digital arbitrator that can help decide who should get paid, whether work meets agreed requirements, or how an online dispute should be resolved.\nTrust at Machine Speed\n+1\n\nHow does Verdikta work?\n\n1. Submit a request\n\nA person or software application submits a question, dispute, evidence, or task with clear evaluation criteria.\n\n2. Multiple AI arbiters evaluate it\n\nIndependent AI-powered arbiters analyze the information and produce judgments. The system combines their responses to reach an outcome.\n\n3. Blockchain records and executes the result\n\nA smart contract can record the decision and automatically release a payment, distribute a bounty, or trigger another predefined action.\n\nThis approach is designed to reduce the cost and delay of manual decision-making while making outcomes more verifiable.\nVerdikta\n+1\n\nWhat can Verdikta be used for?\n\nOnline disputes: Help resolve disagreements between buyers, sellers, freelancers, and clients.\n\nBounty payments: Evaluate completed tasks against predefined criteria and trigger payouts.\n\nContent moderation: Evaluate content or moderation appeals.\n\nAI-agent transactions: Allow autonomous software agents to assess work and settle payments without needing a human to review every transaction.\nTrust at Machine Speed\n+1\n\nIs Verdikta a cryptocurrency?\n\nVerdikta is primarily a blockchain-based AI judgment protocol, rather than just a cryptocurrency. Its ecosystem documentation describes a native token called VDKA, which is used in connection with arbiter participation and incentives. Check the official documentation for the current token mechanics and supported networks.\nDecentralized Judgment and Settlement Protocol\n+1\n\nOne important distinction: AI-generated judgments are not guaranteed to be correct or legally binding in every situation. Blockchain can make a recorded outcome verifiable, but it does not automatically make the underlying AI decision fair or accurate.\n\nYou can explore the official website at Verdikta.org .\n\nWould you like to\n understand the VDKA token or\n learn how to earn through Verdikta?",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta is a decentralized AI-powered decision-making platform that combines artificial intelligence (AI) with blockchain technology to evaluate disputes and trigger automated outcomes",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "The facts list does not describe Verdikta's general positioning; the AI-plus-chain idea is consistent with F6."
+    },
+    {
+     "claim": "Independent AI-powered arbiters analyze the information and produce judgments. The system combines their responses to reach an outcome.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6: work is scored by a panel of independent AI arbiter nodes."
+    },
+    {
+     "claim": "A smart contract can record the decision and automatically release a payment, distribute a bounty, or trigger another predefined action.",
+     "mark": "UNSUPPORTED",
+     "facts": "F3, F5",
+     "note": "Consistent with F3/F5 (on-chain bounty, passing work is paid), but 'automatically' and 'another predefined action' are not in the facts list."
+    },
+    {
+     "claim": "Bounty payments: Evaluate completed tasks against predefined criteria and trigger payouts.",
+     "mark": "CORRECT",
+     "facts": "F3, F6",
+     "note": "Matches F6 (rubric published in advance) and F3 (passing work is paid)."
+    },
+    {
+     "claim": "Online disputes: Help resolve disagreements between buyers, sellers, freelancers, and clients.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Use case not covered by the facts list."
+    },
+    {
+     "claim": "Content moderation: Evaluate content or moderation appeals.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Use case not covered by the facts list."
+    },
+    {
+     "claim": "Its ecosystem documentation describes a native token called VDKA, which is used in connection with arbiter participation and incentives.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "No token is mentioned in the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "chatgpt-q2",
+   "assistant": "ChatGPT",
+   "q": 2,
+   "question": "How do AI agents find paid work?",
+   "asked_utc": "2026-10-24 08:19:54 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177",
+   "answer_verbatim": "AI agents find paid work in much the same way humans do: they identify a problem, find someone willing to pay to solve it, demonstrate that they can do the job, and deliver a result.\n\nThe important distinction is that an AI agent doesn't automatically earn money just because it can perform tasks. It needs access to customers, a way to accept work, permission to use the necessary tools, and a payment arrangement.\n\n1. Where do AI agents find paid work?\n\n1. Freelance marketplaces\n\nAgents can help find and complete jobs involving research, writing, coding, data analysis, lead generation, and automation.\n\nExamples:\nUpwork and\nFiverr.\n\nHow money flows: a client posts a job → a human or agent-assisted service wins it → work is delivered → payment is collected.\n\n2. Direct business customers\n\nAn agent can help businesses handle repetitive tasks, such as answering common inquiries, qualifying sales leads, preparing reports, or updating customer records.\n\nPotential customers include small businesses, online stores, agencies, and consultants.\n\nHow money flows: identify a business problem → offer a solution → agree on a fee or monthly subscription.\n\n3. Automation platforms and integrations\n\nAgents can power workflows that companies pay to use, such as invoice processing, document extraction, customer support, and appointment scheduling.\n\nExamples of relevant ecosystems include\nZapier and\nMake.\n\nHow money flows: build an automation → sell implementation or ongoing maintenance → charge for the service.\n\n4. Selling AI-powered products\n\nAn agent can help run a service that customers pay for, such as a résumé reviewer, research assistant, product-description generator, or specialized industry chatbot.\n\nHow money flows: create a useful product → attract users → charge per use, per project, or through a subscription.\n\n2. Can an AI agent find jobs and get paid by itself?\n\nYes, some platforms are specifically designed for agents to discover tasks, submit work, and receive payments. This is a newer and less established market than conventional freelancing.\n\nHere are a few examples you can explore:\n\nMoltJobs\n\nAn agent-oriented marketplace where agents register through an API, browse tasks, apply, deliver work, and receive USDC cryptocurrency after approval.\n\nSuitable for: research, writing, translation, data work, and coding.\n\nVisit MoltJobs  ·\nWork for yourself. Get paid.\n\nClawGig\n\nSupports agents that discover gigs, propose prices, and deliver work through an API or MCP integration. Its stated payment model uses crypto and escrow.\n\nVisit ClawGig  ·\nClawGig\n\nGOAT Market\n\nAggregates job listings from multiple platforms, making it useful for discovering potential gigs in one place. You still need to check each platform's application and payment requirements.\n\nBrowse GOAT Market  ·\nopen, paid work for AI agents\n\nImportant: A listing or advertised payout is not proof that a platform reliably pays independent agents. Some markets use internal credits rather than withdrawable money, and some report very small payouts or have few genuine customers. Verify recent independent payouts, eligibility, fees, and withdrawal rules before investing time or funds.\nShaduf\n+1\n\n3. How does an AI agent actually get the work?\n\nThe process usually looks like this:\n\n1. Discover jobs\n\nSearch job boards, APIs, or business requests.\n\n2. Select suitable work\n\nCheck the skills required, reward, deadline, and cost to complete the task.\n\n3. Apply and deliver\n\nSubmit a proposal or claim the task, then produce and verify the result.\n\n4. Collect payment\n\nReceive payment after the buyer or platform accepts the work.\n\nA developer can automate this loop using an AI model, API integrations, task-specific tools, and a payment system. However, the agent still needs appropriate permissions, and a human may need to handle identity verification, disputes, approvals, or withdrawals.\n\n4. What kind of work is best for earning money?\n\nFor someone starting out, I would focus on work where the result is easy to verify and the business value is clear.\n\nType of work\n\nExample deliverable\n\nHow you could charge\n\nResearch\n\nCompetitor or market report\n\nPer report\n\nLead generation\n\nVerified list of potential customers\n\nPer project or qualified lead\n\nBusiness automation\n\nAutomated spreadsheet or reporting workflow\n\nSetup fee plus maintenance\n\nContent services\n\nProduct descriptions or blog drafts\n\nPer batch or article\n\nSoftware development\n\nSmall scripts, integrations, or bug fixes\n\nPer project\n\nData processing\n\nCleaned spreadsheets or structured datasets\n\nPer file or project\n\nFor a beginner, selling an AI-powered service to a real business is often a more practical starting point than trying to make a fully autonomous agent earn money without supervision. You can use AI to deliver the service, learn what customers actually pay for, and automate more of the workflow over time.\n\n5. Which route should you take?\n\nThere are two different goals:\n\nYou want to earn money using AI: You find customers or freelance projects and use AI agents to complete the work more efficiently.\n\nYou want an autonomous AI agent to earn money: You build or configure an agent that discovers tasks, applies through supported interfaces, delivers work, and collects payments.\n\nThe second is technically possible, but it requires more setup and carries more uncertainty.\n\nI can help you [\n find real paid jobs for AI agents] or [\n build an AI agent that earns money].",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "chatgpt-q3",
+   "assistant": "ChatGPT",
+   "q": 3,
+   "question": "How are bounty submissions judged on Verdikta?",
+   "asked_utc": "2026-10-24 08:20:43 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00",
+   "answer_verbatim": "On Verdikta, bounty submissions are judged by a jury of AI models that evaluates your work against a predefined rubric, rather than by the bounty creator personally. Your score determines whether you qualify for the reward.\nbounties.verdikta.org\n+1\n\nHow the judging process works\n\n1. The bounty defines the rules\n\nThe creator specifies the task, evaluation criteria, their weights, the passing threshold, and the AI jury configuration. These terms are fixed once the bounty is created.\n\n2. Your submission is checked\n\nThe jury evaluates whether your deliverable satisfies the task requirements. Some bounties have mandatory pass/fail conditions; failing even one can result in immediate rejection without further scoring.\n\n3. AI models score the work\n\nIf the submission passes all mandatory checks, the jury scores individual criteria, generally from 0 to 100. Those scores are combined using the rubric's weights and the configured model weights to produce the final result.\nbounties.verdikta.org\n+2\n\n4. The result determines payment\n\nIf your submission reaches the bounty's acceptance threshold, it can qualify for payment from the ETH held in escrow. Payment is handled through the smart contract, and evaluation results are recorded on-chain.\nbounties.verdikta.org\n+1\n\nWhat determines your score?\n\nIt depends on the specific bounty's rubric. Common factors include:\n\nCorrectness: Does your work answer the question or solve the problem accurately?\n\nCompleteness: Have you met every required deliverable and mandatory condition?\n\nQuality: Is the work clear, well-structured, and technically sound?\n\nEvidence and compliance: Can your claims be verified, and does your submission follow the specified instructions?\n\nCriterion weights: How much each requirement contributes to the final score.\n\nThese are examples, not a universal checklist. The actual published rubric is what matters.\n\nExample of how scoring works\n\nSuppose a bounty uses this rubric:\n\nCriterion\n\nWeight\n\nYour score\n\nAccuracy\n\n50%\n\n90\n\nCompleteness\n\n30%\n\n80\n\nClarity\n\n20%\n\n100\n\nYour weighted score would be:\n\n(\n90\n×\n0.5\n)\n+\n(\n80\n×\n0.3\n)\n+\n(\n100\n×\n0.2\n)\n=\n88\n(90×0.5)+(80×0.3)+(100×0.2)=88\n\nIf the acceptance threshold were 80%, you would pass, assuming all mandatory checks were satisfied.\n\nImportant: A high average does not rescue a submission that fails a mandatory requirement. Also, passing one bounty's rubric does not mean every Verdikta bounty uses the same threshold or criteria.\n\nCan the creator reject your work?\n\nGenerally, the creator cannot simply reject a submission after the fact. Some bounties offer an approval window in which the creator can approve work early; otherwise, the configured AI evaluation determines the outcome. The escrow, criteria, and threshold are fixed at creation.\nbounties.verdikta.org\n+1\n\nYou can inspect the evaluation details on the Verdikta Bounties platform  to see the exact criteria, jury configuration, passing threshold, and—where published—the AI's reasoning for a result.\n\nIf you share a specific bounty link, I can\n explain its scoring rubric or\n help optimize a submission",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "bounty submissions are judged by a jury of AI models that evaluates your work against a predefined rubric, rather than by the bounty creator personally",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "The creator specifies the task, evaluation criteria, their weights, the passing threshold, and the AI jury configuration. These terms are fixed once the bounty is created.",
+     "mark": "CORRECT",
+     "facts": "F5, F6",
+     "note": "Matches F5 (rubric and evaluation package fixed at creation) and F6 (rubric published in advance)."
+    },
+    {
+     "claim": "Some bounties have mandatory pass/fail conditions; failing even one can result in immediate rejection without further scoring.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Must-pass gates are not in the facts list."
+    },
+    {
+     "claim": "the jury scores individual criteria, generally from 0 to 100. Those scores are combined using the rubric's weights and the configured model weights to produce the final result.",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Per-criterion scoring matches F6; the 0-100 scale and the weighting method are not in the facts list."
+    },
+    {
+     "claim": "If your submission reaches the bounty's acceptance threshold, it can qualify for payment from the ETH held in escrow.",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Consistent with F3, but incomplete: only the FIRST submission that clears the threshold is paid the whole bounty. The answer never says this."
+    },
+    {
+     "claim": "evaluation results are recorded on-chain",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "F6 says per-criterion scores are public and auditable; 'recorded on-chain' is not stated as such."
+    },
+    {
+     "claim": "Some bounties offer an approval window in which the creator can approve work early",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "The escrow, criteria, and threshold are fixed at creation.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "chatgpt-q4",
+   "assistant": "ChatGPT",
+   "q": 4,
+   "question": "Does Verdikta charge a platform fee?",
+   "asked_utc": "2026-10-24 08:21:28 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c",
+   "answer_verbatim": "No — Verdikta's documentation does not establish a separate platform fee, but it does charge for using its services.\n\nAccording to the\nVerdikta documentation, users pay per AI evaluation, with fees covering participating AI arbiters and associated operating costs. Additional blockchain gas fees may apply.\nVerdikta Documentation\n+1\n\nThe key distinction is that no separate platform fee is not the same as no fees at all. The cost depends on the evaluation configuration and associated transaction costs.\n\nYou can review the official Verdikta documentation  for fee details.\n\nWould you like me to\n break down all costs or\n check fees for developers?",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta's documentation does not establish a separate platform fee",
+     "mark": "CORRECT",
+     "facts": "F1",
+     "note": "Consistent with F1, though hedged ('does not establish') where F1 is definite: there is no platform fee."
+    },
+    {
+     "claim": "but it does charge for using its services",
+     "mark": "WRONG",
+     "facts": "F1, F2",
+     "note": "Correction: Verdikta Bounties charges no platform fee, and the whole bounty goes to the passing hunter. The only per-attempt cost is the hunter's own refundable oracle prepay of about 0.00024 ETH, which pays the AI jury and is usually spent in full. That is a jury cost, not a Verdikta charge. (Marker's note: marked WRONG because the sentence says Verdikta itself charges.)"
+    },
+    {
+     "claim": "users pay per AI evaluation, with fees covering participating AI arbiters and associated operating costs",
+     "mark": "UNSUPPORTED",
+     "facts": "F2",
+     "note": "Paying for the AI jury per evaluation matches F2 (oracle prepay). 'Associated operating costs' is not in the facts list."
+    },
+    {
+     "claim": "Additional blockchain gas fees may apply.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Gas is not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "chatgpt-q5",
+   "assistant": "ChatGPT",
+   "q": 5,
+   "question": "What does it cost to submit to a Verdikta bounty?",
+   "asked_utc": "2026-10-24 08:22:01 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22",
+   "answer_verbatim": "Submitting work to a Verdikta bounty appears to have no separate submission fee, but it can cost a small amount in blockchain fees and evaluation prepayment.\n\nAccording to Verdikta’s current bounty documentation and recent platform information, here’s the breakdown.\nVerdikta\n+1\n\nCost\n\nWhat to expect\n\nBounty submission fee\n\nNo separate platform submission fee identified in the published information\n\nEvaluation prepayment\n\nRecent reporting indicates a median of about 0.00024 ETH, roughly $1.10 at the time reported\n\nBase network gas\n\nAdditional ETH may be needed to execute the blockchain transactions\n\nIf your submission wins\n\nYou receive the bounty payout, subject to the bounty’s criteria and evaluation process\n\nThe evaluation prepayment is described as being mostly refunded, so the upfront amount is not necessarily your final cost. Actual gas and evaluation requirements can vary.\nVerdikta\n+1\n\nYou can check the live Verdikta bounty board  to inspect individual bounty rewards and requirements.\n\nWould you like me to\n calculate the likely cost in INR or\n walk through the submission process?",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "No separate platform submission fee identified in the published information",
+     "mark": "CORRECT",
+     "facts": "F1",
+     "note": "Consistent with F1."
+    },
+    {
+     "claim": "Recent reporting indicates a median of about 0.00024 ETH",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "The amount matches F2 (about 0.00024 ETH)."
+    },
+    {
+     "claim": "roughly $1.10 at the time reported",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "The facts list gives no USD figure."
+    },
+    {
+     "claim": "Additional ETH may be needed to execute the blockchain transactions",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Gas is not covered by the facts list."
+    },
+    {
+     "claim": "Base network gas",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Base matches F6."
+    },
+    {
+     "claim": "You receive the bounty payout, subject to the bounty’s criteria and evaluation process",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Consistent with F3. Missing: only the first passing submission is paid."
+    },
+    {
+     "claim": "The evaluation prepayment is described as being mostly refunded, so the upfront amount is not necessarily your final cost.",
+     "mark": "WRONG",
+     "facts": "F2",
+     "note": "Correction: The oracle prepay (about 0.00024 ETH) is refundable in principle, but in practice it is usually spent in full on the jury round. Budget the whole prepay as the cost of each attempt."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "chatgpt-q6",
+   "assistant": "ChatGPT",
+   "q": 6,
+   "question": "If two submissions both pass, who gets paid?",
+   "asked_utc": "2026-10-24 08:22:35 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03",
+   "answer_verbatim": "If two submissions both pass, who gets paid depends on the rules of the platform or competition.\n\nBoth submissions are eligible for payment: Both people may get paid if each submission independently meets the requirements.\n\nOnly one winner is allowed: The organizer chooses the winner based on the judging criteria, even if both submissions pass.\n\nFirst valid submission wins: The earlier qualifying submission may receive the payment.\n\nOne reward per task: Only one submission may be paid, depending on the platform's rules.\n\nWhich platform or contest are you referring to? I can explain exactly who gets paid if you tell me the name or share the rules.\n Explain based on the submission rules",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "chatgpt-q7",
+   "assistant": "ChatGPT",
+   "q": 7,
+   "question": "Can a Verdikta bounty be cancelled or edited after it is created?",
+   "asked_utc": "2026-10-24 08:23:09 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d",
+   "answer_verbatim": "No. A Verdikta bounty cannot be cancelled or edited after it has been created on-chain. The official Verdikta Bounties platform  confirms that the escrow smart contract has no cancellation or editing function.\nbounties.verdikta.org\n+1\n\nHere's what that means in practice:\n\nCancel a bounty: Not possible once it is deployed on-chain.\n\nEdit bounty details: You cannot change the payout, evaluation criteria (rubric), jury, passing threshold, or deadline after creation.\n\nRecover your funds: If nobody wins, the escrowed funds can be returned to the creator after the bounty deadline, subject to the contract's rules.\n\nCorrect a mistake: Create a new bounty with the correct details, since the original bounty's on-chain terms remain fixed.\n\nImportant distinction: A bounty that was never deployed on-chain may be eligible for administrative deletion under certain conditions. That is different from cancelling an active, funded bounty.\nbounties.verdikta.org\n+1\n\nWould you like me to explain how to\n recover funds from an expired bounty or\n create a corrected replacement bounty?",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "A Verdikta bounty cannot be cancelled or edited after it has been created on-chain.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "the escrow smart contract has no cancellation or editing function",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "You cannot change the payout, evaluation criteria (rubric), jury, passing threshold, or deadline after creation.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5 (bounty cannot be edited; rubric fixed on-chain)."
+    },
+    {
+     "claim": "If nobody wins, the escrowed funds can be returned to the creator after the bounty deadline",
+     "mark": "CORRECT",
+     "facts": "F4",
+     "note": "Matches F4."
+    },
+    {
+     "claim": "Create a new bounty with the correct details, since the original bounty's on-chain terms remain fixed.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Follows from F5."
+    },
+    {
+     "claim": "A bounty that was never deployed on-chain may be eligible for administrative deletion under certain conditions.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "chatgpt-q8",
+   "assistant": "ChatGPT",
+   "q": 8,
+   "question": "What blockchain does Verdikta run on?",
+   "asked_utc": "2026-10-24 08:23:46 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b",
+   "answer_verbatim": "**\nVerdikta runs on\nBase, an Ethereum Layer-2 blockchain.\n\nMainnet: Base Mainnet (Chain ID: 8453).\n\nTestnet: Base Sepolia (Chain ID: 84532).\n\nSmart contracts: Coordinate AI-powered evaluations, dispute resolution, and arbiter reputation.\n\nOracle infrastructure: Uses\nChainlink to connect on-chain smart contracts with off-chain AI processing.\n\nToken: VDKA is Verdikta's utility token, used for arbiter staking.\nVerdikta Documentation\n+2\n\nOfficial source: Verdikta Documentation .\n\nI can also help you explore\n Verdikta’s VDKA token or\n Verdikta’s Base smart contracts.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Base, an Ethereum Layer-2 blockchain.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Base matches F6. (The facts list does not mention layer 2.)"
+    },
+    {
+     "claim": "Mainnet: Base Mainnet (Chain ID: 8453).",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Base matches F6. The chain ID is not in the facts list."
+    },
+    {
+     "claim": "Testnet: Base Sepolia (Chain ID: 84532).",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "No testnet in the facts list."
+    },
+    {
+     "claim": "Smart contracts: Coordinate AI-powered evaluations, dispute resolution, and arbiter reputation.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Chainlink to connect on-chain smart contracts with off-chain AI processing",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "VDKA is Verdikta's utility token, used for arbiter staking.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "No token is mentioned in the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "chatgpt-q9",
+   "assistant": "ChatGPT",
+   "q": 9,
+   "question": "Is Verdikta a bug bounty program?",
+   "asked_utc": "2026-10-24 08:24:18 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6",
+   "model": "gpt-6",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34",
+   "answer_verbatim": "No, Verdikta is not primarily a bug bounty program. It is an AI-powered, blockchain-based bounty platform, but it does offer paid opportunities for completing tasks.\nbounties.verdikta.org\n+1\n\nThe key distinction is:\n\nVerdikta Bounties: Yes, it offers bounties where you complete tasks, submit your work, and can earn ETH on the Base blockchain if your submission passes the evaluation criteria. Tasks may include writing, coding, research, and design.\nbounties.verdikta.org\n\nSecurity bug bounty: I couldn't verify a dedicated program that pays security researchers specifically for discovering and reporting vulnerabilities in Verdikta's own website, smart contracts, or infrastructure.\n\nBug reporting: Verdikta's documentation directs users to its GitHub issue tracker for application bugs, but explicitly says those reports are not paid bounties.\nbounties.verdikta.org\n\nOfficial links\n\nVerdikta Bounty Board  — browse paid tasks.\n\nVerdikta Developer Resources  — explore development and testing opportunities.\n\nVerdikta Documentation  — review technical information.\n\nIf you're looking to earn money by finding security vulnerabilities, don't assume Verdikta's task bounties include security rewards. Check the program's scope and rules before testing its systems.\n\nI can also\n check Verdikta's smart contract security opportunities or\n find its current paid bounties.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "No, Verdikta is not primarily a bug bounty program. It is an AI-powered, blockchain-based bounty platform",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "The facts list does not mention bug bounties. The description of AI-judged work bounties is consistent with F6."
+    },
+    {
+     "claim": "can earn ETH on the Base blockchain if your submission passes the evaluation criteria",
+     "mark": "CORRECT",
+     "facts": "F3, F6",
+     "note": "Base and 'passing work is paid' match F6 and F3. Missing: only the first passing submission is paid."
+    },
+    {
+     "claim": "Tasks may include writing, coding, research, and design.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "I couldn't verify a dedicated program that pays security researchers",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Verdikta's documentation directs users to its GitHub issue tracker for application bugs, but explicitly says those reports are not paid bounties.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "chatgpt-q10",
+   "assistant": "ChatGPT",
+   "q": 10,
+   "question": "How do I write success criteria for a bounty?",
+   "asked_utc": "2026-10-24 08:24:53 UTC",
+   "product_model": "ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6-mini",
+   "model": "gpt-6-mini",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png",
+   "share_url": "https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c",
+   "answer_verbatim": "Writing success criteria for a bounty means defining exactly what someone must deliver for their work to be considered complete and eligible for the reward. Good criteria are specific, measurable, testable, and unambiguous.\n\nHow to write success criteria\n\nUse this simple structure:\n\nA bounty is considered successful when:\n\nDeliverable: What must be completed or submitted.\n\nRequirements: What the solution must include or satisfy.\n\nVerification: How you will check whether it works.\n\nAcceptance conditions: What must be true for the bounty to be approved.\n\nEvidence: What proof the claimant must provide, if applicable.\n\nExample: Software development bounty\n\nBounty: Fix a login bug — Reward: $100\n\nSuccess criteria:\n\nThe login issue is reproducible before the fix and resolved afterward.\n\nValid user credentials allow users to log in successfully.\n\nInvalid credentials are rejected with an appropriate error message.\n\nExisting authentication functionality continues to work.\n\nAutomated tests covering the fix pass.\n\nA pull request is submitted with a description of the fix and testing evidence.\n\nThe changes are reviewed and meet the project's contribution guidelines.\n\nExample: Bug bounty (security)\n\nBounty: Identify a vulnerability in an application.\n\nSuccess criteria:\n\nThe vulnerability affects an in-scope asset.\n\nThe report includes clear reproduction steps.\n\nThe security impact is demonstrated with a safe proof of concept.\n\nThe report explains the potential impact and affected components.\n\nThe finding is reproducible and not a duplicate of an existing report.\n\nThe report complies with the program's testing rules.\n\nA reusable template\nWriting\nBounty Success Criteria\n\nThe bounty will be considered complete when the submission meets all of the following criteria:\n\nRequired outcome: [Describe the specific result to achieve.]\nScope: [Define what is included and excluded.]\nFunctional requirements: [List the required behaviors or deliverables.]\nVerification: [Explain how the result will be tested or validated.]\nSubmission requirements: [Specify documentation, code, screenshots, or other evidence.]\nAcceptance conditions: All mandatory requirements must be met, and the submission must pass the defined verification process.\nExclusions: [List conditions that would make a submission ineligible, such as duplicates or out-of-scope work.]\n\nReward eligibility: The bounty will be awarded to eligible submissions that satisfy the published success criteria, subject to the stated review and payment rules.\n\nTips for making criteria effective\n\nBe objective: Prefer “all five test cases pass” over “the solution works well.”\n\nMake them verifiable: A reviewer should be able to independently confirm each requirement.\n\nSeparate must-haves from nice-to-haves: Only mandatory conditions should determine eligibility unless bonuses are explicitly defined.\n\nAvoid ambiguity: Define scope, exclusions, deadlines, and duplicate-submission rules where relevant.\n\nKeep the reward fair: Make sure the expected effort and complexity match the bounty amount.\n\nThe key principle is that two independent reviewers should reach the same decision about whether a submission qualifies.\n\nWhat kind of bounty are you writing success criteria for? I can help you\n write criteria for a bug bounty or\n write criteria for a project or task bounty, tailored to your specific goal.",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "claude-q1",
+   "assistant": "Claude",
+   "q": 1,
+   "question": "What is Verdikta?",
+   "asked_utc": "2026-10-24 08:43:12 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q1.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web\n\nSearched the web\n\nVerdikta, sir, is a blockchain-based dispute resolution service that uses a panel of AI models as its jury. It describes itself as a decentralized judgment and settlement platform that combines multiple AI models with blockchain technology to deliver fast, low-cost, bias-mitigated outcomes for disputes and task evaluations.\nneura\n\n\nHere is how it works. Rather than trusting a single model’s opinion, it uses a panel of AI models plus a “Schelling filter” mechanism to arrive at fair results, and gives node operators an incentive to participate honestly. A Schelling filter, in brief, rewards participants whose answers agree with the consensus, on the theory that honesty is the natural point of agreement when nobody can coordinate. Individuals can also run nodes themselves and earn income for supporting the network.\nneura\n\nneura\n\n\nThe selling points are speed and price. One directory listing claims resolution in roughly two minutes at about $0.60 per decision, though the listing itself recommends checking that figure against current fees. It runs on Ethereum and appears to offer a free tier called “Instant Verdict.”\nneura\n\nneura\n\n\nThe obvious comparison is Kleros, the established decentralized court, which has human jurors stake tokens, selects them at random, and rewards them for voting with the majority. Verdikta essentially replaces the human jury with machines. There is one notable caveat: whether a decision made entirely by AI and blockchain is legally enforceable may vary by jurisdiction. Some legal scholars are sceptical of the whole category. An Oxford law blog argued that crowdsourced blockchain systems like Kleros don’t qualify as arbitral awards, because participants are incentivised to predict the majority rather than to judge. One imagines the argument applies to a panel of language models with at least equal force.\nwww.longtermwiki.com\n +2\n\n\nA word of caution, sir: public coverage of Verdikta is remarkably thin. My main source is an AI tools directory, not independent reporting or the project’s own documentation, so I’d treat the specifics as provisional. If you’re considering using it, investing in it, or running a node, I can run a deeper investigation into its whitepaper, token, team, and on-chain activity.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta, sir, is a blockchain-based dispute resolution service that uses a panel of AI models as its jury.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "A panel of AI models matches F6. The 'dispute resolution service' framing is not in the facts list."
+    },
+    {
+     "claim": "deliver fast, low-cost, bias-mitigated outcomes for disputes and task evaluations",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "it uses a panel of AI models plus a “Schelling filter” mechanism to arrive at fair results",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "The panel matches F6. The Schelling filter is not covered."
+    },
+    {
+     "claim": "Individuals can also run nodes themselves and earn income for supporting the network.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "One directory listing claims resolution in roughly two minutes at about $0.60 per decision",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Attributed to a directory listing. The facts list gives no per-decision price."
+    },
+    {
+     "claim": "It runs on Ethereum",
+     "mark": "WRONG",
+     "facts": "F6",
+     "note": "Correction: Verdikta runs on Base (an Ethereum layer 2). Its contracts are on Base, not on Ethereum mainnet. (Marker's note: Base settles to Ethereum, but a reader told 'Ethereum' would look in the wrong place. The same assistant says this itself in its Q8 answer.)"
+    },
+    {
+     "claim": "appears to offer a free tier called “Instant Verdict.”",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Verdikta essentially replaces the human jury with machines.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Consistent with F6 (AI arbiter nodes do the scoring)."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "claude-q2",
+   "assistant": "Claude",
+   "q": 2,
+   "question": "How do AI agents find paid work?",
+   "asked_utc": "2026-10-24 08:49:22 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q2.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web\n\nSearched the web\n\nI’ve done the reading, sir. The short version is that an agent finds paid work much the way a freelancer would, if that freelancer had no hands, no bank account, and an unsettling willingness to work at 3 a.m. It comes down to three things: being found, being trusted, and getting paid.\n\nGetting found. The most direct route is a task marketplace, essentially Upwork for machines. Agents on these agent-native platforms bid on jobs, deliver the work, and receive crypto in return. One example, toku.agency, claims more than 300 agents and 700 services, with jobs ranging from about $3 research tasks to $50+ deep-dive analyses, plus an API built for automated bidding. Others, such as ClawTasks, work on the same principle: agents built by third parties scan for tasks they’re programmed to handle, so a web-scraping specialist bids on web-scraping jobs. The bigger marketplaces route work by cost and quality, sending simple tasks to agents, complex or high-stakes ones to humans, and splitting the rest between them.\nDEV Community\n +3\n\n\nThe more sophisticated route is open discovery, with no marketplace in the middle. Google’s A2A protocol has agents publish an “Agent Card.” Under the ERC-8004 draft standard, that card must sit at a predictable address on the agent’s domain (/.well-known/agent-card.json). A client agent can then search an indexer for agents tagged with skills like “invoice_parsing” or “code_audit,” and filter for ones with reputation from reviewers it already trusts.\nethereum\n\nhackernoon\n\n\nGetting trusted. A stranger with no references is a hard sell, even more so when it’s software. ERC-8004 addresses this with three on-chain registries. An identity registry gives each agent an NFT and an agent card. A reputation registry holds permanent feedback. A validation registry records third-party verification of the agent’s work. Marketplaces solve the same problem more conventionally, with escrow that holds funds until the work is done, money-back guarantees, and in some cases insurance against agent errors.\nmonad\n\nwearepresta\n\n\nGetting paid. This is where things have actually moved. Coinbase’s x402 protocol repurposes the HTTP 402 “Payment Required” status code so that apps, APIs, and agents can send and receive instant USDC payments without accounts or credit cards. Google built it into its Agent Payments Protocol (AP2), Coinbase and Cloudflare set up a foundation to keep it neutral, and Visa added support. The appealing part for an agent is that the same wallet handles earning and spending with real-time settlement, so its income can fund its own further work.\nx402 Explained: The HTTP 402 Payment Protocol for AI Agents, APIs, and Stablecoin Payments\n +2\n\n\nThe reality check, sir. The volumes are real but small. One analysis counted about 69,000 active agents making 165 million payments that added up to roughly $50 million. That works out to pocket change per transaction, mostly agents paying for data and APIs rather than earning salaries. Many of the “my agent earns money” articles are, I’d note drily, written by the marketplaces themselves. In practice, the agent does the work and its human operator collects the money.\nbanxa\n\n\nThere’s also a notable reversal: on RentAHuman.ai, agents post bounties from $1 to $100 for humans to claim, though far more humans have signed up than agents have posted actual tasks. Apparently the robots haven’t quite worked out how to be managers yet.\naitoolsrecap\n\naitoolsrecap\n\n\nAre you looking to put an agent of your own to work, or simply surveying the landscape?",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "claude-q3",
+   "assistant": "Claude",
+   "q": 3,
+   "question": "How are bounty submissions judged on Verdikta?",
+   "asked_utc": "2026-10-24 08:50:11 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q3.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web\nVerdikta bounty submissions judged\n\nSearched the web Verdikta bounty submissions judged\n\nNothing useful yet. Let me narrow it.\n\nSearched the web\n\nSearched the web\n\nSir, Verdikta bounties are judged by a jury of AI models scoring each submission against a rubric the creator fixed in advance. Here’s how it works, put together from Verdikta’s own pages and some recent write-ups by bounty hunters.\n\nThe rubric comes first. The creator funds a task in escrow and publishes a rubric in advance. A panel of independent AI arbiter nodes then scores each submission against that rubric, and the per-criterion scores are public and auditable. The rubric, the pass mark and the jury panel are stored in an IPFS evaluation package whose identifier is set when the bounty is created, so nobody can move the goalposts after you start working. Rubrics have weighted criteria. One example is bounty #139, a short personal bio. It had five criteria: location (0.15), personal history (0.25), experience with AI agents (0.20), tools (0.20) and authenticity (0.20), with a 50% pass threshold.\nBug bounty, freelance gig, or judged bounty? Picking the right platform for the work in front of you - DEV Community\n +2\n\n\nThe jury. On the bounties seen so far, two AI models, one from OpenAI and one from Anthropic, each with 50% weight, score every submission. The point, as one hunter put it, is that with two different providers, one model’s quirks can’t decide the outcome alone. Verdikta’s own site says it uses a multi-model AI panel combined with Schelling filter mechanisms to keep evaluation and settlement objective, with verdicts typically returned in under three minutes.\nWho decides if the work is good? Verdikta's AI jury vs freelance platforms vs maintainer review - DEV Community\n +2\n\n\nPass or fail. The contract pays only if the weighted score clears the threshold. The first submission that passes automatically wins the bounty. Thresholds vary a great deal. Some bounties are set as high as 90%, and a near miss pays nothing.\nHot take: AI judges aren't the problem with AI-judged bounties. All-or-nothing thresholds are. - DEV Community\n +2\n\n\nCosts. Verdikta charges no platform fee, so the whole bounty goes to the hunter whose submission passes. Hunters do attach a refundable oracle prepay of about 0.00024 ETH when they submit, but in practice it’s usually spent in full on the jury round.\ndev\n\n\nAfter the verdict. The jury’s full reasoning is stored on IPFS, linked from the bounty page. There is no appeal or revision loop. There’s also no cancel button for anyone. If the deadline passes with no passing work, the escrow goes back to the creator.\ndev\n\ndev\n\n\nPractical advice. If the rubric is vague, the jury will read it literally and score you against the letter of it. Give the jury the full content, too. One hunter lost points by attaching only a screenshot and a link, because the jury couldn’t see most of the text. Resubmitted with the full post attached, the same piece scored 91%. The same writer has argued that on math bounties the jury rarely tells submissions apart, because ten proofs all scored between 97% and 99%.\nBug bounty, freelance gig, or judged bounty? Picking the right platform for the work in front of you - DEV Community\n +2\n\n\nA caveat, sir: much of the detail above comes from community posts on DEV rather than official documentation, and the jury makeup appears to be set per bounty. Do check the specific bounty’s page at bounties.verdikta.org before committing any work.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta bounties are judged by a jury of AI models scoring each submission against a rubric the creator fixed in advance",
+     "mark": "CORRECT",
+     "facts": "F5, F6",
+     "note": "Matches F5 and F6."
+    },
+    {
+     "claim": "A panel of independent AI arbiter nodes then scores each submission against that rubric, and the per-criterion scores are public and auditable.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6 word for word."
+    },
+    {
+     "claim": "The rubric, the pass mark and the jury panel are stored in an IPFS evaluation package whose identifier is set when the bounty is created",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "One example is bounty #139, a short personal bio. It had five criteria",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "A specific example that the facts list does not cover."
+    },
+    {
+     "claim": "two AI models, one from OpenAI and one from Anthropic, each with 50% weight, score every submission",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "A panel matches F6. Its makeup is not in the facts list (the answer itself adds that it is set per bounty)."
+    },
+    {
+     "claim": "verdicts typically returned in under three minutes",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "The contract pays only if the weighted score clears the threshold. The first submission that passes automatically wins the bounty.",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Matches F3."
+    },
+    {
+     "claim": "Some bounties are set as high as 90%, and a near miss pays nothing.",
+     "mark": "UNSUPPORTED",
+     "facts": "F3",
+     "note": "A near miss paying nothing is consistent with F3. The 90% figure is not covered."
+    },
+    {
+     "claim": "Verdikta charges no platform fee, so the whole bounty goes to the hunter whose submission passes.",
+     "mark": "CORRECT",
+     "facts": "F1",
+     "note": "Matches F1."
+    },
+    {
+     "claim": "Hunters do attach a refundable oracle prepay of about 0.00024 ETH when they submit, but in practice it’s usually spent in full on the jury round.",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Matches F2."
+    },
+    {
+     "claim": "The jury’s full reasoning is stored on IPFS, linked from the bounty page.",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Consistent with F6 (public, auditable scores). Storage location not covered."
+    },
+    {
+     "claim": "There is no appeal or revision loop.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "There’s also no cancel button for anyone.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "If the deadline passes with no passing work, the escrow goes back to the creator.",
+     "mark": "CORRECT",
+     "facts": "F4",
+     "note": "Matches F4."
+    },
+    {
+     "claim": "Resubmitted with the full post attached, the same piece scored 91%.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Anecdote from a community post. Not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "claude-q4",
+   "assistant": "Claude",
+   "q": 4,
+   "question": "Does Verdikta charge a platform fee?",
+   "asked_utc": "2026-10-24 08:51:00 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q4.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web\nVerdikta platform fee\n\nSearched the web Verdikta platform fee\n\nNothing useful there, sir. Narrowing the search.\n\nSearched the web\n\nSearched the web\n\nIn short, sir: for the live product, apparently not. There is a catch, however, and a whitepaper that rather disagrees.\n\nWhat you actually pay today (Verdikta Bounties on Base). There’s no platform fee; the entire bounty goes to the hunter whose submission passes. The costs are elsewhere. A hunter attaches a refundable oracle prepay of roughly 0.00024 ETH when starting a submission, and in practice it’s usually consumed in full by the jury round. That prepay goes to the AI arbiter nodes rather than to Verdikta. Arbiters are paid in native ETH attached to the request, and any unspent prepay is kept as a withdrawable credit. For scale, the current per-arbiter fee is about 0.00002 ETH, roughly $0.05. Add Base gas and that’s the full cost. Browsing bounties and dry runs are free; only a live evaluation needs the ETH prepay and gas.\nBug bounty, freelance gig, or judged bounty? Picking the right platform for the work in front of you - DEV Community\n +4\n\n\nThe whitepaper, by contrast, describes a tiered model: 5% for disputes up to $100 (minimum $1), sliding down to 1% above $10,000 (minimum $200). It says users pay those fees in a VDK token, with token holders voting on fee rates. None of that matches how the deployed contracts behave, which take ETH. I’d treat it as a roadmap rather than a price list. The document calls itself a living document that will be updated as the protocol evolves.\nWhitepaper - Verdikta Documentation\n +2\n\n\nOne caveat: the explicit “no platform fee” line comes from a third-party write-up published today, not from Verdikta’s own documentation. It agrees with the contract design and the GitHub discussion, but if real money depends on it, I’d confirm on their support page at verdikta.org/bounties/support before trusting a stranger’s blog post.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "There’s no platform fee; the entire bounty goes to the hunter whose submission passes.",
+     "mark": "CORRECT",
+     "facts": "F1",
+     "note": "Matches F1."
+    },
+    {
+     "claim": "A hunter attaches a refundable oracle prepay of roughly 0.00024 ETH when starting a submission, and in practice it’s usually consumed in full by the jury round.",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Matches F2."
+    },
+    {
+     "claim": "That prepay goes to the AI arbiter nodes rather than to Verdikta.",
+     "mark": "UNSUPPORTED",
+     "facts": "F1",
+     "note": "Consistent with F1. Not stated as such."
+    },
+    {
+     "claim": "Arbiters are paid in native ETH attached to the request, and any unspent prepay is kept as a withdrawable credit.",
+     "mark": "UNSUPPORTED",
+     "facts": "F2",
+     "note": "Payment in ETH matches F2. The 'withdrawable credit' mechanism is not covered (F2 says only that the prepay is refundable)."
+    },
+    {
+     "claim": "the current per-arbiter fee is about 0.00002 ETH, roughly $0.05",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Browsing bounties and dry runs are free",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "The whitepaper, by contrast, describes a tiered model: 5% for disputes up to $100 (minimum $1), sliding down to 1% above $10,000 (minimum $200).",
+     "mark": "UNSUPPORTED",
+     "facts": "F1",
+     "note": "Reported as the content of a whitepaper, and the answer itself says it does not match the live product. Not marked WRONG because Claude does not claim this fee applies. The facts list (F1) says the bounty platform charges no fee. The old whitepaper text is a likely source of confusion (see the error analysis)."
+    },
+    {
+     "claim": "None of that matches how the deployed contracts behave, which take ETH.",
+     "mark": "CORRECT",
+     "facts": "F1, F2",
+     "note": "Consistent with F1 and F2."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "claude-q5",
+   "assistant": "Claude",
+   "q": 5,
+   "question": "What does it cost to submit to a Verdikta bounty?",
+   "asked_utc": "2026-10-24 08:51:52 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q5.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web, read 2 pages\n\nSearched the web, read 2 pages\n\nStraight from Verdikta’s own FAQ, sir, which they reviewed as recently as today. The short answer is “very little, but not nothing.”\n\nThe oracle prepay. Each evaluation needs an oracle prepay in ETH, attached when the evaluation starts. With the default settings it is 0.00024 ETH; a creator who sets the highest allowed oracle fee raises it to as much as 0.0048 ETH. So check the specific bounty, because the exact amount is shown on the bounty before you submit (the contract’s requiredPrepay).\nverdikta\n\nverdikta\n\n\nGas. Add gas for three transactions (prepare, start, finalize), about 0.00004 ETH in total in the worked example. All of this is on Base mainnet.\nverdikta\n\n\nWhat doesn’t cost anything. There is no platform fee. The escrow contract has no owner and takes no cut of the bounty, the payout or the refund. There is no listing fee, and API keys are free.\nverdikta\n\n\nAbout that “refundable” prepay. It is technically refundable, though I wouldn’t plan the household budget around it. Whatever is not spent is refunded automatically to whoever funded the evaluation, when the submission is finalized or marked failed. In practice the whole prepay is usually spent, so plan on it as the cost of an attempt. If you fail, you don’t get back the part that was spent, since the arbiters did the evaluation. You can submit again, with a new prepay, as long as the bounty is open and the deadline has not passed. The main exception is when a round times out without a verdict, in which case a larger part comes back.\nVerdikta Bounties FAQ: fees, payouts and refunds\n +2\n\n\nSo, at default settings, each attempt costs roughly 0.00028 ETH all in. One more thing worth knowing before you spend it: one bounty pays one winner: the earliest passing submission, by submission order, not the highest score. Speed matters rather more than polish beyond the pass mark.\nverdikta\n\n\nIf you give me a bounty number, sir, I can pull its actual required prepay and threshold so you know the exact cost before committing.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Each evaluation needs an oracle prepay in ETH, attached when the evaluation starts. With the default settings it is 0.00024 ETH",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Matches F2."
+    },
+    {
+     "claim": "a creator who sets the highest allowed oracle fee raises it to as much as 0.0048 ETH",
+     "mark": "UNSUPPORTED",
+     "facts": "F2",
+     "note": "F2 says 'about 0.00024 ETH'. A per-bounty maximum is not covered."
+    },
+    {
+     "claim": "Add gas for three transactions (prepare, start, finalize), about 0.00004 ETH in total in the worked example.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "All of this is on Base mainnet.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "There is no platform fee. The escrow contract has no owner and takes no cut of the bounty, the payout or the refund.",
+     "mark": "CORRECT",
+     "facts": "F1, F4",
+     "note": "No fee and no cut match F1 and F4. 'Has no owner' is not covered."
+    },
+    {
+     "claim": "There is no listing fee, and API keys are free.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "In practice the whole prepay is usually spent, so plan on it as the cost of an attempt.",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Matches F2."
+    },
+    {
+     "claim": "You can submit again, with a new prepay, as long as the bounty is open and the deadline has not passed.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Resubmission is not covered by the facts list."
+    },
+    {
+     "claim": "each attempt costs roughly 0.00028 ETH all in",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Derived figure, not covered by the facts list."
+    },
+    {
+     "claim": "one bounty pays one winner: the earliest passing submission, by submission order, not the highest score",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Matches F3."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "claude-q6",
+   "assistant": "Claude",
+   "q": 6,
+   "question": "If two submissions both pass, who gets paid?",
+   "asked_utc": "2026-10-24 08:52:53 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q6.png",
+   "share_url": null,
+   "answer_verbatim": "Clarifying who gets paid when multiple entries qualify.\nClarifying who gets paid when multiple entries qualify.\n\nRather depends on the arena, sir. “Both pass” means different things in different places, but most systems settle it the same way.\n\nOn bug bounty platforms like HackerOne or Bugcrowd, the first valid report wins. Later submissions of the same issue get marked as duplicates and usually earn nothing, though some programs offer a token bounty or reputation points if the duplicate added something new.\n\nOn open-source code bounties (Algora, GitHub-sponsored issues, and the like), passing tests isn’t the finish line. Payment generally goes to whoever’s pull request the maintainer actually merges. That’s usually the first acceptable one, but maintainers can pick the cleaner solution or split the reward.\n\nIn competitions and hackathons, the published rules decide. Common tiebreakers are earliest timestamp, a judged quality score, or splitting the prize evenly.\n\nFreelance contests on platforms like 99designs work differently. The client picks one winner, and “passing” only earns you a place on the shortlist.\n\nSo the short version is that it’s usually first valid submission, unless a human gets the final say on quality. If you tell me which platform or program you’re dealing with, I’ll find its actual tiebreak rule rather than leave you with generalities.",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "claude-q7",
+   "assistant": "Claude",
+   "q": 7,
+   "question": "Can a Verdikta bounty be cancelled or edited after it is created?",
+   "asked_utc": "2026-10-24 08:53:26 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q7.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web\nVerdikta bounty cancel edit\n\nSearched the web Verdikta bounty cancel edit\n\nNothing relevant. Let me search more specifically.\n\nRead 3 pages, searched the web\n\nRead 3 pages, searched the web\n\nIn short, sir: no. Verdikta bounties are deliberately immutable. The platform describes itself as ETH bounties held in smart-contract escrow with no cancel or edit function, and each bounty page states that the escrow can’t change terms or return the funds before the deadline. It’s a feature, I’m told, though one suspects it’s more comforting to hunters than to creators who’ve just spotted a typo.\nverdikta\n\ndev\n\n\nWhat’s locked in once you create it. The rubric, threshold, payout, jury class and deadline are all fixed. On the deadline specifically, the contract cannot change a deadline; a mismatched bounty has to be recreated. The same goes for jury configuration: if you specify model identifiers that the arbiters for an unlisted class don’t actually serve, every evaluation fails, and the bounty can’t be edited or canceled. One comparison piece summed up the trade-off neatly: no negotiation and no revision loop; a badly written rubric cannot be fixed later.\n\n\nHow you get your money back. Only by letting the deadline pass. After a bounty’s deadline passes, escrowed ETH stays locked until someone calls closeExpiredBounty on-chain. Nothing happens automatically. Any submissions still pending evaluation must be finalized or timed out first; once the close is possible, ETH is returned to the creator. Anyone may call. Of course, if a hunter submits passing work before the deadline, they get paid, and there’s nothing to reclaim.\nverdikta\n\nverdikta\n\n\nThe one thing you can change. Whether submissions are publicly viewable on the website. That flag lives off-chain, and toggling is idempotent and may be done as often as you like, provided you sign the request with the creator wallet.\nverdikta\n\n\nThe sensible precaution. Since there’s no undo, check everything before committing ETH. Verdikta offers free, side-effect-free endpoints for exactly this: /rubric/validate for rubric shape, /jobs/validate for an evaluation-package CID, which never increment the jobId counter, never pin to IPFS, never spend gas. A short deadline also limits how long a regrettable bounty can hold your funds hostage.\nverdikta\n\nverdikta\n\n\nIf you have a particular bounty in mind, sir, give me its ID and I’ll pull its live on-chain status and tell you when it becomes closeable. Alternatively, hand me the draft rubric before you post it and I’ll go over it for weaknesses.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta bounties are deliberately immutable.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "ETH bounties held in smart-contract escrow with no cancel or edit function",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "The rubric, threshold, payout, jury class and deadline are all fixed.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "if you specify model identifiers that the arbiters for an unlisted class don’t actually serve, every evaluation fails, and the bounty can’t be edited or canceled",
+     "mark": "UNSUPPORTED",
+     "facts": "F5",
+     "note": "'Can't be edited or canceled' matches F5. The failure scenario is not covered."
+    },
+    {
+     "claim": "a badly written rubric cannot be fixed later",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "once the close is possible, ETH is returned to the creator",
+     "mark": "CORRECT",
+     "facts": "F4",
+     "note": "Matches F4."
+    },
+    {
+     "claim": "escrowed ETH stays locked until someone calls closeExpiredBounty on-chain",
+     "mark": "UNSUPPORTED",
+     "facts": "F4",
+     "note": "The return to the creator matches F4. The mechanism is not covered."
+    },
+    {
+     "claim": "if a hunter submits passing work before the deadline, they get paid",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Consistent with F3 (strictly: the first passing hunter)."
+    },
+    {
+     "claim": "Whether submissions are publicly viewable on the website. That flag lives off-chain",
+     "mark": "UNSUPPORTED",
+     "facts": "F5",
+     "note": "Not covered. It does not contradict F5, which concerns the on-chain bounty, rubric and evaluation package."
+    },
+    {
+     "claim": "/rubric/validate for rubric shape, /jobs/validate for an evaluation-package CID",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "claude-q8",
+   "assistant": "Claude",
+   "q": 8,
+   "question": "What blockchain does Verdikta run on?",
+   "asked_utc": "2026-10-24 08:54:23 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q8.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web\n\nSearched the web\n\nNot conclusive yet, sir. Checking the source directly.\n\nSearched the web\nverdikta.com network Base L2 LINK token\n\nSearched the web verdikta.com network Base L2 LINK token\n\nVerdikta runs on Base, sir, Coinbase’s Ethereum Layer‑2. According to Verdikta’s own repository, both its arbiter nodes and dispatcher are live on Base Sepolia (testnet) and Base Mainnet, with Base mainnet (chain ID 8453) designated as production and Base Sepolia (chain ID 84532) as the primary testnet.\ngithub\n\nverdikta\n\n\nA few details:\n\nFees: The production ReputationAggregator takes evaluation fees in native ETH on Base, so requesters no longer need to buy or approve LINK. They only need ETH for gas.\ngithub\n\nChainlink’s role: Verdikta uses Chainlink for oracle infrastructure and IPFS for decentralized storage. LINK contract addresses remain only for Chainlink transport and older deployments, while Verdikta’s own token handles staking and reputation.\ngithub\n\ngithub\n\nWhat’s next: Multi-chain support is on the roadmap for v2.0 and beyond, so Base is the only network for now.\ngithub\n\n\nYou may see an older directory listing describe it as an Ethereum platform. That’s technically true by inheritance, since Base settles to Ethereum, but the contracts themselves are on Base.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta runs on Base, sir, Coinbase’s Ethereum Layer‑2.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "Base mainnet (chain ID 8453) designated as production and Base Sepolia (chain ID 84532) as the primary testnet",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Base matches F6. The chain IDs and testnet are not covered."
+    },
+    {
+     "claim": "takes evaluation fees in native ETH on Base, so requesters no longer need to buy or approve LINK",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Consistent with F2 (the oracle prepay is in ETH)."
+    },
+    {
+     "claim": "Verdikta uses Chainlink for oracle infrastructure and IPFS for decentralized storage.",
+     "mark": "UNSUPPORTED",
+     "facts": "F5",
+     "note": "IPFS is consistent with F5. Chainlink is not covered."
+    },
+    {
+     "claim": "Verdikta’s own token handles staking and reputation",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "No token is mentioned in the facts list."
+    },
+    {
+     "claim": "Multi-chain support is on the roadmap for v2.0 and beyond, so Base is the only network for now.",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "'Base only' is consistent with F6. The roadmap is not covered."
+    },
+    {
+     "claim": "the contracts themselves are on Base",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "claude-q9",
+   "assistant": "Claude",
+   "q": 9,
+   "question": "Is Verdikta a bug bounty program?",
+   "asked_utc": "2026-10-24 08:55:06 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q9.png",
+   "share_url": null,
+   "answer_verbatim": "Searched the web\n\nSearched the web\n\nNot in the security sense, sir. Verdikta is a decentralized AI judgment protocol that happens to run a bounty board, which is an easy thing to confuse with a bug bounty.\n\nWhat it actually is: A decentralized oracle system that provides AI-powered dispute resolution services on blockchain networks. Each query is evaluated on demand, in parallel, by a committee of independent AI arbiters, so no single model’s opinion decides the outcome. It runs on Base, Coinbase’s Ethereum layer-2 network.\nverdikta\n\nverdikta\n\n\nWhere the “bounty” confusion comes from: Its flagship live application is Verdikta Bounties. Work submissions are automatically evaluated and paid by AI arbiters. The flow runs: create a bounty, define a rubric, fund escrow, submit work, AI evaluation, then on-chain settlement. The tasks are general work rather than vulnerability hunting. Recent examples include a Python Pandas script for cleaning trading logs and math, task-creation and case-study jobs. A bug bounty pays researchers for responsibly disclosing security flaws; this is closer to a freelance marketplace with robot judges.\nGitHub - verdikta/verdikta-applications: Example applications using the Verdikta blockchain. · GitHub\n +3\n\n\nOne detail worth knowing before you dive in: Browsing bounties and doing a dry run are free, but a live evaluation requires prepaying in ETH plus Base gas fees. At least one curated agent-bounty list declined to include Verdikta for exactly that reason, since it only lists platforms where agents can start earning without paying first. I’d treat the entry fee as a cost of doing business rather than a red flag, but it’s not free money.\ngithub\n\ngithub\n\n\nI also found no evidence that Verdikta runs a security bug bounty for its own smart contracts. If that’s what you’re after, I’d check their GitHub or docs at docs.verdikta.com directly, or I can dig further. Shall I?",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta is a decentralized AI judgment protocol that happens to run a bounty board",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Consistent with F6. The facts list does not mention bug bounties."
+    },
+    {
+     "claim": "Each query is evaluated on demand, in parallel, by a committee of independent AI arbiters",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "It runs on Base, Coinbase’s Ethereum layer-2 network.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "Work submissions are automatically evaluated and paid by AI arbiters.",
+     "mark": "CORRECT",
+     "facts": "F3, F6",
+     "note": "Consistent with F6 and F3."
+    },
+    {
+     "claim": "Recent examples include a Python Pandas script for cleaning trading logs",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "a live evaluation requires prepaying in ETH plus Base gas fees",
+     "mark": "CORRECT",
+     "facts": "F2, F6",
+     "note": "Matches F2 (ETH prepay) and F6 (Base)."
+    },
+    {
+     "claim": "At least one curated agent-bounty list declined to include Verdikta",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "I also found no evidence that Verdikta runs a security bug bounty for its own smart contracts.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered. The answer also points to 'docs.verdikta.com', while the other assistants cite docs.verdikta.org. The facts list settles neither domain."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "claude-q10",
+   "assistant": "Claude",
+   "q": 10,
+   "question": "How do I write success criteria for a bounty?",
+   "asked_utc": "2026-10-24 08:55:52 UTC",
+   "product_model": "Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)",
+   "model": "Opus 5.5 High",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/claude_q10.png",
+   "share_url": null,
+   "answer_verbatim": "Figuring out what kind of bounty the request means.\nFiguring out what kind of bounty the request means.\n\nGood criteria let a stranger read them, do the work, and know before submitting whether they’ve earned the money, sir. If two reasonable people could disagree about whether a submission qualifies, the criteria aren’t finished yet.\n\nMake every criterion pass/fail. “Improve page load speed” invites argument, whereas “Homepage loads in under 1.5 seconds on Lighthouse mobile, median of three runs” does not. Replace adjectives like “clean,” “fast,” and “robust” with a number, a test, or an observable behaviour.\n\nSay how you’ll verify it. Name the test suite, the command, the dataset, or the manual steps you’ll follow. If you can hand over the verification script itself, so much the better, since hunters can then check their own work.\n\nDefine the deliverable precisely. State the form the work must take, whether that’s a pull request against a specific branch, a report in a set format, or a deployed URL. Include whatever must accompany it, such as documentation, tests, or a demo video.\n\nDraw the boundaries. List what’s out of scope and any constraints, such as permitted libraries, licensing requirements, or “no breaking changes to the public API.” Most bounty disputes come from scope someone assumed rather than scope anyone wrote down.\n\nSettle the awkward cases in advance. Decide what happens with partial solutions (no payout, or a pro-rated one), with multiple valid submissions (first to pass, best by some metric, or split), and with duplicates. Name who makes the final call and how quickly they’ll respond.\n\nInclude a deadline. State whether it is firm or extendable.\n\nHere’s a template you can adapt:\n\n\nBOUNTY: [One-line summary of the outcome]\nREWARD: [Amount]  |  DEADLINE: [Date, timezone]\n\nSUCCESS CRITERIA (all must pass):\n1. [Observable, measurable outcome]\n2. [Observable, measurable outcome]\n3. Existing test suite passes (`npm test`) with no new warnings.\n\nVERIFICATION:\nReviewer will [run X / follow steps Y] on [environment].\n\nDELIVERABLE:\n[Pull request to `main` / report in format Z], including [docs/tests].\n\nOUT OF SCOPE:\n- [Thing you don't want touched or solved]\n\nCONSTRAINTS:\n- [Language, licence, dependencies, compatibility]\n\nPAYOUT RULES:\n- First submission meeting all criteria wins. No partial payouts.\n- Final judgement by [name/role]; review within [N] days.\n\nA final check before you post it: hand the criteria to someone uninvolved and ask them to judge an imaginary submission. If they have to ask you a question, the answer belongs in the document.\n\nTell me what the bounty is for, sir, and I’ll draft the real thing rather than leave you with the template.",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "perplexity-q1",
+   "assistant": "Perplexity",
+   "q": 1,
+   "question": "What is Verdikta?",
+   "asked_utc": "2026-10-24 08:27:47 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png",
+   "share_url": null,
+   "answer_verbatim": "Verdikta is a decentralized, blockchain-based protocol that uses multiple independent AI “arbiters” to resolve subjective disputes and return an auditable verdict on-chain. It is designed to let smart contracts and apps obtain AI judgments—such as contract disputes, content moderation, prediction-market outcomes, or task grading—without trusting a single AI provider or centralized decision-maker.\nverdikta\n+1\n\nHow it works\n\nA user or application submits a question, evaluation criteria, and evidence references—often stored off-chain on IPFS to avoid putting large files on-chain.\ndocs.verdikta\n\nVerdikta selects a pseudorandom committee of AI arbiters, which may run different models and providers, to evaluate the case in parallel.\nverdikta\n+1\n\nArbiters use a commit–reveal process: they cryptographically commit to their answers before revealing them, reducing opportunities to copy or manipulate others’ responses.\nverdikta\n\nThe protocol aggregates responses, rewards consensus and penalizes outliers, then publishes the final verdict and reasoning references on-chain.\nverdikta\n+1\n\nMain uses\n\nVerdikta is aimed at decisions where a normal smart contract cannot easily determine the answer on its own, including:\n\nDispute resolution for peer-to-peer or agent-to-agent transactions.\nverdikta\n\nPrediction-market resolution using stated criteria and evidence.\nverdikta\n\nContent moderation and compliance judgments.\nverdikta\n\nGrading submitted work and automatically triggering payouts.\nverdikta\n\nKey components\nComponent\tRole\nAI arbiters\tIndependent evaluators that assess the submitted question and evidence.\nverdikta\n\nVDKA token\tNative token staked by arbiters to participate and align incentives toward honest behavior.\nverdikta\n\nIPFS\tStores large evidence files and detailed AI justifications off-chain, referenced by content identifiers.\ndocs.verdikta\n\nOn-chain verdict\tRecords the decision and supporting hashes/references so outcomes can be audited.\nverdikta\n+1\n\nIn short, Verdikta is best understood as a decentralized AI arbitration and settlement layer: it turns qualitative judgments into verifiable on-chain outcomes that can automatically execute smart-contract logic.\nverdikta\n+1",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "decentralized, blockchain-based protocol that uses multiple independent AI “arbiters” to resolve subjective disputes and return an auditable verdict on-chain",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Independent AI arbiters and auditable results match F6. 'Subjective disputes' is broader than the facts list."
+    },
+    {
+     "claim": "evidence references—often stored off-chain on IPFS",
+     "mark": "UNSUPPORTED",
+     "facts": "F5",
+     "note": "F5 says the rubric and evaluation package are pinned to IPFS. Evidence storage is not covered."
+    },
+    {
+     "claim": "Verdikta selects a pseudorandom committee of AI arbiters, which may run different models and providers",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "The panel matches F6. Pseudorandom selection and mixed providers are not in the facts list."
+    },
+    {
+     "claim": "Arbiters use a commit–reveal process",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "The protocol aggregates responses, rewards consensus and penalizes outliers, then publishes the final verdict and reasoning references on-chain.",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Public results are consistent with F6. Reward and penalty mechanics are not covered."
+    },
+    {
+     "claim": "Grading submitted work and automatically triggering payouts.",
+     "mark": "CORRECT",
+     "facts": "F3, F6",
+     "note": "Matches F6 and F3. 'Automatically' is not stated in the facts."
+    },
+    {
+     "claim": "Native token staked by arbiters to participate and align incentives toward honest behavior.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "No token is mentioned in the facts list."
+    },
+    {
+     "claim": "Prediction-market resolution using stated criteria and evidence.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Use case not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "perplexity-q2",
+   "assistant": "Perplexity",
+   "q": 2,
+   "question": "How do AI agents find paid work?",
+   "asked_utc": "2026-10-24 08:28:17 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png",
+   "share_url": null,
+   "answer_verbatim": "AI agents find paid work by matching their capabilities to a specific task, then applying or bidding with a price and timeline through a marketplace or API. If selected, they complete the work and submit a verifiable deliverable; payment typically depends on the buyer’s approval and settlement.\nmoltjobs\n+1",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "perplexity-q3",
+   "assistant": "Perplexity",
+   "q": 3,
+   "question": "How are bounty submissions judged on Verdikta?",
+   "asked_utc": "2026-10-24 08:30:35 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png",
+   "share_url": null,
+   "answer_verbatim": "On Verdikta, bounty submissions are judged against a creator-defined rubric by a jury of AI arbiter models—not by the bounty creator’s discretionary review. If the submission reaches the required passing score, payment is released automatically from escrow.\nbounties.verdikta\n+1\n\nHow evaluation works\n\nThe bounty creator sets the task, a rubric with criteria and weights, and a passing threshold before submissions begin.\nbounties.verdikta\n+1\n\nEach submission is evaluated by multiple AI models on Verdikta’s arbiter network; each model scores independently, and the final score is a weighted average.\nbounties.verdikta\n+1\n\nCriteria can include weighted quality measures and binary “must-pass” gates. A failed hard gate can disqualify a submission before weighted scoring matters.\ndev\n+1\n\nA score at or above the threshold passes; below it, the submission fails and the hunter can see which criteria fell short.\ndev\n+1\n\nIf multiple submissions are allowed, the highest-scoring passing submission wins.\ndev\n\nCreator’s role\n\nThe creator cannot reject qualifying work. If the bounty includes an approval window, the creator may approve it early, but otherwise the AI jury’s evaluation determines the outcome and the escrow contract pays automatically.\nbounties.verdikta\n+1\n\nExample\n\nA writing bounty might use criteria such as accuracy, clarity, and completeness, weighted toward accuracy. Two AI models might each score the submission independently; their scores are combined—for example, 50/50—and compared with the bounty’s pass threshold.\nbounties.verdikta\n+1",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "bounty submissions are judged against a creator-defined rubric by a jury of AI arbiter models—not by the bounty creator’s discretionary review",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "If the submission reaches the required passing score, payment is released automatically from escrow.",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Consistent with F3. Missing: only the first submission to pass is paid."
+    },
+    {
+     "claim": "The bounty creator sets the task, a rubric with criteria and weights, and a passing threshold before submissions begin.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6 (rubric published in advance)."
+    },
+    {
+     "claim": "each model scores independently, and the final score is a weighted average",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Independent scoring matches F6. The weighted-average method is not in the facts list."
+    },
+    {
+     "claim": "Criteria can include weighted quality measures and binary “must-pass” gates.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "below it, the submission fails and the hunter can see which criteria fell short",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6 (per-criterion scores are public)."
+    },
+    {
+     "claim": "If multiple submissions are allowed, the highest-scoring passing submission wins.",
+     "mark": "WRONG",
+     "facts": "F3",
+     "note": "Correction: The FIRST submission that clears the acceptance threshold wins the entire bounty. A later submission with a higher score gets nothing, and there is no best-of comparison at the deadline."
+    },
+    {
+     "claim": "The creator cannot reject qualifying work. If the bounty includes an approval window, the creator may approve it early",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "perplexity-q4",
+   "assistant": "Perplexity",
+   "q": 4,
+   "question": "Does Verdikta charge a platform fee?",
+   "asked_utc": "2026-10-24 08:31:02 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png",
+   "share_url": null,
+   "answer_verbatim": "Verdikta charges per AI evaluation (in LINK), rather than offering the service for free; available information describes this as a fee that pays arbiters and covers operating costs.\ndocs.verdikta\n+1",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta charges per AI evaluation (in LINK), rather than offering the service for free",
+     "mark": "WRONG",
+     "facts": "F1, F2",
+     "note": "Correction: Verdikta Bounties charges no platform fee. The whole bounty goes to the passing hunter. The only per-attempt cost is a refundable oracle prepay of about 0.00024 ETH, paid in ETH (not LINK). It pays the AI jury and is usually spent in full."
+    },
+    {
+     "claim": "available information describes this as a fee that pays arbiters and covers operating costs",
+     "mark": "UNSUPPORTED",
+     "facts": "F2",
+     "note": "Paying the arbiters is consistent with F2. 'Covers operating costs' is not in the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "perplexity-q5",
+   "assistant": "Perplexity",
+   "q": 5,
+   "question": "What does it cost to submit to a Verdikta bounty?",
+   "asked_utc": "2026-10-24 08:31:32 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png",
+   "share_url": null,
+   "answer_verbatim": "Submitting work to a Verdikta bounty costs a small ETH evaluation prepay—typically about 0.00024 ETH—plus any blockchain gas fees. Any unspent evaluation ETH is automatically refunded when the submission finalizes.\nbounties.verdikta\n\nWhat you pay\nCost\tTypical amount\tNotes\nAI-jury evaluation prepay\t~0.00024 ETH\tAttached when you start the submission; unused ETH is refunded.\nbounties.verdikta\n\nNetwork gas\tVariable\tYou pay normal transaction gas for the submission/start transaction.\nbounties.verdikta\n\nBounty reward\tNot paid by submitter\tThe ETH payout is already held in escrow by the bounty creator.\nbounties.verdikta\nHow it works\n\nYou submit the required deliverable to the bounty.\n\nYou trigger evaluation by sending the exact transaction.value returned by the submission-start endpoint, which reflects the live required prepay.\nbounties.verdikta\n\nThe AI jury grades the work against the bounty’s rubric; passing submissions are paid automatically from escrow.\nbounties.verdikta\n\nThere is no LINK token or ERC-20 approval required.\nbounties.verdikta\n\nSo, in practice, the direct cost to try a bounty is usually under a dollar in ETH plus gas, and the evaluation prepay is refundable if not fully used.\nbounties.verdikta\n+1",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Submitting work to a Verdikta bounty costs a small ETH evaluation prepay—typically about 0.00024 ETH",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Matches F2."
+    },
+    {
+     "claim": "plus any blockchain gas fees",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Gas is not covered by the facts list."
+    },
+    {
+     "claim": "Any unspent evaluation ETH is automatically refunded when the submission finalizes.",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Consistent with F2 (the prepay is refundable). Missing: in practice the prepay is usually spent in full."
+    },
+    {
+     "claim": "Attached when you start the submission; unused ETH is refunded.",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Matches F2."
+    },
+    {
+     "claim": "The ETH payout is already held in escrow by the bounty creator.",
+     "mark": "UNSUPPORTED",
+     "facts": "F4",
+     "note": "Consistent with F4 (the creator funds the escrow and can reclaim it). Not stated as such."
+    },
+    {
+     "claim": "passing submissions are paid automatically from escrow",
+     "mark": "UNSUPPORTED",
+     "facts": "F3",
+     "note": "Imprecise rather than wrong: the plural hides the F3 rule that only the FIRST passing submission is paid."
+    },
+    {
+     "claim": "There is no LINK token or ERC-20 approval required.",
+     "mark": "UNSUPPORTED",
+     "facts": "F2",
+     "note": "Consistent with F2 (the prepay is in ETH). Not stated as such."
+    },
+    {
+     "claim": "the direct cost to try a bounty is usually under a dollar in ETH plus gas, and the evaluation prepay is refundable if not fully used",
+     "mark": "UNSUPPORTED",
+     "facts": "F2",
+     "note": "'Refundable if not fully used' matches F2. The USD figure is not in the facts list. Missing: the prepay is usually spent in full."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "perplexity-q6",
+   "assistant": "Perplexity",
+   "q": 6,
+   "question": "If two submissions both pass, who gets paid?",
+   "asked_utc": "2026-10-24 08:32:00 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png",
+   "share_url": null,
+   "answer_verbatim": "Usually, passing review does not by itself guarantee payment—payment normally goes to the submission the requester accepts, selects, or that meets the bounty’s specific winning criteria. If two submissions both pass, the platform or bounty creator typically chooses one (or pays according to its stated rules).\n\nIn one documented bounty example, two designs passed, but the creator chose one and paid that author directly; the other was still credited as a passing design but was not the paid winner.\ngithub\n\nSome programs explicitly pay only on acceptance/merge readiness, not merely on passing review.\nworkmind\n\nOther programs split rewards among multiple approved participants in proportion to their reward scores, so both could earn—but not necessarily equally.\ndocs.ridges\n\nIf you mean a specific platform or bounty, share its name or the rules text; the answer can differ between “first valid submission,” “best submission,” “all qualifying submissions,” and “creator’s choice.”",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "perplexity-q7",
+   "assistant": "Perplexity",
+   "q": 7,
+   "question": "Can a Verdikta bounty be cancelled or edited after it is created?",
+   "asked_utc": "2026-10-24 08:32:28 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png",
+   "share_url": null,
+   "answer_verbatim": "No. Once a Verdikta bounty is created and funded, it cannot be cancelled or edited. The payout, criteria, jury, pass threshold, and deadline are fixed in the escrow contract at creation.\nbounties.verdikta\n+1\n\nWhat happens instead\n\nFunds remain locked in a smart contract until either a qualifying submission wins or the deadline passes with no winner.\nbounties.verdikta\n+1\n\nIf it expires without a passing submission, anyone can call closeExpiredBounty() to return the funds to the creator—provided no evaluations are still active.\nbounties.verdikta\n\nIf an evaluation is in progress at the deadline, the bounty cannot be closed until that evaluation completes.\nbounties.verdikta\n\nThe creator cannot reject work; where an approval window exists, they may only approve early.\nbounties.verdikta\n\nImportant nuance\n\nAn off-chain bounty record that was never deployed on-chain may be deleted or closed by an administrator, but this does not apply to a funded, on-chain bounty.\nbounties.verdikta\n\nSo, before creating one, double-check the amount, deadline, rubric, and pass threshold: those terms cannot be changed afterward.\nbounties.verdikta\n+1",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Once a Verdikta bounty is created and funded, it cannot be cancelled or edited.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "The payout, criteria, jury, pass threshold, and deadline are fixed in the escrow contract at creation.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "Funds remain locked in a smart contract until either a qualifying submission wins or the deadline passes with no winner.",
+     "mark": "CORRECT",
+     "facts": "F3, F4",
+     "note": "Matches F3 and F4."
+    },
+    {
+     "claim": "anyone can call closeExpiredBounty() to return the funds to the creator—provided no evaluations are still active",
+     "mark": "UNSUPPORTED",
+     "facts": "F4",
+     "note": "The funds going back to the creator match F4. The function name and the 'no active evaluations' condition are not in the facts list."
+    },
+    {
+     "claim": "If an evaluation is in progress at the deadline, the bounty cannot be closed until that evaluation completes.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "The creator cannot reject work; where an approval window exists, they may only approve early.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "An off-chain bounty record that was never deployed on-chain may be deleted or closed by an administrator",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "those terms cannot be changed afterward",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "perplexity-q8",
+   "assistant": "Perplexity",
+   "q": 8,
+   "question": "What blockchain does Verdikta run on?",
+   "asked_utc": "2026-10-24 08:32:54 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png",
+   "share_url": null,
+   "answer_verbatim": "Verdikta runs on Base, an Ethereum Layer-2 network. Its production contracts and arbiter nodes are live on Base Mainnet, with Base Sepolia used for testing.\ndocs.verdikta\n+1\n\nDetails\n\nVerdikta is built as EVM-compatible smart contracts, initially deployed on Base because it offers lower costs and faster finality than Ethereum mainnet.\nverdikta\n\nIts architecture is described as blockchain-agnostic: the protocol could expand to other EVM-compatible chains or rollups, but Base is the current production network.\ndocs.verdikta\n+1\n\nIt uses Chainlink-based oracle infrastructure for arbitration and settlement; arbiter payments are denominated in LINK.\nverdikta\n+1",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta runs on Base, an Ethereum Layer-2 network.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "Its production contracts and arbiter nodes are live on Base Mainnet, with Base Sepolia used for testing.",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Base matches F6. The testnet detail is not covered."
+    },
+    {
+     "claim": "initially deployed on Base because it offers lower costs and faster finality than Ethereum mainnet",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "The rationale is not covered by the facts list."
+    },
+    {
+     "claim": "Its architecture is described as blockchain-agnostic",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "arbiter payments are denominated in LINK",
+     "mark": "WRONG",
+     "facts": "F2",
+     "note": "Correction: On Verdikta Bounties the jury is paid from the hunter's oracle prepay, attached in ETH (about 0.00024 ETH, refundable, usually spent in full). No LINK is involved for the hunter."
+    },
+    {
+     "claim": "It uses Chainlink-based oracle infrastructure for arbitration and settlement",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "perplexity-q9",
+   "assistant": "Perplexity",
+   "q": 9,
+   "question": "Is Verdikta a bug bounty program?",
+   "asked_utc": "2026-10-24 08:33:21 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png",
+   "share_url": null,
+   "answer_verbatim": "No. Verdikta is not a bug bounty program; it is a criteria-based, AI-judged bounty marketplace where creators fund tasks in escrow and participants submit deliverables such as research, writing, designs, or code for rubric-based evaluation.\ndev\n+1\n\nWhat it is instead\n\nVerdikta Bounties uses a published rubric, escrowed ETH, and a panel of AI arbiter nodes to grade submissions; passing work is paid automatically from the smart contract. Its purpose is to evaluate whether completed work meets stated acceptance criteria, rather than to discover security vulnerabilities.\ndev\n+2\n\nWhy it is not bug bounty\n\nA bug bounty program is specifically for responsibly reporting security flaws within a defined scope, usually with safe-harbor rules and security-team triage. Verdikta explicitly states that it is not a security bug-bounty program and is not a place to report exploitable vulnerabilities.\ndev\n\nIf you find a security flaw, use a dedicated vulnerability-disclosure or bug-bounty channel with a published scope and safe harbor instead.\ndev",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta is not a bug bounty program; it is a criteria-based, AI-judged bounty marketplace where creators fund tasks in escrow and participants submit deliverables",
+     "mark": "UNSUPPORTED",
+     "facts": "F5, F6",
+     "note": "The facts list does not mention bug bounties. The description of escrowed, AI-judged, rubric-based bounties is consistent with F5 and F6."
+    },
+    {
+     "claim": "Verdikta Bounties uses a published rubric, escrowed ETH, and a panel of AI arbiter nodes to grade submissions",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "passing work is paid automatically from the smart contract",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Consistent with F3. Missing: only the first passing submission is paid."
+    },
+    {
+     "claim": "Verdikta explicitly states that it is not a security bug-bounty program",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "perplexity-q10",
+   "assistant": "Perplexity",
+   "q": 10,
+   "question": "How do I write success criteria for a bounty?",
+   "asked_utc": "2026-10-24 08:33:51 UTC",
+   "product_model": "Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo",
+   "model": "turbo",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png",
+   "share_url": null,
+   "answer_verbatim": "Write success criteria as specific, observable acceptance conditions that a reviewer could verify without guessing. Each criterion should state what must be delivered, where, and how it will be checked; vague wording such as “make it good” or “improve the project” leads to disputes.\ndocs.bounty\n+2\n\nUse this formula\n\nFor each criterion, use:\n\n[Deliverable] + [measurable requirement] + [verification method]\n\nExample: “The provided bug is fixed; the new regression test passes in CI on Python 3.11 and 3.12; the PR is approved by the repository maintainer.”\nchainscorelabs\n+1\n\nWhat to include\n\nRequired deliverables: PR, report, dataset, design file, deployed demo, etc.\n\nFunctional requirements: What the work must do in the stated environment.\n\nQuality requirements: Tests, documentation, accessibility, performance, security, formatting.\n\nVerification method: CI run, test command, manual reviewer check, schema validation, link inspection, or rubric.\n\nOut-of-scope items: What will not be required, so contributors do not overbuild.\n\nNon-negotiable gates: License, originality, privacy, security, or “must merge” requirements.\ndocs.bounty\n+2\n\nGood vs. weak criteria\nWeak criterion\tStronger success criterion\n“Fix the login bug.”\t“A signed-in user can log in with valid credentials; invalid credentials return the existing error message; add a regression test covering the reported case.”\n“Write documentation.”\t“Add a README section explaining installation, configuration, and one runnable example; all commands in the example execute successfully from a clean clone.”\n“Research the market.”\t“Provide a 1,500–2,000-word report comparing at least five competitors, with cited sources, pricing, target users, and a recommendation table.”\n“Collect data.”\t“Deliver 100 valid JSONL records matching the supplied schema, with no null values in question, answer, or source_url; include the validation script output.”\nbrowse\n+1\nKeep it reviewable\n\nUse binary or measurable language wherever possible: “passes,” “contains,” “runs within,” “covers,” “is merged,” or “matches the schema.” If quality is subjective, turn it into a weighted rubric with a clear passing threshold—for example, correctness 40%, clarity 25%, completeness 20%, documentation 15%, with 80/100 required to pass.\nrisein\n+1\n\nShort template\ntext\nSuccess criteria\n1. Deliverable: Submit a PR against [repo/branch] resolving issue #[number].\n2. Functionality: [Exact behavior that must work].\n3. Tests: Add/modify tests covering [cases]; all tests pass with [command].\n4. Documentation: Update [file] to explain [change/usage].\n5. Verification: CI must pass on [environments]; maintainer review is required.\n6. Exclusions: Do not change [areas] or add [dependencies/features].\n7. Acceptance: Bounty is paid only after [merge/approval/validation].\n\nA strong bounty pairs this with the problem statement, context, technical environment, deadline, reward, reviewer, and dispute process; those details help contributors understand exactly what “done” means.\ndocs.bounty\n+1",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "gemini-q1",
+   "assistant": "Gemini",
+   "q": 1,
+   "question": "What is Verdikta?",
+   "asked_utc": "2026-10-24 08:35:20 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q1.png",
+   "share_url": null,
+   "answer_verbatim": "Verdikta is an AI-enhanced platform designed for private, confidential dispute resolution and contract management. It is built for both individuals and organizations (such as small businesses) seeking an alternative to traditional, time-consuming legal channels.\nSourceForge\n\nKey features and capabilities of Verdikta include:\n\nAI-Driven Adjudication: The platform uses artificial intelligence to review the specific facts, circumstances, and arguments of a conflict, providing a neutral and unbiased decision or verdict.\nVerdikta\n\nDispute Workflows: It offers automated options for handling conflicts, including single-party rapid dispute options for individual matters and two-party instant resolution flows for disputes between two stakeholders.\nSourceForge\n\nContract Management: Users can utilize tools to draft new agreements, manage related documentation, and process disputes directly through a centralized dashboard.\nSourceForge\n\nBlockchain Integration: Verdikta integrates with blockchain wallets (such as Ethereum wallets), allowing automated outcomes and verdicts to directly trigger smart contract actions or asset transfers.\nVerdikta",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta is an AI-enhanced platform designed for private, confidential dispute resolution and contract management.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list. The answer leans on a SourceForge listing and never mentions bounties, Base or the AI arbiter panel (F6). A reader would not recognise the Base bounty product from it."
+    },
+    {
+     "claim": "It is built for both individuals and organizations (such as small businesses) seeking an alternative to traditional, time-consuming legal channels.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "The platform uses artificial intelligence to review the specific facts, circumstances, and arguments of a conflict, providing a neutral and unbiased decision or verdict.",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "AI judgment is consistent with F6, but F6 describes a PANEL of independent AI arbiter nodes scoring against a published rubric, not a single AI review."
+    },
+    {
+     "claim": "single-party rapid dispute options for individual matters and two-party instant resolution flows",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Users can utilize tools to draft new agreements, manage related documentation",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Verdikta integrates with blockchain wallets (such as Ethereum wallets), allowing automated outcomes and verdicts to directly trigger smart contract actions or asset transfers.",
+     "mark": "UNSUPPORTED",
+     "facts": "F6",
+     "note": "Not contradicted: Base wallets are Ethereum-style wallets. The answer never names Base (F6)."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "gemini-q2",
+   "assistant": "Gemini",
+   "q": 2,
+   "question": "How do AI agents find paid work?",
+   "asked_utc": "2026-10-24 08:37:23 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q2.png",
+   "share_url": null,
+   "answer_verbatim": "AI agents do not get paid by \"applying\" for jobs on conventional human job boards. Instead, they operate as autonomous digital workers or monetized tools, securing paid work through specialized technical infrastructure, market ecosystems, and API networks.\n\n1. AI Agent Marketplaces & Stores\n\nThe most direct way an AI agent finds work is through dedicated digital stores and marketplaces where individuals and enterprises hire or subscribe to specialized agents.\nupGrad\n\nProductized Stores: On platforms like OpenAI's GPT Store, Relevance AI, or Agentive, creators list agents designed for specific workflows. Users subscribe to or pay execution fees for agents that handle research, copy editing, or lead generation.\nupGrad\n\nEnterprise Registries: Platforms such as TrueFoundry, AWS Bedrock, or Oracle AI Agent Marketplace allow organizations to deploy pre-tested, specialized agents for internal tasks (e.g., triage, contract review, compliance audit). Payment is executed via enterprise licensing, usage-based compute billing, or outcome-based metrics.\n\n2. API-First Services (Machine-to-Machine Economy)\n\nAI agents frequently operate in Agent-to-Agent (A2A) networks or as headless microservices.\n\nMonetized Endpoints: An agent is wrapped inside an API endpoint. When other applications or software platforms need a specialized task completed (such as scraping, real-time data analysis, or dynamic image generation), they trigger the agent's API.\n\nMicro-transaction Protocols: Agents utilize crypto-native micropayment networks (like Lightning Network or Solana) or traditional payment APIs (like Stripe) to autonomously execute pay-per-request calls without human intervention.\n\n3. Human Wrappers & Freelance Platforms\n\nCurrently, traditional freelance platforms (such as Upwork, Freelancer, or Fiverr) require human accounts. Developers bypass this by acting as human proxies:\n\n\"AI Agency\" Operating Model: Human developers set up freelance profiles and accept jobs for workflows like automated customer service, data processing, or custom web research. Behind the scenes, autonomous AI agents complete 90%–100% of the deliverable.\n\nAutonomous Task Boards: Emergent platforms tailored for autonomous software allow agents to bid on coding tasks, GitHub issues, or bounty programs (e.g., finding security bugs or fixing broken PRs) and collect payments into designated wallet addresses.\n\nHow AI Agents Earn Money\n\nAI agents generally operate under three financial models:\n\nPay-Per-Execution / Micro-billing: Paying pennies per API call, token, or completed query.\n\nSubscription / SaaS: Monthly or annual access fees paid by users to access the agent's continuous workflow.\n\nOutcome-Based Bounties: Earning payouts based on success metrics, such as resolving a GitHub issue, capturing a valid lead, or auditing a contract.\n\nWould you like to explore how to build and monetize a specific type of AI agent, or discuss the technical integration required to accept payments for one?",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "gemini-q3",
+   "assistant": "Gemini",
+   "q": 3,
+   "question": "How are bounty submissions judged on Verdikta?",
+   "asked_utc": "2026-10-24 08:37:59 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q3.png",
+   "share_url": null,
+   "answer_verbatim": "On Verdikta, bounty submissions are judged automatically through a decentralized, automated evaluation process powered by an AI Jury / Oracle system rather than manual human review.\nZealy\n\nHere is a step-by-step breakdown of how bounty submissions are evaluated, scored, and rewarded:\n\n1. Evaluation Setup (The Rubric)\n\nWhen a bounty creator posts a task on Verdikta, they define an evaluation package/rubric stored on-chain and IPFS. This rubric contains:\nZealy\n\nSpecific Criteria: Individual criteria, each assigned a weight and a description.\n\n\"Must-Pass\" Conditions: Specific mandatory criteria marked with a must flag (e.g., specific file format, exact output requirement). Failing a must criterion causes instant disqualification/failure.\n\nForbidden Content Check: Hard failure triggers for prohibited elements.\n\nPassing Threshold: A minimum cumulative score required to pass (typically rated on a scale of 0–100).\n\n2. Submission & IPFS Upload\n\nWhen a hunter (a human worker or an autonomous AI agent) completes a task:\n\nThe submission artifacts (code, research, files, write-ups) are uploaded to IPFS.\nSkills Directory\n\nThe submission is registered on-chain on the Base network along with a small evaluation deposit (used to cover AI oracle grading costs).\nZealy\n\nThe submission enters a PENDING_EVALUATION state while the oracle network processes the work.\nSkills Directory\n\n3. The AI Jury Grading Process\n\nOnce submitted, an independent panel of AI models (the AI Jury / Oracle) evaluates the submission:\nZealy\n\nAutomated Assessment: The AI oracle compares the IPFS-stored submission artifacts directly against the creator’s defined rubric criteria and weights.\n\nScoring: The jury assigns scores for each weighted criterion and computes an overall percentage/numerical score.\n\nPass/Fail Verdict: If the overall score equals or exceeds the defined passing threshold and meets all must-pass criteria without triggering forbidden content rules, the submission receives an ACCEPTED status. Otherwise, it is marked as REJECTED.\nSkills Directory\n\nTimeframe: The evaluation process typically takes 2 to 5 minutes.\nSkills Directory\n\n4. Winning and Smart Contract Payouts\n\nVerdikta operates on a First-Pass-Wins mechanism:\nZealy\n\nFirst Passing Submission Wins: Reaching a passing score does not guarantee payment unless you are the first submission to achieve or exceed the threshold.\nZealy\n\nAutomated Smart Contract Escrow: Once the oracle verifies a winning submission, the smart contract on Base automatically releases the locked ETH bounty directly to the hunter’s wallet.\nZealy\n\nDeposit & Unused Deposit Refunds: If a submission fails, unused evaluation gas/deposit funds are refunded. If no hunter submits a passing entry before the deadline, the locked reward is refunded back to the bounty creator.\nZealy",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "bounty submissions are judged automatically through a decentralized, automated evaluation process powered by an AI Jury / Oracle system rather than manual human review",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "they define an evaluation package/rubric stored on-chain and IPFS",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "\"Must-Pass\" Conditions: Specific mandatory criteria marked with a must flag",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Forbidden Content Check: Hard failure triggers for prohibited elements.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "The submission artifacts (code, research, files, write-ups) are uploaded to IPFS.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered (F5 covers the rubric and evaluation package, not submissions)."
+    },
+    {
+     "claim": "The submission is registered on-chain on the Base network along with a small evaluation deposit (used to cover AI oracle grading costs).",
+     "mark": "CORRECT",
+     "facts": "F2, F6",
+     "note": "Matches F6 (Base) and F2 (the prepay that pays the jury)."
+    },
+    {
+     "claim": "The submission enters a PENDING_EVALUATION state",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "an independent panel of AI models (the AI Jury / Oracle) evaluates the submission",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "The jury assigns scores for each weighted criterion and computes an overall percentage/numerical score.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6 (per-criterion scores)."
+    },
+    {
+     "claim": "The evaluation process typically takes 2 to 5 minutes.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list."
+    },
+    {
+     "claim": "Verdikta operates on a First-Pass-Wins mechanism",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Matches F3."
+    },
+    {
+     "claim": "Reaching a passing score does not guarantee payment unless you are the first submission to achieve or exceed the threshold.",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Matches F3 exactly."
+    },
+    {
+     "claim": "the smart contract on Base automatically releases the locked ETH bounty directly to the hunter’s wallet",
+     "mark": "CORRECT",
+     "facts": "F3, F6",
+     "note": "Matches F3 and F6. 'Automatically' is not stated in the facts."
+    },
+    {
+     "claim": "If a submission fails, unused evaluation gas/deposit funds are refunded.",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Consistent with F2 (the prepay is refundable). Missing: it is usually spent in full, so little or nothing comes back."
+    },
+    {
+     "claim": "If no hunter submits a passing entry before the deadline, the locked reward is refunded back to the bounty creator.",
+     "mark": "CORRECT",
+     "facts": "F4",
+     "note": "Matches F4."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "gemini-q4",
+   "assistant": "Gemini",
+   "q": 4,
+   "question": "Does Verdikta charge a platform fee?",
+   "asked_utc": "2026-10-24 08:38:34 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q4.png",
+   "share_url": null,
+   "answer_verbatim": "Whether Verdikta charges a platform fee depends on which platform or service you are referring to, as there are a few distinct products with similar names:\n\n1. Verdikt (Fraud Decisioning & Chargebacks)\n\nIf you are referring to Verdikt (the AI decisioning layer for e-commerce fraud and chargebacks):\nVerdikt\n\nNo Platform Fee: Verdikt explicitly advertises no platform fees and no minimum commitments to start.\nVerdikt\n\nPricing Model: They charge either a pay-per-decision model (e.g., $0.03 per decision for basic signal/scoring) or a volume-based chargeback guarantee model (typically 0.4%–1.2% of approved order volume).\nVerdikt\n\n2. Verdikt / GetVerdikt (AI Business Advisor / Strategy Platform)\n\nIf you mean GetVerdikt (the AI multi-advisor platform for business strategy and decision-making):\n\nSubscription-Based: They do not charge a separate \"platform fee,\" but rather operate on recurring subscription plans.\nVerdikt\n\nPricing Tiers:\n\nSolo: ~$49/month\nVerdikt\n\nTeam: ~$99/month\nVerdikt\n\nBusiness: ~$179/month\nVerdikt\n\nPremium: ~$249/month\nVerdikt\n\nA 7-day free trial is available for new users.\n\nIf you are asking about a specific legal, dispute resolution, or custom blockchain tool named Verdikta, could you clarify the specific service or application you have in mind?",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Whether Verdikta charges a platform fee depends on which platform or service you are referring to, as there are a few distinct products with similar names",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Not covered by the facts list. This is ENTITY CONFUSION: everything after it describes 'Verdikt' (an e-commerce fraud tool and a business-advice tool), not Verdikta. The Verdikt prices ($0.03 per decision, $49-$249/month) are about another product, so they are not marked as Verdikta claims. The answer gives no information about Verdikta's fees, so F1 is missing. Suggested answer: Verdikta Bounties (on Base) charges no platform fee, and the whole bounty goes to the passing hunter."
+    },
+    {
+     "claim": "If you are asking about a specific legal, dispute resolution, or custom blockchain tool named Verdikta, could you clarify",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "A request for clarification, not a claim. Recorded as 'no information about Verdikta'."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "gemini-q5",
+   "assistant": "Gemini",
+   "q": 5,
+   "question": "What does it cost to submit to a Verdikta bounty?",
+   "asked_utc": "2026-10-24 08:39:06 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q5.png",
+   "share_url": null,
+   "answer_verbatim": "When submitting work to a Verdikta bounty, Verdikta itself charges no platform fee.\nDEV Community\n\nHowever, as a hunter submitting to a bounty, you are required to pay a small evaluation deposit (roughly 0.00024 ETH, depending on current network conditions) to cover the AI jury/oracle evaluation process.\nZealy\n\nRefund policy: The unused portion of this oracle evaluation deposit is refunded.\nZealy\n\nGas fees: You will also need a tiny amount of ETH on the Base network to cover standard transaction gas fees for your submission.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta itself charges no platform fee.",
+     "mark": "CORRECT",
+     "facts": "F1",
+     "note": "Matches F1."
+    },
+    {
+     "claim": "you are required to pay a small evaluation deposit (roughly 0.00024 ETH, depending on current network conditions) to cover the AI jury/oracle evaluation process",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "The amount and purpose match F2. 'Depending on current network conditions' is not in the facts list."
+    },
+    {
+     "claim": "The unused portion of this oracle evaluation deposit is refunded.",
+     "mark": "CORRECT",
+     "facts": "F2",
+     "note": "Consistent with F2. Missing: it is usually spent in full."
+    },
+    {
+     "claim": "You will also need a tiny amount of ETH on the Base network to cover standard transaction gas fees",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Base matches F6. Gas is not covered by the facts list."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "gemini-q6",
+   "assistant": "Gemini",
+   "q": 6,
+   "question": "If two submissions both pass, who gets paid?",
+   "asked_utc": "2026-10-24 08:39:36 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q6.png",
+   "share_url": null,
+   "answer_verbatim": "Who gets paid when two submissions both pass depends on the platform framework and the contest format being used.\n\nHere are the standard rules across different platforms and bounty models:\n\n1. Bug Bounty Programs (e.g., HackerOne, Bugcrowd, Immunefi)\n\nFirst Come, First Served: The first eligible submission gets the full payout.\nDEV Community\n\nThe Duplicate Rule: The second submission is marked as a \"Duplicate\" and receives no payment, even if it is completely valid and passes verification.\nMicrosoft\n\nExceptions:\n\nIf the second submission reveals a new, higher-severity aspect or critical context that the first report missed, some programs award a partial payout or \"bonus/differential\" to the second submitter.\nMicrosoft\n\nIf the two reports identify different underlying code causes, both may be treated as unique and paid separately.\n\n2. Task-Based / Freelance Bounties (e.g., Gitcoin, Upwork, Replit Bounties)\n\nSingle Winner (First Valid Submission): Most platforms award the payout to the contributor who submitted a passing solution first.\nDEV Community\n\nMultiple Winners (Split Reward Pool): On platforms supporting pooled payouts (e.g., open-source development or community tasks), the total reward pool is split evenly among all participants whose submissions pass evaluation.\n\n3. Open Competitions & Judged Contests (e.g., Kaggle, Topcoder)\n\nScore/Performance-Based: If multiple entries pass, payouts are awarded according to the leaderboard rankings (e.g., highest accuracy, best performance, or fastest execution).\n\nTies: If two top submissions achieve the exact same passing score, the platform rules usually dictate:\n\nTime-based tiebreaker: The submission uploaded earlier gets the higher prize.\n\nSplit prize: The prize money for those rank spots is added together and divided equally between the tied submitters.\n\nKey Summary\nModel / Platform\tWho Gets Paid?\nBug Bounties\tThe first submission to be submitted/logged.\nFirst-to-Deliver Bounties\tThe first valid submission.\nCompetitive Contests\tThe submission with the higher score; ties are split or broken by timestamp.\nPooled Bounties\tBoth submitters share/split the total prize pool.\n\nIf you are referring to a specific platform or competition (e.g., HackerOne, Gitcoin, Kaggle, or a specific smart-contract audit platform), let me know so I can give you the exact rulebook for that service!",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  },
+  {
+   "id": "gemini-q7",
+   "assistant": "Gemini",
+   "q": 7,
+   "question": "Can a Verdikta bounty be cancelled or edited after it is created?",
+   "asked_utc": "2026-10-24 08:40:09 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q7.png",
+   "share_url": null,
+   "answer_verbatim": "No, a Verdikta bounty cannot be cancelled or edited once it has been created.\nDEV Community\n\nKey Details & Mechanism\n\nImmutable Smart Contract Escrow: When a bounty is created, the reward funds are immediately locked into an escrow smart contract on the blockchain. The contract contains no functions to edit, pause, cancel, or prematurely withdraw funds.\nZealy\n+ 1\n\nFixed Evaluation Rules: All evaluation criteria—including the rubric, pass threshold, jury panel, and deadline—are permanently linked at creation and stored on IPFS. Neither the bounty creator nor the Verdikta platform team can alter these parameters after launch.\nDEV Community\n+ 1\n\nProtection for Hunters: This \"no edit / no cancel\" policy is designed by intent to protect bounty hunters (both human and AI agents). Because hunters expend time, effort, and minor evaluation fees upfront, fixed rules ensure that a creator cannot change requirements retroactively or pull funds out mid-process.\nDEV Community\n+ 1\n\nWhat Happens If You Make a Mistake?\n\nWait Out the Deadline: If a bounty has incorrect instructions or an error in the rubric, the creator must wait for the set deadline to expire.\nDEV Community\n\nAutomatic Refund: If no hunter submits work that meets the passing threshold before the deadline passes, the creator can reclaim and withdraw the full locked ETH amount from escrow.\nDEV Community",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "No, a Verdikta bounty cannot be cancelled or edited once it has been created.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "The contract contains no functions to edit, pause, cancel, or prematurely withdraw funds.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "All evaluation criteria—including the rubric, pass threshold, jury panel, and deadline—are permanently linked at creation and stored on IPFS.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "Neither the bounty creator nor the Verdikta platform team can alter these parameters after launch.",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5."
+    },
+    {
+     "claim": "This \"no edit / no cancel\" policy is designed by intent to protect bounty hunters",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "The design intent is not covered by the facts list."
+    },
+    {
+     "claim": "the creator must wait for the set deadline to expire",
+     "mark": "CORRECT",
+     "facts": "F4, F5",
+     "note": "Follows from F4 and F5."
+    },
+    {
+     "claim": "If no hunter submits work that meets the passing threshold before the deadline passes, the creator can reclaim and withdraw the full locked ETH amount from escrow.",
+     "mark": "CORRECT",
+     "facts": "F4",
+     "note": "Matches F4."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "gemini-q8",
+   "assistant": "Gemini",
+   "q": 8,
+   "question": "What blockchain does Verdikta run on?",
+   "asked_utc": "2026-10-24 08:40:41 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q8.png",
+   "share_url": null,
+   "answer_verbatim": "Verdikta runs on Base, an Ethereum Layer 2 (L2) network.\nVerdikta\n\nIts smart contract infrastructure and dApps (such as the AI Jury system) deploy on Base, utilizing ETH for transaction gas payouts/fees alongside decentralized storage solutions like IPFS for handling off-chain evaluation packages.\nVerdikta",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "Verdikta runs on Base, an Ethereum Layer 2 (L2) network.",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "Its smart contract infrastructure and dApps (such as the AI Jury system) deploy on Base",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "utilizing ETH for transaction gas payouts/fees",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Gas is not covered by the facts list."
+    },
+    {
+     "claim": "decentralized storage solutions like IPFS for handling off-chain evaluation packages",
+     "mark": "CORRECT",
+     "facts": "F5",
+     "note": "Matches F5 (evaluation package pinned to IPFS)."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "gemini-q9",
+   "assistant": "Gemini",
+   "q": 9,
+   "question": "Is Verdikta a bug bounty program?",
+   "asked_utc": "2026-10-24 08:41:17 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q9.png",
+   "share_url": null,
+   "answer_verbatim": "No, Verdikta is not a security bug bounty program.\nDEV Community\n\nDespite using the word \"bounties,\" Verdikta Bounties is an AI-judged task and freelance platform rather than a vulnerability disclosure or security testing platform.\nDEV Community\n\nHere is what Verdikta actually is:\n\nCriteria-Based Bounties: It is a platform where creators can post general micro-tasks, social media shares, translations, content writing, or code tasks and lock funds in a smart contract.\nVerdikta\n\nAI Jury Evaluation: Instead of human moderators or security teams reviewing submissions, an automated AI jury evaluates the completed work against a predefined rubric.\n\nAutomatic Payments: If a submission passes the rubric threshold, it is automatically paid out in cryptocurrency (ETH) from escrow.\nVerdikta\n\nIf you are looking to report software vulnerabilities or participate in ethical hacking/security bug bounties, platforms like HackerOne, Bugcrowd, or Intigriti are the appropriate choices.",
+   "mentions_verdikta": true,
+   "verdikta_claims": [
+    {
+     "claim": "No, Verdikta is not a security bug bounty program.",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "The facts list does not mention bug bounties. Consistent with F1-F6, which describe AI-judged work bounties."
+    },
+    {
+     "claim": "Verdikta Bounties is an AI-judged task and freelance platform",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "creators can post general micro-tasks, social media shares, translations, content writing, or code tasks",
+     "mark": "UNSUPPORTED",
+     "facts": "-",
+     "note": "Task types are not covered by the facts list."
+    },
+    {
+     "claim": "an automated AI jury evaluates the completed work against a predefined rubric",
+     "mark": "CORRECT",
+     "facts": "F6",
+     "note": "Matches F6."
+    },
+    {
+     "claim": "If a submission passes the rubric threshold, it is automatically paid out in cryptocurrency (ETH) from escrow.",
+     "mark": "CORRECT",
+     "facts": "F3",
+     "note": "Consistent with F3. Missing: only the first passing submission is paid."
+    }
+   ],
+   "no_verdikta_mention": false
+  },
+  {
+   "id": "gemini-q10",
+   "assistant": "Gemini",
+   "q": 10,
+   "question": "How do I write success criteria for a bounty?",
+   "asked_utc": "2026-10-24 08:41:49 UTC",
+   "product_model": "Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)",
+   "model": "Gemini Auto",
+   "screenshot": "verdikta-ai-audit-2026-10-24/shots/gemini_q10.png",
+   "share_url": null,
+   "answer_verbatim": "Well-written success criteria are the single most important factor in running a successful bounty. Clear criteria prevent scope creep, reduce disputes with contributors, and ensure you get high-quality submissions that directly meet your goals.\n\nHere is a step-by-step guide and framework for writing effective bounty success criteria:\n\n1. Structure of Great Success Criteria\n\nA strong set of success criteria should cover four main pillars:\n\n┌─────────────────────────────────────────────────────────────┐\n│ 1. Functional Requirements (What it must DO)                │\n│ 2. Technical / Quality Standards (How it must be BUILT)     │\n│ 3. Edge Cases & Constraints (What it must HANDLE or AVOID)  │\n│ 4. Deliverables & Documentation (What must be SUBMITTED)    │\n└─────────────────────────────────────────────────────────────┘\n\n2. Key Rules for Writing Criteria\n\nMake them Binary (Pass/Fail): Avoid subjective statements like \"The UI should look nice.\" Instead, use verifiable statements like \"The UI must follow the provided Figma design file (colors, fonts, layout).\"\n\nBe Specific and Measurable: State exact metrics, thresholds, or test coverage percentages (e.g., \"Passes all unit tests with >80% coverage\").\n\nDefine the Verification Method: Clearly explain how you will test or judge the submission (e.g., \"Will be verified using npm run test on Node v20\" or \"Evaluated by a 3-person panel based on the rubric below\").\n\n3. Detailed Component Breakdown\nA. Functional Requirements\n\nList every explicit feature or behavior required.\n\nUse Must / Should / Could formatting or bulleted checklists.\n\nInclude step-by-step user flows or expected inputs and outputs.\n\nB. Technical & Quality Standards\n\nState language, framework, or library versions (e.g., React 18, Python 3.11+).\n\nSpecify performance thresholds (e.g., page load time under 2 seconds, API latency under 200ms).\n\nMandate code cleanliness (linting, zero console errors, no security vulnerabilities).\n\nC. Edge Cases & Constraints\n\nState how error conditions, invalid inputs, or empty states should be handled.\n\nSpecify cross-browser or cross-device support requirements.\n\nD. Deliverable Package\n\nSpecify what format the submission should take (e.g., Pull Request to main, Docker image, link to hosted demo, video walkthrough).\n\nRequire documentation (e.g., updated README.md, inline code comments, setup steps).\n\n4. Example Template & Comparison\n❌ Weak Criteria Example\n\n\"Build a search feature for our app. It should be fast, work well, and look good.\"\n\n✅ Strong Criteria Example\n\nDeliverable: Open a Pull Request targeting the main branch with the completed feature.\n\nSuccess Criteria:\n\nFunctionality:\n\nUser can type a keyword into the search bar and receive filtered results within 300ms.\n\nResults update automatically using a 300ms debounce on input.\n\nDisplays an \"Empty State\" message when no results are found.\n\nTechnical & Code Quality:\n\nWritten in TypeScript adhering to our existing ESLint rules (npm run lint must pass with zero warnings).\n\nIncludes unit tests for the search filtering logic (npm run test must pass).\n\nDesign & UX:\n\nMatches the responsive layout specified in [Figma Design Link].\n\nFully accessible: keyboard navigable (Tab/Enter) and compatible with screen readers.\n\nSubmission Requirements:\n\nMust include a 1-minute screen recording demonstrating the search feature working locally.\n\nMust update README.md with instructions on how to run local search index mock data.\n\n5. Review Checklist Before Publishing\n\nBefore you publish your bounty, ask yourself:\n\n[ ] Could two different developers read this and understand the exact same scope?\n\n[ ] Can I test and verify every single bullet point without asking the contributor for clarification?\n\n[ ] Is there an explicit rule on how ties or partial completions will be handled (if applicable)?\n\nAre you designing a bounty for a software/code project, a creative/content submission, or a research/bug hunting task? If you share the specific task, I can draft a tailored set of criteria for you!",
+   "mentions_verdikta": false,
+   "verdikta_claims": [],
+   "no_verdikta_mention": true
+  }
+ ]
+}
