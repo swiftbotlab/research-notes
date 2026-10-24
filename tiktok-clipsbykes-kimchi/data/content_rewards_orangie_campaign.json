@@ -1,0 +1,113 @@
+{
+ "source": "https://contentrewards.com/c/campaigns/918b609f-a0a8-4305-a65e-3a2842e3942e (public page, fetched 2026-10-23 23:47 UTC)",
+ "name": "Orangie's Campaign",
+ "organization": "Memecoin Clippers (orangie)",
+ "launchDate": "2026-08-13T20:58:08.000Z",
+ "status": "paused",
+ "statusChangedAt": "2026-09-30T04:38:05.090Z",
+ "statusReason": "budget_exhausted",
+ "cpm_cents_per_1k_views": 100,
+ "budgetSpentCents": 450000,
+ "approvedSubmissionCount": 94,
+ "creatorCount": 12,
+ "totalViews": 4859534,
+ "metricsUpdatedAt": "2026-10-23T23:14:08.000Z",
+ "description": "We are gonna have a short campaign. After that, the best clippers will get the chance to join our in-house team and work closely with Orangie!",
+ "topClips": [
+  {
+   "platform": "tiktok",
+   "postUrl": "https://www.tiktok.com/@clipsbykes/video/7688845767313870102",
+   "rank": 1,
+   "title": "“I ask him every day about retiring and he says…” 🤯😬 #fyp #orangie #cupsey #orangieclips",
+   "totalViews": 283300,
+   "clipper": "kesv1"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://www.tiktok.com/@aguywholarped/video/7687516229430480146",
+   "rank": 2,
+   "title": "Orangie x Kimchi x Brezscale #memecoins #trader",
+   "totalViews": 271200,
+   "clipper": "Noah"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://www.tiktok.com/@calitheeee/video/7686450448743664918",
+   "rank": 3,
+   "title": "Orangie is a real one for this✌️  #orangie #memecoins #crypto #trading #fyp",
+   "totalViews": 248800,
+   "clipper": "Calithe"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://tiktok.com/@calitheeee/video/7675775521535347990",
+   "rank": 4,
+   "title": "Orangie shows Kimchi his $400,000 porche🤯",
+   "totalViews": 239500,
+   "clipper": "Calithe"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://www.tiktok.com/@clipsbykes/video/7689140087149415702",
+   "rank": 6,
+   "title": "Bro he’s been grinding so hard 😳🫢 #fyp #orangie #cupsey #cented #orangieclips",
+   "totalViews": 206700,
+   "clipper": "kesv1"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://tiktok.com/@clipsbykes/video/7674415653226319126",
+   "rank": 7,
+   "title": "Kimchi and orangie shopping",
+   "totalViews": 206400,
+   "clipper": "kesv1"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://www.tiktok.com/@clipsbykes/video/7685197608284998934",
+   "rank": 8,
+   "title": "Imagine prime Orangie did this 😮‍💨🤷🏼‍♂️ #fyp #orangie #orangieclips",
+   "totalViews": 200400,
+   "clipper": "kesv1"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://tiktok.com/@calitheeee/video/7673905411426110742",
+   "rank": 9,
+   "title": "Orangie exxplains how much you need to start getting into memecoins in 2026😳",
+   "totalViews": 200000,
+   "clipper": "Calithe"
+  },
+  {
+   "platform": "tiktok",
+   "postUrl": "https://tiktok.com/@clipsbykes/video/7676167509199867158",
+   "rank": 10,
+   "title": "How to trade with a small port",
+   "totalViews": 183100,
+   "clipper": "kesv1"
+  }
+ ],
+ "leaderboard": [
+  {
+   "rank": 1,
+   "clipper": "kesv1",
+   "approvedSubmissions": 49,
+   "earnedUSD": 2647.17,
+   "totalViews": 3115115
+  },
+  {
+   "rank": 2,
+   "clipper": "Calithe",
+   "approvedSubmissions": 15,
+   "earnedUSD": 593.59,
+   "totalViews": 807210
+  },
+  {
+   "rank": 3,
+   "clipper": "xovvvvv",
+   "approvedSubmissions": 3,
+   "earnedUSD": 288.59,
+   "totalViews": 249800
+  }
+ ]
+}
