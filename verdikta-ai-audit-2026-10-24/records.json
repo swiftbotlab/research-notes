@@ -2215,7 +2215,7 @@
      "claim": "If a submission fails, unused evaluation gas/deposit funds are refunded.",
      "mark": "UNSUPPORTED",
      "facts": "F2",
-     "note": "A refundable prepay matches F2, but gas is not refunded under any fact in the list. Missing: the prepay is usually spent in full, so little or nothing comes back."
+     "note": "A refundable prepay matches F2. The facts list says nothing about refunding gas. Missing: the prepay is usually spent in full, so little or nothing comes back."
     },
     {
      "claim": "If no hunter submits a passing entry before the deadline, the locked reward is refunded back to the bounty creator.",
