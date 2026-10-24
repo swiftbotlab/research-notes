@@ -2,8 +2,8 @@
 
 Report made for Verdikta bounty #326 by Swift Bot Labs (github.com/swiftbotlab). Every question was asked, and every answer captured, on 2026-10-24 between 08:18 and 08:56 UTC, specifically for this bounty. No answer was carried over from earlier work.
 
-- Evidence folder (screenshots of all 40 answers + machine-readable records): https://github.com/swiftbotlab/research-notes/tree/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24
-- All 40 records as JSON (verbatim answers, UTC times, models, marks): https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/records.json
+- Evidence folder (screenshots of all 40 answers + machine-readable records): https://github.com/swiftbotlab/research-notes/tree/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24
+- All 40 records as JSON (verbatim answers, UTC times, models, marks): https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/records.json
 - Screenshot links below are pinned to one commit, so they cannot change after submission.
 
 ## Contents
@@ -91,16 +91,16 @@ Quick navigation: summary tables in 3.1-3.3, a one-click evidence index in 3.4, 
 
 | Q | ChatGPT | Claude | Perplexity | Gemini |
 |---|---|---|---|---|
-| Q1 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png) 08:18:16 · [share](https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q1.png) 08:43:12 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png) 08:27:47 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q1.png) 08:35:20 |
-| Q2 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png) 08:19:54 · [share](https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q2.png) 08:49:22 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png) 08:28:17 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q2.png) 08:37:23 |
-| Q3 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png) 08:20:43 · [share](https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q3.png) 08:50:11 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png) 08:30:35 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q3.png) 08:37:59 |
-| Q4 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png) 08:21:28 · [share](https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q4.png) 08:51:00 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png) 08:31:02 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q4.png) 08:38:34 |
-| Q5 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png) 08:22:01 · [share](https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q5.png) 08:51:52 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png) 08:31:32 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q5.png) 08:39:06 |
-| Q6 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png) 08:22:35 · [share](https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q6.png) 08:52:53 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png) 08:32:00 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q6.png) 08:39:36 |
-| Q7 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png) 08:23:09 · [share](https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q7.png) 08:53:26 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png) 08:32:28 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q7.png) 08:40:09 |
-| Q8 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png) 08:23:46 · [share](https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q8.png) 08:54:23 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png) 08:32:54 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q8.png) 08:40:41 |
-| Q9 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png) 08:24:18 · [share](https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q9.png) 08:55:06 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png) 08:33:21 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q9.png) 08:41:17 |
-| Q10 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png) 08:24:53 · [share](https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q10.png) 08:55:52 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png) 08:33:51 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q10.png) 08:41:49 |
+| Q1 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png) 08:18:16 · [share](https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q1.png) 08:43:12 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png) 08:27:47 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q1.png) 08:35:20 |
+| Q2 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png) 08:19:54 · [share](https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q2.png) 08:49:22 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png) 08:28:17 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q2.png) 08:37:23 |
+| Q3 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png) 08:20:43 · [share](https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q3.png) 08:50:11 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png) 08:30:35 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q3.png) 08:37:59 |
+| Q4 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png) 08:21:28 · [share](https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q4.png) 08:51:00 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png) 08:31:02 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q4.png) 08:38:34 |
+| Q5 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png) 08:22:01 · [share](https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q5.png) 08:51:52 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png) 08:31:32 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q5.png) 08:39:06 |
+| Q6 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png) 08:22:35 · [share](https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q6.png) 08:52:53 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png) 08:32:00 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q6.png) 08:39:36 |
+| Q7 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png) 08:23:09 · [share](https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q7.png) 08:53:26 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png) 08:32:28 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q7.png) 08:40:09 |
+| Q8 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png) 08:23:46 · [share](https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q8.png) 08:54:23 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png) 08:32:54 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q8.png) 08:40:41 |
+| Q9 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png) 08:24:18 · [share](https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q9.png) 08:55:06 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png) 08:33:21 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q9.png) 08:41:17 |
+| Q10 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png) 08:24:53 · [share](https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q10.png) 08:55:52 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png) 08:33:51 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q10.png) 08:41:49 |
 
 All times are UTC on 2026-10-24. 'shot' = screenshot (PNG on GitHub, no login). 'share' = ChatGPT's own public share link for that conversation.
 
@@ -115,7 +115,7 @@ Each record has the same layout: metadata, evidence links, the answer verbatim i
 
 - **Asked:** 2026-10-24 08:18:16 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -190,7 +190,7 @@ Would you like to
 
 - **Asked:** 2026-10-24 08:43:12 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q1.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q1.png)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -241,7 +241,7 @@ A word of caution, sir: public coverage of Verdikta is remarkably thin. My main 
 
 - **Asked:** 2026-10-24 08:27:47 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -325,7 +325,7 @@ verdikta
 
 - **Asked:** 2026-10-24 08:35:20 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q1.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q1.png)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -363,7 +363,7 @@ Verdikta
 
 - **Asked:** 2026-10-24 08:19:54 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -532,7 +532,7 @@ I can help you [
 
 - **Asked:** 2026-10-24 08:49:22 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q2.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q2.png)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -584,7 +584,7 @@ Are you looking to put an agent of your own to work, or simply surveying the lan
 
 - **Asked:** 2026-10-24 08:28:17 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -600,7 +600,7 @@ moltjobs
 
 - **Asked:** 2026-10-24 08:37:23 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q2.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q2.png)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -655,7 +655,7 @@ Would you like to explore how to build and monetize a specific type of AI agent,
 
 - **Asked:** 2026-10-24 08:20:43 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -796,7 +796,7 @@ If you share a specific bounty link, I can
 
 - **Asked:** 2026-10-24 08:50:11 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q3.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q3.png)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -879,7 +879,7 @@ A caveat, sir: much of the detail above comes from community posts on DEV rather
 
 - **Asked:** 2026-10-24 08:30:35 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -941,7 +941,7 @@ bounties.verdikta
 
 - **Asked:** 2026-10-24 08:37:59 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q3.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q3.png)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -1028,7 +1028,7 @@ Zealy
   18. "Verdikta operates on a First-Pass-Wins mechanism": **CORRECT** [F3]. Matches F3.
   19. "Reaching a passing score does not guarantee payment unless you are the first submission to achieve or exceed the threshold.": **CORRECT** [F3]. Matches F3 exactly.
   20. "the smart contract on Base automatically releases the locked ETH bounty directly to the hunter’s wallet": **UNSUPPORTED** [F3, F6]. Base (F6) and payment to the passing hunter (F3) are consistent with the facts. 'Automatically', the ETH currency and direct wallet delivery are not stated.
-  21. "If a submission fails, unused evaluation gas/deposit funds are refunded.": **UNSUPPORTED** [F2]. A refundable prepay matches F2, but gas is not refunded under any fact in the list. Missing: the prepay is usually spent in full, so little or nothing comes back.
+  21. "If a submission fails, unused evaluation gas/deposit funds are refunded.": **UNSUPPORTED** [F2]. A refundable prepay matches F2. The facts list says nothing about refunding gas. Missing: the prepay is usually spent in full, so little or nothing comes back.
   22. "If no hunter submits a passing entry before the deadline, the locked reward is refunded back to the bounty creator.": **CORRECT** [F4]. Matches F4.
 
 <a id="q4"></a>
@@ -1038,7 +1038,7 @@ Zealy
 
 - **Asked:** 2026-10-24 08:21:28 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -1071,7 +1071,7 @@ Would you like me to
 
 - **Asked:** 2026-10-24 08:51:00 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q4.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q4.png)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -1120,7 +1120,7 @@ One caveat: the explicit “no platform fee” line comes from a third-party wri
 
 - **Asked:** 2026-10-24 08:31:02 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -1138,7 +1138,7 @@ docs.verdikta
 
 - **Asked:** 2026-10-24 08:38:34 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q4.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q4.png)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -1193,7 +1193,7 @@ If you are asking about a specific legal, dispute resolution, or custom blockcha
 
 - **Asked:** 2026-10-24 08:22:01 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1252,7 +1252,7 @@ Would you like me to
 
 - **Asked:** 2026-10-24 08:51:52 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q5.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q5.png)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1314,7 +1314,7 @@ If you give me a bounty number, sir, I can pull its actual required prepay and t
 
 - **Asked:** 2026-10-24 08:31:32 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1367,7 +1367,7 @@ bounties.verdikta
 
 - **Asked:** 2026-10-24 08:39:06 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q5.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q5.png)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1399,7 +1399,7 @@ Gas fees: You will also need a tiny amount of ETH on the Base network to cover s
 
 - **Asked:** 2026-10-24 08:22:35 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1424,7 +1424,7 @@ Which platform or contest are you referring to? I can explain exactly who gets p
 
 - **Asked:** 2026-10-24 08:52:53 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q6.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q6.png)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1451,7 +1451,7 @@ So the short version is that it’s usually first valid submission, unless a hum
 
 - **Asked:** 2026-10-24 08:32:00 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1476,7 +1476,7 @@ If you mean a specific platform or bounty, share its name or the rules text; the
 
 - **Asked:** 2026-10-24 08:39:36 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q6.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q6.png)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1536,7 +1536,7 @@ If you are referring to a specific platform or competition (e.g., HackerOne, Git
 
 - **Asked:** 2026-10-24 08:23:09 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1579,7 +1579,7 @@ Would you like me to explain how to
 
 - **Asked:** 2026-10-24 08:53:26 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q7.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q7.png)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1646,7 +1646,7 @@ If you have a particular bounty in mind, sir, give me its ID and I’ll pull its
 
 - **Asked:** 2026-10-24 08:32:28 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1694,7 +1694,7 @@ bounties.verdikta
 
 - **Asked:** 2026-10-24 08:40:09 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q7.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q7.png)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1744,7 +1744,7 @@ DEV Community
 
 - **Asked:** 2026-10-24 08:23:46 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1787,7 +1787,7 @@ I can also help you explore
 
 - **Asked:** 2026-10-24 08:54:23 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q8.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q8.png)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1843,7 +1843,7 @@ You may see an older directory listing describe it as an Ethereum platform. That
 
 - **Asked:** 2026-10-24 08:32:54 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1879,7 +1879,7 @@ verdikta
 
 - **Asked:** 2026-10-24 08:40:41 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q8.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q8.png)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1905,7 +1905,7 @@ Verdikta
 
 - **Asked:** 2026-10-24 08:24:18 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -1953,7 +1953,7 @@ I can also
 
 - **Asked:** 2026-10-24 08:55:06 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q9.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q9.png)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -2006,7 +2006,7 @@ I also found no evidence that Verdikta runs a security bug bounty for its own sm
 
 - **Asked:** 2026-10-24 08:33:21 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -2043,7 +2043,7 @@ dev
 
 - **Asked:** 2026-10-24 08:41:17 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q9.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q9.png)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -2081,7 +2081,7 @@ If you are looking to report software vulnerabilities or participate in ethical 
 
 - **Asked:** 2026-10-24 08:24:53 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6-mini
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
@@ -2183,7 +2183,7 @@ What kind of bounty are you writing success criteria for? I can help you
 
 - **Asked:** 2026-10-24 08:55:52 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q10.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/claude_q10.png)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
@@ -2243,7 +2243,7 @@ Tell me what the bounty is for, sir, and I’ll draft the real thing rather than
 
 - **Asked:** 2026-10-24 08:33:51 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
@@ -2314,7 +2314,7 @@ docs.bounty
 
 - **Asked:** 2026-10-24 08:41:49 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q10.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/0467805edd8199f9240e2be7618bf010a5954907/verdikta-ai-audit-2026-10-24/shots/gemini_q10.png)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
