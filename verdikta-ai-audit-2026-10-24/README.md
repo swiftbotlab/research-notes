@@ -2,8 +2,8 @@
 
 Report made for Verdikta bounty #326 by Swift Bot Labs (github.com/swiftbotlab). Every question was asked, and every answer captured, on 2026-10-24 between 08:18 and 08:56 UTC, specifically for this bounty. No answer was carried over from earlier work.
 
-- Evidence folder (screenshots of all 40 answers + machine-readable records): https://github.com/swiftbotlab/research-notes/tree/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24
-- All 40 records as JSON (verbatim answers, UTC times, models, marks): https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/records.json
+- Evidence folder (screenshots of all 40 answers + machine-readable records): https://github.com/swiftbotlab/research-notes/tree/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24
+- All 40 records as JSON (verbatim answers, UTC times, models, marks): https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/records.json
 - Screenshot links below are pinned to one commit, so they cannot change after submission.
 
 ## Contents
@@ -14,6 +14,8 @@ Report made for Verdikta bounty #326 by Swift Bot Labs (github.com/swiftbotlab).
 5. Error analysis: what goes wrong, where, and why
 6. Corrections and what to fix (actionable summary)
 7. Limitations and notes for the repeat run
+
+Quick navigation: summary tables in 3.1-3.3, a one-click evidence index in 3.4, records by question at [Q1](#q1) [Q2](#q2) [Q3](#q3) [Q4](#q4) [Q5](#q5) [Q6](#q6) [Q7](#q7) [Q8](#q8) [Q9](#q9) [Q10](#q10).
 
 ## 1. Method
 
@@ -29,10 +31,11 @@ Report made for Verdikta bounty #326 by Swift Bot Labs (github.com/swiftbotlab).
 - **What 'verbatim' means here.** The answer text is reproduced exactly as displayed, inside a code block so nothing is reformatted. The only change is whitespace: trailing spaces were removed and runs of blank lines were collapsed. No words were changed, added or dropped. Inline source chips appear as their visible labels on their own line (for example `bounties.verdikta.org` then `+1`, or `DEV Community`). Tables appear as the app's text output, so cells come out tab-separated or one per line. ChatGPT's rendered math appears twice because the page holds both a visual and an accessible copy. Claude's answers begin with the app's own status lines ('Searched the web', 'Nothing useful yet. Let me narrow it.'), which are part of what the user sees.
 - **Evidence.** Every record has a screenshot (raw PNG on GitHub, opens without login). ChatGPT records also have the app's own public share link. Logged-out Perplexity disables sharing, and Incognito/Temporary chats in Claude and Gemini cannot be shared, so for those three the screenshot is the evidence.
 - **Marking.** Every sentence in an answer that says something about Verdikta was extracted as a claim, quoted exactly, and marked against the facts list in section 2, and only against that list:
-  - **CORRECT**: the facts list confirms it.
+  - **CORRECT**: the facts list confirms EVERY part of the quoted claim. This rule is strict. If a sentence mixes a confirmed fact with extra detail (for example 'Verdikta runs on Base, an Ethereum Layer-2'), it is split: the confirmed part ('Verdikta runs on Base') is CORRECT, and the extra detail ('an Ethereum Layer-2') is quoted separately as UNSUPPORTED. If a sentence cannot be split cleanly, the whole sentence is UNSUPPORTED and the note says which part is consistent with which fact. Words like 'automatically', 'escrowed ETH', 'weighted' and 'gas' are not in the facts list, so claims that depend on them are not CORRECT.
   - **WRONG**: the facts list contradicts it. Every WRONG claim has a suggested correction.
   - **UNSUPPORTED**: the facts list neither confirms nor denies it. Many UNSUPPORTED claims may well be true, but this audit does not judge them.
-  - Where a claim is right but leaves out a rule a reader needs (most often the first-passing-submission rule, or that the prepay is usually spent in full), it stays CORRECT or UNSUPPORTED and the gap is noted. Vague or incomplete answers were not marked WRONG. Where a marking was a judgement call, the note says so.
+  - **One consistent rule for payout statements.** A statement that 'passing work is paid' without saying it must be the FIRST passing submission is UNSUPPORTED, with the gap noted. It is not CORRECT, because F3 restricts payment to the first passing submission. It is not WRONG either, because it does not claim every passing submission is paid. Only a statement of a best-of or several-winner rule is WRONG against F3.
+  - Where a claim is right but leaves out something a reader needs (for example that the prepay is usually spent in full), the gap is noted next to the mark. Vague or incomplete answers were not marked WRONG. Where a marking was a judgement call, the note says so.
   - Generic statements about other platforms or bounties in general are not Verdikta claims and are not marked. Records whose answer never mentions Verdikta are marked 'NO VERDIKTA MENTION'.
 - **Process notes (full disclosure).**
   - ChatGPT Q1 was first sent once while the capture script was being fixed. That first answer was not captured with evidence and is not used. The recorded ChatGPT Q1 is the next, separate run (08:18:16 UTC).
@@ -55,11 +58,11 @@ Report made for Verdikta bounty #326 by Swift Bot Labs (github.com/swiftbotlab).
 
 | Assistant (model) | Answers that mention Verdikta | Claims CORRECT | Claims WRONG | Claims UNSUPPORTED |
 |---|---|---|---|---|
-| ChatGPT (gpt-6 / gpt-6-mini, logged out) | 7 of 10 | 18 | 2 | 23 |
-| Claude (Opus 5.5 High, Incognito) | 7 of 10 | 31 | 1 | 34 |
-| Perplexity (turbo, logged out) | 7 of 10 | 16 | 3 | 25 |
-| Gemini (Gemini Auto, Temporary chat) | 7 of 10 | 26 | 0 | 17 |
-| **All four** | **28 of 40** | **91** | **6** | **99** |
+| ChatGPT (gpt-6 / gpt-6-mini, logged out) | 7 of 10 | 19 | 2 | 56 |
+| Claude (Opus 5.5 High, Incognito) | 7 of 10 | 36 | 1 | 76 |
+| Perplexity (turbo, logged out) | 7 of 10 | 13 | 3 | 49 |
+| Gemini (Gemini Auto, Temporary chat) | 7 of 10 | 20 | 0 | 36 |
+| **All four** | **28 of 40** | **88** | **6** | **217** |
 
 ### 3.2 Verdict per question (WRONG claims and key gaps)
 
@@ -84,6 +87,23 @@ Report made for Verdikta bounty #326 by Swift Bot Labs (github.com/swiftbotlab).
 - **Money questions carry most of the errors.** Fees (Q4) and costs (Q5) produce 4 of the 6 WRONG claims. The recurring mistakes are LINK as the payment token, 'Verdikta charges per evaluation', and the prepay being 'mostly refunded'.
 - **The payout rule is the riskiest gap.** Only Claude (Q3, Q5) and Gemini (Q3) state the first-passing-submission rule (F3). Perplexity (Q3) states the opposite ('highest-scoring passing submission wins'). Most other answers say 'passing work is paid' without saying it must be the FIRST passing work.
 
+### 3.4 Evidence index (one click per record)
+
+| Q | ChatGPT | Claude | Perplexity | Gemini |
+|---|---|---|---|---|
+| Q1 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png) 08:18:16 · [share](https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q1.png) 08:43:12 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png) 08:27:47 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q1.png) 08:35:20 |
+| Q2 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png) 08:19:54 · [share](https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q2.png) 08:49:22 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png) 08:28:17 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q2.png) 08:37:23 |
+| Q3 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png) 08:20:43 · [share](https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q3.png) 08:50:11 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png) 08:30:35 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q3.png) 08:37:59 |
+| Q4 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png) 08:21:28 · [share](https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q4.png) 08:51:00 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png) 08:31:02 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q4.png) 08:38:34 |
+| Q5 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png) 08:22:01 · [share](https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q5.png) 08:51:52 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png) 08:31:32 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q5.png) 08:39:06 |
+| Q6 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png) 08:22:35 · [share](https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q6.png) 08:52:53 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png) 08:32:00 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q6.png) 08:39:36 |
+| Q7 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png) 08:23:09 · [share](https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q7.png) 08:53:26 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png) 08:32:28 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q7.png) 08:40:09 |
+| Q8 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png) 08:23:46 · [share](https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q8.png) 08:54:23 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png) 08:32:54 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q8.png) 08:40:41 |
+| Q9 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png) 08:24:18 · [share](https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q9.png) 08:55:06 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png) 08:33:21 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q9.png) 08:41:17 |
+| Q10 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png) 08:24:53 · [share](https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c) | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q10.png) 08:55:52 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png) 08:33:51 | [shot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q10.png) 08:41:49 |
+
+All times are UTC on 2026-10-24. 'shot' = screenshot (PNG on GitHub, no login). 'share' = ChatGPT's own public share link for that conversation.
+
 ## 4. The 40 records
 
 Each record has the same layout: metadata, evidence links, the answer verbatim in a code block, then the marking (my words, kept separate from the answer).
@@ -95,7 +115,7 @@ Each record has the same layout: metadata, evidence links, the answer verbatim i
 
 - **Asked:** 2026-10-24 08:18:16 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q1.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc69f4f44881918bf8558f6165596a)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -149,20 +169,28 @@ Would you like to
  learn how to earn through Verdikta?
 `````
 
-- **Marking** (7 Verdikta claims: 2 CORRECT, 0 WRONG, 5 UNSUPPORTED):
+- **Marking** (15 Verdikta claims: 1 CORRECT, 0 WRONG, 14 UNSUPPORTED):
   1. "Verdikta is a decentralized AI-powered decision-making platform that combines artificial intelligence (AI) with blockchain technology to evaluate disputes and trigger automated outcomes": **UNSUPPORTED** [F6]. The facts list does not describe Verdikta's general positioning; the AI-plus-chain idea is consistent with F6.
-  2. "Independent AI-powered arbiters analyze the information and produce judgments. The system combines their responses to reach an outcome.": **CORRECT** [F6]. Matches F6: work is scored by a panel of independent AI arbiter nodes.
-  3. "A smart contract can record the decision and automatically release a payment, distribute a bounty, or trigger another predefined action.": **UNSUPPORTED** [F3, F5]. Consistent with F3/F5 (on-chain bounty, passing work is paid), but 'automatically' and 'another predefined action' are not in the facts list.
-  4. "Bounty payments: Evaluate completed tasks against predefined criteria and trigger payouts.": **CORRECT** [F3, F6]. Matches F6 (rubric published in advance) and F3 (passing work is paid).
-  5. "Online disputes: Help resolve disagreements between buyers, sellers, freelancers, and clients.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
-  6. "Content moderation: Evaluate content or moderation appeals.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
-  7. "Its ecosystem documentation describes a native token called VDKA, which is used in connection with arbiter participation and incentives.": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
+  2. "Think of it as a digital arbitrator that can help decide who should get paid, whether work meets agreed requirements, or how an online dispute should be resolved.": **UNSUPPORTED** [F6]. An interpretive analogy. Judging whether work meets requirements is consistent with F6. Online disputes are not covered.
+  3. "A person or software application submits a question, dispute, evidence, or task with clear evaluation criteria.": **UNSUPPORTED** [F6]. Submitting work for evaluation against criteria is consistent with F6. The rest is not covered.
+  4. "Independent AI-powered arbiters analyze the information and produce judgments.": **CORRECT** [F6]. Matches F6: a panel of independent AI arbiter nodes does the scoring.
+  5. "The system combines their responses to reach an outcome.": **UNSUPPORTED** [not in facts list]. How the arbiters' responses are combined is not in the facts list.
+  6. "A smart contract can record the decision and automatically release a payment, distribute a bounty, or trigger another predefined action.": **UNSUPPORTED** [F3, F5]. Consistent with F3/F5 (on-chain bounty, passing work is paid), but 'automatically' and 'another predefined action' are not in the facts list.
+  7. "This approach is designed to reduce the cost and delay of manual decision-making while making outcomes more verifiable.": **UNSUPPORTED** [not in facts list]. Design goals are not covered by the facts list.
+  8. "Online disputes: Help resolve disagreements between buyers, sellers, freelancers, and clients.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
+  9. "Bounty payments: Evaluate completed tasks against predefined criteria and trigger payouts.": **UNSUPPORTED** [F3, F6]. Evaluating tasks against predefined criteria matches F6 (rubric published in advance). Consistent with F3 but marked UNSUPPORTED under this report's rule for 'passing work is paid' statements: F3 says only the FIRST passing submission is paid, and the answer does not say so. It is not marked WRONG because it does not claim that every passing submission is paid.
+  10. "Content moderation: Evaluate content or moderation appeals.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
+  11. "AI-agent transactions: Allow autonomous software agents to assess work and settle payments without needing a human to review every transaction.": **UNSUPPORTED** [F6]. Consistent with F6 (AI arbiters score work). The agent-to-agent use case is not covered.
+  12. "Verdikta is primarily a blockchain-based AI judgment protocol, rather than just a cryptocurrency.": **UNSUPPORTED** [F6]. Consistent with F6. Not stated as such.
+  13. "Its ecosystem documentation describes a native token called VDKA, which is used in connection with arbiter participation and incentives.": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
+  14. "AI-generated judgments are not guaranteed to be correct or legally binding in every situation.": **UNSUPPORTED** [not in facts list]. A general caveat that the facts list does not address.
+  15. "You can explore the official website at Verdikta.org": **UNSUPPORTED** [not in facts list]. The website address is not in the facts list.
 
 #### Q1 / Claude
 
 - **Asked:** 2026-10-24 08:43:12 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q1.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q1.png)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -195,21 +223,25 @@ www.longtermwiki.com
 A word of caution, sir: public coverage of Verdikta is remarkably thin. My main source is an AI tools directory, not independent reporting or the project’s own documentation, so I’d treat the specifics as provisional. If you’re considering using it, investing in it, or running a node, I can run a deeper investigation into its whitepaper, token, team, and on-chain activity.
 `````
 
-- **Marking** (8 Verdikta claims: 2 CORRECT, 1 WRONG, 5 UNSUPPORTED):
-  1. "Verdikta, sir, is a blockchain-based dispute resolution service that uses a panel of AI models as its jury.": **CORRECT** [F6]. A panel of AI models matches F6. The 'dispute resolution service' framing is not in the facts list.
-  2. "deliver fast, low-cost, bias-mitigated outcomes for disputes and task evaluations": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  3. "it uses a panel of AI models plus a “Schelling filter” mechanism to arrive at fair results": **UNSUPPORTED** [F6]. The panel matches F6. The Schelling filter is not covered.
-  4. "Individuals can also run nodes themselves and earn income for supporting the network.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  5. "One directory listing claims resolution in roughly two minutes at about $0.60 per decision": **UNSUPPORTED** [not in facts list]. Attributed to a directory listing. The facts list gives no per-decision price.
-  6. "It runs on Ethereum": **WRONG** [F6]. Correction: Verdikta runs on Base (an Ethereum layer 2). Its contracts are on Base, not on Ethereum mainnet. (Marker's note: Base settles to Ethereum, but a reader told 'Ethereum' would look in the wrong place. The same assistant says this itself in its Q8 answer.)
-  7. "appears to offer a free tier called “Instant Verdict.”": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  8. "Verdikta essentially replaces the human jury with machines.": **CORRECT** [F6]. Consistent with F6 (AI arbiter nodes do the scoring).
+- **Marking** (12 Verdikta claims: 1 CORRECT, 1 WRONG, 10 UNSUPPORTED):
+  1. "Verdikta, sir, is a blockchain-based dispute resolution service": **UNSUPPORTED** [not in facts list]. The 'dispute resolution service' framing is not in the facts list.
+  2. "uses a panel of AI models as its jury": **CORRECT** [F6]. Matches F6.
+  3. "deliver fast, low-cost, bias-mitigated outcomes for disputes and task evaluations": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  4. "it uses a panel of AI models plus a “Schelling filter” mechanism to arrive at fair results": **UNSUPPORTED** [F6]. The panel matches F6. The Schelling filter is not covered.
+  5. "Individuals can also run nodes themselves and earn income for supporting the network.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  6. "The selling points are speed and price.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "One directory listing claims resolution in roughly two minutes at about $0.60 per decision": **UNSUPPORTED** [not in facts list]. Attributed to a directory listing. The facts list gives no per-decision price.
+  8. "It runs on Ethereum": **WRONG** [F6]. Correction: Verdikta runs on Base (an Ethereum layer 2). Its contracts are on Base, not on Ethereum mainnet. (Marker's note: Base settles to Ethereum, but a reader told 'Ethereum' would look in the wrong place. The same assistant says this itself in its Q8 answer.)
+  9. "appears to offer a free tier called “Instant Verdict.”": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  10. "Verdikta essentially replaces the human jury with machines.": **UNSUPPORTED** [F6]. An interpretive comparison (with Kleros). Consistent with F6 (AI arbiter nodes do the scoring).
+  11. "whether a decision made entirely by AI and blockchain is legally enforceable may vary by jurisdiction": **UNSUPPORTED** [not in facts list]. A legal caveat that the facts list does not address.
+  12. "public coverage of Verdikta is remarkably thin": **UNSUPPORTED** [not in facts list]. The assistant's own observation about its sources. Not a fact claim the list can settle.
 
 #### Q1 / Perplexity
 
 - **Asked:** 2026-10-24 08:27:47 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q1.png)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -270,21 +302,30 @@ verdikta
 +1
 `````
 
-- **Marking** (8 Verdikta claims: 2 CORRECT, 0 WRONG, 6 UNSUPPORTED):
-  1. "decentralized, blockchain-based protocol that uses multiple independent AI “arbiters” to resolve subjective disputes and return an auditable verdict on-chain": **CORRECT** [F6]. Independent AI arbiters and auditable results match F6. 'Subjective disputes' is broader than the facts list.
-  2. "evidence references—often stored off-chain on IPFS": **UNSUPPORTED** [F5]. F5 says the rubric and evaluation package are pinned to IPFS. Evidence storage is not covered.
-  3. "Verdikta selects a pseudorandom committee of AI arbiters, which may run different models and providers": **UNSUPPORTED** [F6]. The panel matches F6. Pseudorandom selection and mixed providers are not in the facts list.
-  4. "Arbiters use a commit–reveal process": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  5. "The protocol aggregates responses, rewards consensus and penalizes outliers, then publishes the final verdict and reasoning references on-chain.": **UNSUPPORTED** [F6]. Public results are consistent with F6. Reward and penalty mechanics are not covered.
-  6. "Grading submitted work and automatically triggering payouts.": **CORRECT** [F3, F6]. Matches F6 and F3. 'Automatically' is not stated in the facts.
-  7. "Native token staked by arbiters to participate and align incentives toward honest behavior.": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
-  8. "Prediction-market resolution using stated criteria and evidence.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
+- **Marking** (17 Verdikta claims: 2 CORRECT, 0 WRONG, 15 UNSUPPORTED):
+  1. "uses multiple independent AI “arbiters”": **CORRECT** [F6]. Matches F6.
+  2. "to resolve subjective disputes and return an auditable verdict on-chain": **UNSUPPORTED** [F6]. Auditable results are consistent with F6. 'Subjective disputes' and an on-chain verdict are not stated.
+  3. "It is designed to let smart contracts and apps obtain AI judgments": **UNSUPPORTED** [F6]. Consistent with F6. The listed uses (contract disputes, content moderation, prediction markets) and 'without trusting a single AI provider' are not covered.
+  4. "evidence references—often stored off-chain on IPFS": **UNSUPPORTED** [F5]. F5 says the rubric and evaluation package are pinned to IPFS. Evidence storage is not covered.
+  5. "Verdikta selects a pseudorandom committee of AI arbiters, which may run different models and providers": **UNSUPPORTED** [F6]. The panel matches F6. Pseudorandom selection and mixed providers are not in the facts list.
+  6. "Arbiters use a commit–reveal process": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "The protocol aggregates responses, rewards consensus and penalizes outliers, then publishes the final verdict and reasoning references on-chain.": **UNSUPPORTED** [F6]. Public results are consistent with F6. Reward and penalty mechanics are not covered.
+  8. "Verdikta is aimed at decisions where a normal smart contract cannot easily determine the answer on its own": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  9. "Dispute resolution for peer-to-peer or agent-to-agent transactions.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
+  10. "Prediction-market resolution using stated criteria and evidence.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
+  11. "Content moderation and compliance judgments.": **UNSUPPORTED** [not in facts list]. Use case not covered by the facts list.
+  12. "Grading submitted work and automatically triggering payouts.": **UNSUPPORTED** [F3, F6]. Grading work matches F6 and payout of passing work matches F3. 'Automatically' is not in the facts list.
+  13. "Independent evaluators that assess the submitted question and evidence.": **CORRECT** [F6]. Table row 'AI arbiters': matches F6 (independent AI arbiter nodes).
+  14. "Native token staked by arbiters to participate and align incentives toward honest behavior.": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
+  15. "Stores large evidence files and detailed AI justifications off-chain, referenced by content identifiers.": **UNSUPPORTED** [F5]. Table row 'IPFS'. F5 says the rubric and evaluation package are pinned to IPFS. Evidence and justifications are not covered.
+  16. "Records the decision and supporting hashes/references so outcomes can be audited.": **UNSUPPORTED** [F6]. Table row 'On-chain verdict'. Auditability is consistent with F6. The on-chain recording details are not stated.
+  17. "In short, Verdikta is best understood as a decentralized AI arbitration and settlement layer": **UNSUPPORTED** [F6]. Consistent with F6. The 'arbitration layer' framing and automatic execution are not stated.
 
 #### Q1 / Gemini
 
 - **Asked:** 2026-10-24 08:35:20 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q1.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q1.png)
 - **Question as sent:** What is Verdikta?
 - **Answer (verbatim):**
 
@@ -322,7 +363,7 @@ Verdikta
 
 - **Asked:** 2026-10-24 08:19:54 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q2.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a4d88948191b9b490ab17a0d177)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -491,7 +532,7 @@ I can help you [
 
 - **Asked:** 2026-10-24 08:49:22 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q2.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q2.png)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -543,7 +584,7 @@ Are you looking to put an agent of your own to work, or simply surveying the lan
 
 - **Asked:** 2026-10-24 08:28:17 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q2.png)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -559,7 +600,7 @@ moltjobs
 
 - **Asked:** 2026-10-24 08:37:23 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q2.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q2.png)
 - **Question as sent:** How do AI agents find paid work?
 - **Answer (verbatim):**
 
@@ -614,7 +655,7 @@ Would you like to explore how to build and monetize a specific type of AI agent,
 
 - **Asked:** 2026-10-24 08:20:43 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q3.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a7414988191bed4edc96971cc00)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -729,21 +770,33 @@ If you share a specific bounty link, I can
  help optimize a submission
 `````
 
-- **Marking** (8 Verdikta claims: 4 CORRECT, 0 WRONG, 4 UNSUPPORTED):
+- **Marking** (20 Verdikta claims: 5 CORRECT, 0 WRONG, 15 UNSUPPORTED):
   1. "bounty submissions are judged by a jury of AI models that evaluates your work against a predefined rubric, rather than by the bounty creator personally": **CORRECT** [F6]. Matches F6.
-  2. "The creator specifies the task, evaluation criteria, their weights, the passing threshold, and the AI jury configuration. These terms are fixed once the bounty is created.": **CORRECT** [F5, F6]. Matches F5 (rubric and evaluation package fixed at creation) and F6 (rubric published in advance).
-  3. "Some bounties have mandatory pass/fail conditions; failing even one can result in immediate rejection without further scoring.": **UNSUPPORTED** [not in facts list]. Must-pass gates are not in the facts list.
-  4. "the jury scores individual criteria, generally from 0 to 100. Those scores are combined using the rubric's weights and the configured model weights to produce the final result.": **UNSUPPORTED** [F6]. Per-criterion scoring matches F6; the 0-100 scale and the weighting method are not in the facts list.
-  5. "If your submission reaches the bounty's acceptance threshold, it can qualify for payment from the ETH held in escrow.": **CORRECT** [F3]. Consistent with F3, but incomplete: only the FIRST submission that clears the threshold is paid the whole bounty. The answer never says this.
-  6. "evaluation results are recorded on-chain": **UNSUPPORTED** [F6]. F6 says per-criterion scores are public and auditable; 'recorded on-chain' is not stated as such.
-  7. "Some bounties offer an approval window in which the creator can approve work early": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  8. "The escrow, criteria, and threshold are fixed at creation.": **CORRECT** [F5]. Matches F5.
+  2. "Your score determines whether you qualify for the reward.": **UNSUPPORTED** [F3]. Consistent with F3 but UNSUPPORTED under this report's payout rule: it does not say only the FIRST passing submission is paid.
+  3. "The creator specifies the task, evaluation criteria, their weights, the passing threshold, and the AI jury configuration.": **UNSUPPORTED** [F6]. A rubric published in advance (F6) and an acceptance threshold (F3) are in the facts list. Criterion weights and the jury configuration are not.
+  4. "These terms are fixed once the bounty is created.": **CORRECT** [F5]. Matches F5.
+  5. "The jury evaluates whether your deliverable satisfies the task requirements.": **UNSUPPORTED** [F6]. Consistent with F6 (scored against the published rubric). 'Task requirements' is broader than the rubric.
+  6. "Some bounties have mandatory pass/fail conditions; failing even one can result in immediate rejection without further scoring.": **UNSUPPORTED** [not in facts list]. Must-pass gates are not in the facts list.
+  7. "the jury scores individual criteria, generally from 0 to 100. Those scores are combined using the rubric's weights and the configured model weights to produce the final result.": **UNSUPPORTED** [F6]. Per-criterion scoring matches F6; the 0-100 scale and the weighting method are not in the facts list.
+  8. "If your submission reaches the bounty's acceptance threshold, it can qualify for payment": **UNSUPPORTED** [F3]. Consistent with F3 but marked UNSUPPORTED under this report's rule for 'passing work is paid' statements: F3 says only the FIRST passing submission is paid, and the answer does not say so. It is not marked WRONG because it does not claim that every passing submission is paid.
+  9. "from the ETH held in escrow": **UNSUPPORTED** [F4]. Escrowed ETH is not stated in the facts list (F4 says only that the creator can reclaim the full amount).
+  10. "evaluation results are recorded on-chain": **UNSUPPORTED** [F6]. F6 says per-criterion scores are public and auditable; 'recorded on-chain' is not stated as such.
+  11. "It depends on the specific bounty's rubric.": **CORRECT** [F6]. Matches F6 (work is scored against the bounty's rubric).
+  12. "These are examples, not a universal checklist.": **UNSUPPORTED** [not in facts list]. Covers the preceding example factors (correctness, completeness, quality, evidence, criterion weights). They are offered as examples and are not in the facts list.
+  13. "The actual published rubric is what matters.": **CORRECT** [F6]. Matches F6 (rubric published in advance).
+  14. "Suppose a bounty uses this rubric:": **UNSUPPORTED** [not in facts list]. A hypothetical worked example (weights 50/30/20, 80% threshold, score 88). It is not a claim about any real bounty, and weighted scoring is not in the facts list.
+  15. "A high average does not rescue a submission that fails a mandatory requirement.": **UNSUPPORTED** [not in facts list]. Must-pass gates are not in the facts list.
+  16. "passing one bounty's rubric does not mean every Verdikta bounty uses the same threshold or criteria": **UNSUPPORTED** [F6]. Per-bounty rubrics are consistent with F6. Not stated as such.
+  17. "Generally, the creator cannot simply reject a submission after the fact.": **UNSUPPORTED** [F6]. Consistent with F6 (the AI panel does the scoring). Not stated as such.
+  18. "Some bounties offer an approval window in which the creator can approve work early": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  19. "The escrow, criteria, and threshold are fixed at creation.": **CORRECT** [F5]. Matches F5.
+  20. "You can inspect the evaluation details on the Verdikta Bounties platform to see the exact criteria, jury configuration, passing threshold, and—where published—the AI's reasoning for a result.": **UNSUPPORTED** [F6]. Consistent with F6 (per-criterion scores are public and auditable). The specific fields shown are not covered.
 
 #### Q3 / Claude
 
 - **Asked:** 2026-10-24 08:50:11 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q3.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q3.png)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -794,28 +847,39 @@ Bug bounty, freelance gig, or judged bounty? Picking the right platform for the 
 A caveat, sir: much of the detail above comes from community posts on DEV rather than official documentation, and the jury makeup appears to be set per bounty. Do check the specific bounty’s page at bounties.verdikta.org before committing any work.
 `````
 
-- **Marking** (15 Verdikta claims: 8 CORRECT, 0 WRONG, 7 UNSUPPORTED):
+- **Marking** (26 Verdikta claims: 9 CORRECT, 0 WRONG, 17 UNSUPPORTED):
   1. "Verdikta bounties are judged by a jury of AI models scoring each submission against a rubric the creator fixed in advance": **CORRECT** [F5, F6]. Matches F5 and F6.
-  2. "A panel of independent AI arbiter nodes then scores each submission against that rubric, and the per-criterion scores are public and auditable.": **CORRECT** [F6]. Matches F6 word for word.
-  3. "The rubric, the pass mark and the jury panel are stored in an IPFS evaluation package whose identifier is set when the bounty is created": **CORRECT** [F5]. Matches F5.
-  4. "One example is bounty #139, a short personal bio. It had five criteria": **UNSUPPORTED** [not in facts list]. A specific example that the facts list does not cover.
-  5. "two AI models, one from OpenAI and one from Anthropic, each with 50% weight, score every submission": **UNSUPPORTED** [F6]. A panel matches F6. Its makeup is not in the facts list (the answer itself adds that it is set per bounty).
-  6. "verdicts typically returned in under three minutes": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  7. "The contract pays only if the weighted score clears the threshold. The first submission that passes automatically wins the bounty.": **CORRECT** [F3]. Matches F3.
-  8. "Some bounties are set as high as 90%, and a near miss pays nothing.": **UNSUPPORTED** [F3]. A near miss paying nothing is consistent with F3. The 90% figure is not covered.
-  9. "Verdikta charges no platform fee, so the whole bounty goes to the hunter whose submission passes.": **CORRECT** [F1]. Matches F1.
-  10. "Hunters do attach a refundable oracle prepay of about 0.00024 ETH when they submit, but in practice it’s usually spent in full on the jury round.": **CORRECT** [F2]. Matches F2.
-  11. "The jury’s full reasoning is stored on IPFS, linked from the bounty page.": **UNSUPPORTED** [F6]. Consistent with F6 (public, auditable scores). Storage location not covered.
-  12. "There is no appeal or revision loop.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  13. "There’s also no cancel button for anyone.": **CORRECT** [F5]. Matches F5.
-  14. "If the deadline passes with no passing work, the escrow goes back to the creator.": **CORRECT** [F4]. Matches F4.
-  15. "Resubmitted with the full post attached, the same piece scored 91%.": **UNSUPPORTED** [not in facts list]. Anecdote from a community post. Not covered by the facts list.
+  2. "The creator funds a task in escrow": **UNSUPPORTED** [F4]. Consistent with F4 (the creator can reclaim the full amount). Escrow is not stated.
+  3. "and publishes a rubric in advance": **CORRECT** [F6]. Matches F6.
+  4. "A panel of independent AI arbiter nodes then scores each submission against that rubric, and the per-criterion scores are public and auditable.": **CORRECT** [F6]. Matches F6 word for word.
+  5. "The rubric, the pass mark and the jury panel are stored in an IPFS evaluation package whose identifier is set when the bounty is created": **UNSUPPORTED** [F5]. The core matches F5 (rubric and evaluation package pinned to IPFS and fixed). The facts do not list the pass mark and jury panel as package contents.
+  6. "nobody can move the goalposts after you start working": **CORRECT** [F5]. Matches F5 (cannot be edited after creation).
+  7. "Rubrics have weighted criteria.": **UNSUPPORTED** [not in facts list]. Weights are not in the facts list.
+  8. "One example is bounty #139, a short personal bio. It had five criteria": **UNSUPPORTED** [not in facts list]. A specific example that the facts list does not cover.
+  9. "two AI models, one from OpenAI and one from Anthropic, each with 50% weight, score every submission": **UNSUPPORTED** [F6]. A panel matches F6. Its makeup is not in the facts list (the answer itself adds that it is set per bounty).
+  10. "with two different providers, one model’s quirks can’t decide the outcome alone": **UNSUPPORTED** [F6]. Consistent with F6 (panel of independent arbiters). Provider mix not covered.
+  11. "verdicts typically returned in under three minutes": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  12. "The contract pays only if the weighted score clears the threshold.": **UNSUPPORTED** [F3]. Paying only above the threshold is consistent with F3. A 'weighted' score is not stated.
+  13. "The first submission that passes automatically wins the bounty.": **CORRECT** [F3]. Matches F3.
+  14. "Thresholds vary a great deal.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  15. "Some bounties are set as high as 90%, and a near miss pays nothing.": **UNSUPPORTED** [F3]. A near miss paying nothing is consistent with F3. The 90% figure is not covered.
+  16. "Verdikta charges no platform fee, so the whole bounty goes to the hunter whose submission passes.": **CORRECT** [F1]. Matches F1.
+  17. "Hunters do attach a refundable oracle prepay of about 0.00024 ETH when they submit, but in practice it’s usually spent in full on the jury round.": **CORRECT** [F2]. Matches F2.
+  18. "The jury’s full reasoning is stored on IPFS, linked from the bounty page.": **UNSUPPORTED** [F6]. Consistent with F6 (public, auditable scores). Storage location not covered.
+  19. "There is no appeal or revision loop.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  20. "There’s also no cancel button for anyone.": **CORRECT** [F5]. Matches F5.
+  21. "If the deadline passes with no passing work, the escrow goes back to the creator.": **CORRECT** [F4]. Matches F4.
+  22. "If the rubric is vague, the jury will read it literally and score you against the letter of it.": **UNSUPPORTED** [not in facts list]. Advice from community posts. Not covered.
+  23. "One hunter lost points by attaching only a screenshot and a link, because the jury couldn’t see most of the text.": **UNSUPPORTED** [not in facts list]. Anecdote. Not covered.
+  24. "Resubmitted with the full post attached, the same piece scored 91%.": **UNSUPPORTED** [not in facts list]. Anecdote from a community post. Not covered by the facts list.
+  25. "on math bounties the jury rarely tells submissions apart, because ten proofs all scored between 97% and 99%": **UNSUPPORTED** [not in facts list]. Anecdote. Not covered.
+  26. "the jury makeup appears to be set per bounty": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
 
 #### Q3 / Perplexity
 
 - **Asked:** 2026-10-24 08:30:35 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q3.png)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -858,21 +922,26 @@ bounties.verdikta
 +1
 `````
 
-- **Marking** (8 Verdikta claims: 4 CORRECT, 1 WRONG, 3 UNSUPPORTED):
+- **Marking** (13 Verdikta claims: 2 CORRECT, 1 WRONG, 10 UNSUPPORTED):
   1. "bounty submissions are judged against a creator-defined rubric by a jury of AI arbiter models—not by the bounty creator’s discretionary review": **CORRECT** [F6]. Matches F6.
-  2. "If the submission reaches the required passing score, payment is released automatically from escrow.": **CORRECT** [F3]. Consistent with F3. Missing: only the first submission to pass is paid.
-  3. "The bounty creator sets the task, a rubric with criteria and weights, and a passing threshold before submissions begin.": **CORRECT** [F6]. Matches F6 (rubric published in advance).
-  4. "each model scores independently, and the final score is a weighted average": **UNSUPPORTED** [F6]. Independent scoring matches F6. The weighted-average method is not in the facts list.
-  5. "Criteria can include weighted quality measures and binary “must-pass” gates.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  6. "below it, the submission fails and the hunter can see which criteria fell short": **CORRECT** [F6]. Matches F6 (per-criterion scores are public).
-  7. "If multiple submissions are allowed, the highest-scoring passing submission wins.": **WRONG** [F3]. Correction: The FIRST submission that clears the acceptance threshold wins the entire bounty. A later submission with a higher score gets nothing, and there is no best-of comparison at the deadline.
-  8. "The creator cannot reject qualifying work. If the bounty includes an approval window, the creator may approve it early": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  2. "If the submission reaches the required passing score, payment is released": **UNSUPPORTED** [F3]. Consistent with F3 but marked UNSUPPORTED under this report's rule for 'passing work is paid' statements: F3 says only the FIRST passing submission is paid, and the answer does not say so. It is not marked WRONG because it does not claim that every passing submission is paid.
+  3. "automatically from escrow": **UNSUPPORTED** [not in facts list]. 'Automatically' and escrow mechanics are not in the facts list.
+  4. "The bounty creator sets the task, a rubric with criteria and weights, and a passing threshold before submissions begin.": **UNSUPPORTED** [F6]. A rubric published in advance matches F6. Criterion weights are not in the facts list.
+  5. "each model scores independently, and the final score is a weighted average": **UNSUPPORTED** [F6]. Independent scoring matches F6. The weighted-average method is not in the facts list.
+  6. "Criteria can include weighted quality measures and binary “must-pass” gates.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "A failed hard gate can disqualify a submission before weighted scoring matters.": **UNSUPPORTED** [not in facts list]. Must-pass gates and weighting are not in the facts list.
+  8. "below it, the submission fails and the hunter can see which criteria fell short": **CORRECT** [F6]. Matches F6 (per-criterion scores are public).
+  9. "If multiple submissions are allowed, the highest-scoring passing submission wins.": **WRONG** [F3]. Correction: The FIRST submission that clears the acceptance threshold wins the entire bounty. A later submission with a higher score gets nothing, and there is no best-of comparison at the deadline.
+  10. "The creator cannot reject qualifying work. If the bounty includes an approval window, the creator may approve it early": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  11. "otherwise the AI jury’s evaluation determines the outcome and the escrow contract pays automatically": **UNSUPPORTED** [F3, F6]. Consistent with F6 (the AI panel scores) and F3. 'Automatically' is not stated, and nothing here says 'first'.
+  12. "A writing bounty might use criteria such as accuracy, clarity, and completeness": **UNSUPPORTED** [not in facts list]. A hypothetical example, not covered by the facts list.
+  13. "Two AI models might each score the submission independently; their scores are combined—for example, 50/50—and compared with the bounty’s pass threshold.": **UNSUPPORTED** [F6]. A hypothetical. Independent scoring is consistent with F6. The 50/50 combination is not covered.
 
 #### Q3 / Gemini
 
 - **Asked:** 2026-10-24 08:37:59 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q3.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q3.png)
 - **Question as sent:** How are bounty submissions judged on Verdikta?
 - **Answer (verbatim):**
 
@@ -938,22 +1007,29 @@ Deposit & Unused Deposit Refunds: If a submission fails, unused evaluation gas/d
 Zealy
 `````
 
-- **Marking** (15 Verdikta claims: 10 CORRECT, 0 WRONG, 5 UNSUPPORTED):
+- **Marking** (22 Verdikta claims: 7 CORRECT, 0 WRONG, 15 UNSUPPORTED):
   1. "bounty submissions are judged automatically through a decentralized, automated evaluation process powered by an AI Jury / Oracle system rather than manual human review": **CORRECT** [F6]. Matches F6.
   2. "they define an evaluation package/rubric stored on-chain and IPFS": **CORRECT** [F5]. Matches F5.
-  3. ""Must-Pass" Conditions: Specific mandatory criteria marked with a must flag": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  4. "Forbidden Content Check: Hard failure triggers for prohibited elements.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  5. "The submission artifacts (code, research, files, write-ups) are uploaded to IPFS.": **UNSUPPORTED** [not in facts list]. Not covered (F5 covers the rubric and evaluation package, not submissions).
-  6. "The submission is registered on-chain on the Base network along with a small evaluation deposit (used to cover AI oracle grading costs).": **CORRECT** [F2, F6]. Matches F6 (Base) and F2 (the prepay that pays the jury).
-  7. "The submission enters a PENDING_EVALUATION state": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  8. "an independent panel of AI models (the AI Jury / Oracle) evaluates the submission": **CORRECT** [F6]. Matches F6.
-  9. "The jury assigns scores for each weighted criterion and computes an overall percentage/numerical score.": **CORRECT** [F6]. Matches F6 (per-criterion scores).
-  10. "The evaluation process typically takes 2 to 5 minutes.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  11. "Verdikta operates on a First-Pass-Wins mechanism": **CORRECT** [F3]. Matches F3.
-  12. "Reaching a passing score does not guarantee payment unless you are the first submission to achieve or exceed the threshold.": **CORRECT** [F3]. Matches F3 exactly.
-  13. "the smart contract on Base automatically releases the locked ETH bounty directly to the hunter’s wallet": **CORRECT** [F3, F6]. Matches F3 and F6. 'Automatically' is not stated in the facts.
-  14. "If a submission fails, unused evaluation gas/deposit funds are refunded.": **CORRECT** [F2]. Consistent with F2 (the prepay is refundable). Missing: it is usually spent in full, so little or nothing comes back.
-  15. "If no hunter submits a passing entry before the deadline, the locked reward is refunded back to the bounty creator.": **CORRECT** [F4]. Matches F4.
+  3. "Specific Criteria: Individual criteria, each assigned a weight and a description.": **UNSUPPORTED** [not in facts list]. Criterion weights are not in the facts list.
+  4. ""Must-Pass" Conditions: Specific mandatory criteria marked with a must flag": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  5. "Failing a must criterion causes instant disqualification/failure.": **UNSUPPORTED** [not in facts list]. Must-pass gates are not in the facts list.
+  6. "Forbidden Content Check: Hard failure triggers for prohibited elements.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "Passing Threshold: A minimum cumulative score required to pass (typically rated on a scale of 0–100).": **UNSUPPORTED** [F3]. An acceptance threshold is consistent with F3. The 0-100 scale is not stated.
+  8. "When a hunter (a human worker or an autonomous AI agent) completes a task": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  9. "The submission artifacts (code, research, files, write-ups) are uploaded to IPFS.": **UNSUPPORTED** [not in facts list]. Not covered (F5 covers the rubric and evaluation package, not submissions).
+  10. "The submission is registered on-chain on the Base network along with a small evaluation deposit (used to cover AI oracle grading costs).": **CORRECT** [F2, F6]. Matches F6 (Base) and F2 (the prepay that pays the jury).
+  11. "The submission enters a PENDING_EVALUATION state": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  12. "an independent panel of AI models (the AI Jury / Oracle) evaluates the submission": **CORRECT** [F6]. Matches F6.
+  13. "The AI oracle compares the IPFS-stored submission artifacts directly against the creator’s defined rubric criteria and weights.": **UNSUPPORTED** [F6]. Scoring against the rubric matches F6. IPFS-stored submissions and weights are not covered.
+  14. "The jury assigns scores for each weighted criterion and computes an overall percentage/numerical score.": **UNSUPPORTED** [F6]. Per-criterion scores match F6. Criterion weights and how the overall score is computed are not in the facts list.
+  15. "the submission receives an ACCEPTED status": **UNSUPPORTED** [F3]. Status names are not in the facts list. Passing at the threshold is consistent with F3.
+  16. "Otherwise, it is marked as REJECTED.": **UNSUPPORTED** [not in facts list]. Status names are not in the facts list.
+  17. "The evaluation process typically takes 2 to 5 minutes.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  18. "Verdikta operates on a First-Pass-Wins mechanism": **CORRECT** [F3]. Matches F3.
+  19. "Reaching a passing score does not guarantee payment unless you are the first submission to achieve or exceed the threshold.": **CORRECT** [F3]. Matches F3 exactly.
+  20. "the smart contract on Base automatically releases the locked ETH bounty directly to the hunter’s wallet": **UNSUPPORTED** [F3, F6]. Base (F6) and payment to the passing hunter (F3) are consistent with the facts. 'Automatically', the ETH currency and direct wallet delivery are not stated.
+  21. "If a submission fails, unused evaluation gas/deposit funds are refunded.": **UNSUPPORTED** [F2]. A refundable prepay matches F2, but gas is not refunded under any fact in the list. Missing: the prepay is usually spent in full, so little or nothing comes back.
+  22. "If no hunter submits a passing entry before the deadline, the locked reward is refunded back to the bounty creator.": **CORRECT** [F4]. Matches F4.
 
 <a id="q4"></a>
 ### Q4. Does Verdikta charge a platform fee?
@@ -962,7 +1038,7 @@ Zealy
 
 - **Asked:** 2026-10-24 08:21:28 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q4.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6a9b40d48191aee924e3d8279f7c)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -983,17 +1059,19 @@ Would you like me to
  check fees for developers?
 `````
 
-- **Marking** (4 Verdikta claims: 1 CORRECT, 1 WRONG, 2 UNSUPPORTED):
-  1. "Verdikta's documentation does not establish a separate platform fee": **CORRECT** [F1]. Consistent with F1, though hedged ('does not establish') where F1 is definite: there is no platform fee.
+- **Marking** (6 Verdikta claims: 1 CORRECT, 1 WRONG, 4 UNSUPPORTED):
+  1. "No — Verdikta's documentation does not establish a separate platform fee": **CORRECT** [F1]. The answer 'No' matches F1, though it is hedged ('does not establish') where F1 is definite: there is no platform fee.
   2. "but it does charge for using its services": **WRONG** [F1, F2]. Correction: Verdikta Bounties charges no platform fee, and the whole bounty goes to the passing hunter. The only per-attempt cost is the hunter's own refundable oracle prepay of about 0.00024 ETH, which pays the AI jury and is usually spent in full. That is a jury cost, not a Verdikta charge. (Marker's note: marked WRONG because the sentence says Verdikta itself charges.)
   3. "users pay per AI evaluation, with fees covering participating AI arbiters and associated operating costs": **UNSUPPORTED** [F2]. Paying for the AI jury per evaluation matches F2 (oracle prepay). 'Associated operating costs' is not in the facts list.
   4. "Additional blockchain gas fees may apply.": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
+  5. "no separate platform fee is not the same as no fees at all": **UNSUPPORTED** [F1, F2]. Consistent with F1 (no platform fee) and F2 (the hunter pays an oracle prepay to the jury). Not stated as such.
+  6. "The cost depends on the evaluation configuration and associated transaction costs.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
 
 #### Q4 / Claude
 
 - **Asked:** 2026-10-24 08:51:00 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q4.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q4.png)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -1024,21 +1102,25 @@ Whitepaper - Verdikta Documentation
 One caveat: the explicit “no platform fee” line comes from a third-party write-up published today, not from Verdikta’s own documentation. It agrees with the contract design and the GitHub discussion, but if real money depends on it, I’d confirm on their support page at verdikta.org/bounties/support before trusting a stranger’s blog post.
 `````
 
-- **Marking** (8 Verdikta claims: 3 CORRECT, 0 WRONG, 5 UNSUPPORTED):
-  1. "There’s no platform fee; the entire bounty goes to the hunter whose submission passes.": **CORRECT** [F1]. Matches F1.
-  2. "A hunter attaches a refundable oracle prepay of roughly 0.00024 ETH when starting a submission, and in practice it’s usually consumed in full by the jury round.": **CORRECT** [F2]. Matches F2.
-  3. "That prepay goes to the AI arbiter nodes rather than to Verdikta.": **UNSUPPORTED** [F1]. Consistent with F1. Not stated as such.
-  4. "Arbiters are paid in native ETH attached to the request, and any unspent prepay is kept as a withdrawable credit.": **UNSUPPORTED** [F2]. Payment in ETH matches F2. The 'withdrawable credit' mechanism is not covered (F2 says only that the prepay is refundable).
-  5. "the current per-arbiter fee is about 0.00002 ETH, roughly $0.05": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  6. "Browsing bounties and dry runs are free": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  7. "The whitepaper, by contrast, describes a tiered model: 5% for disputes up to $100 (minimum $1), sliding down to 1% above $10,000 (minimum $200).": **UNSUPPORTED** [F1]. Reported as the content of a whitepaper, and the answer itself says it does not match the live product. Not marked WRONG because Claude does not claim this fee applies. The facts list (F1) says the bounty platform charges no fee. The old whitepaper text is a likely source of confusion (see the error analysis).
-  8. "None of that matches how the deployed contracts behave, which take ETH.": **CORRECT** [F1, F2]. Consistent with F1 and F2.
+- **Marking** (12 Verdikta claims: 3 CORRECT, 0 WRONG, 9 UNSUPPORTED):
+  1. "In short, sir: for the live product, apparently not.": **CORRECT** [F1]. The answer 'no platform fee' matches F1 (hedged with 'apparently').
+  2. "There’s no platform fee; the entire bounty goes to the hunter whose submission passes.": **CORRECT** [F1]. Matches F1.
+  3. "A hunter attaches a refundable oracle prepay of roughly 0.00024 ETH when starting a submission, and in practice it’s usually consumed in full by the jury round.": **CORRECT** [F2]. Matches F2.
+  4. "That prepay goes to the AI arbiter nodes rather than to Verdikta.": **UNSUPPORTED** [F1]. Consistent with F1. Not stated as such.
+  5. "Arbiters are paid in native ETH attached to the request, and any unspent prepay is kept as a withdrawable credit.": **UNSUPPORTED** [F2]. Payment in ETH matches F2. The 'withdrawable credit' mechanism is not covered (F2 says only that the prepay is refundable).
+  6. "the current per-arbiter fee is about 0.00002 ETH, roughly $0.05": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "Add Base gas and that’s the full cost.": **UNSUPPORTED** [F6]. Base matches F6. Gas is not covered.
+  8. "Browsing bounties and dry runs are free": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  9. "The whitepaper, by contrast, describes a tiered model: 5% for disputes up to $100 (minimum $1), sliding down to 1% above $10,000 (minimum $200).": **UNSUPPORTED** [F1]. Reported as the content of a whitepaper, and the answer itself says it does not match the live product. Not marked WRONG because Claude does not claim this fee applies. The facts list (F1) says the bounty platform charges no fee. The old whitepaper text is a likely source of confusion (see the error analysis).
+  10. "It says users pay those fees in a VDK token, with token holders voting on fee rates.": **UNSUPPORTED** [not in facts list]. Reported whitepaper content, which the answer itself says does not match the live product. Not covered by the facts list.
+  11. "None of that matches how the deployed contracts behave, which take ETH.": **UNSUPPORTED** [F1, F2]. Consistent with F1 (no platform fee) and F2 (prepay in ETH). The comparison with the whitepaper is not covered by the facts list.
+  12. "the explicit “no platform fee” line comes from a third-party write-up published today": **UNSUPPORTED** [not in facts list]. A statement about the assistant's source, not about Verdikta.
 
 #### Q4 / Perplexity
 
 - **Asked:** 2026-10-24 08:31:02 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q4.png)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -1056,7 +1138,7 @@ docs.verdikta
 
 - **Asked:** 2026-10-24 08:38:34 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q4.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q4.png)
 - **Question as sent:** Does Verdikta charge a platform fee?
 - **Answer (verbatim):**
 
@@ -1111,7 +1193,7 @@ If you are asking about a specific legal, dispute resolution, or custom blockcha
 
 - **Asked:** 2026-10-24 08:22:01 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q5.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6abe27e081918c0cbcec7af0cf22)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1153,20 +1235,24 @@ Would you like me to
  walk through the submission process?
 `````
 
-- **Marking** (7 Verdikta claims: 4 CORRECT, 1 WRONG, 2 UNSUPPORTED):
-  1. "No separate platform submission fee identified in the published information": **CORRECT** [F1]. Consistent with F1.
-  2. "Recent reporting indicates a median of about 0.00024 ETH": **CORRECT** [F2]. The amount matches F2 (about 0.00024 ETH).
-  3. "roughly $1.10 at the time reported": **UNSUPPORTED** [not in facts list]. The facts list gives no USD figure.
-  4. "Additional ETH may be needed to execute the blockchain transactions": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
-  5. "Base network gas": **CORRECT** [F6]. Base matches F6.
-  6. "You receive the bounty payout, subject to the bounty’s criteria and evaluation process": **CORRECT** [F3]. Consistent with F3. Missing: only the first passing submission is paid.
-  7. "The evaluation prepayment is described as being mostly refunded, so the upfront amount is not necessarily your final cost.": **WRONG** [F2]. Correction: The oracle prepay (about 0.00024 ETH) is refundable in principle, but in practice it is usually spent in full on the jury round. Budget the whole prepay as the cost of each attempt.
+- **Marking** (11 Verdikta claims: 4 CORRECT, 1 WRONG, 6 UNSUPPORTED):
+  1. "Submitting work to a Verdikta bounty appears to have no separate submission fee": **CORRECT** [F1]. Consistent with F1 (hedged with 'appears').
+  2. "but it can cost a small amount in blockchain fees and evaluation prepayment": **UNSUPPORTED** [F2]. The evaluation prepayment matches F2. Blockchain fees are not covered.
+  3. "No separate platform submission fee identified in the published information": **CORRECT** [F1]. Consistent with F1.
+  4. "Recent reporting indicates a median": **UNSUPPORTED** [F2]. F2 gives one figure ('about 0.00024 ETH'), not a median of reported values.
+  5. "about 0.00024 ETH": **CORRECT** [F2]. The evaluation prepayment amount matches F2.
+  6. "roughly $1.10 at the time reported": **UNSUPPORTED** [not in facts list]. The facts list gives no USD figure.
+  7. "Base network gas": **UNSUPPORTED** [F6]. Base matches F6. The need for gas and its cost are not in the facts list.
+  8. "Additional ETH may be needed to execute the blockchain transactions": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
+  9. "You receive the bounty payout, subject to the bounty’s criteria and evaluation process": **CORRECT** [F3]. Consistent with F3. Missing: only the first passing submission is paid.
+  10. "The evaluation prepayment is described as being mostly refunded, so the upfront amount is not necessarily your final cost.": **WRONG** [F2]. Correction: The oracle prepay (about 0.00024 ETH) is refundable in principle, but in practice it is usually spent in full on the jury round. Budget the whole prepay as the cost of each attempt.
+  11. "Actual gas and evaluation requirements can vary.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
 
 #### Q5 / Claude
 
 - **Asked:** 2026-10-24 08:51:52 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q5.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q5.png)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1203,23 +1289,32 @@ verdikta
 If you give me a bounty number, sir, I can pull its actual required prepay and threshold so you know the exact cost before committing.
 `````
 
-- **Marking** (10 Verdikta claims: 5 CORRECT, 0 WRONG, 5 UNSUPPORTED):
-  1. "Each evaluation needs an oracle prepay in ETH, attached when the evaluation starts. With the default settings it is 0.00024 ETH": **CORRECT** [F2]. Matches F2.
-  2. "a creator who sets the highest allowed oracle fee raises it to as much as 0.0048 ETH": **UNSUPPORTED** [F2]. F2 says 'about 0.00024 ETH'. A per-bounty maximum is not covered.
-  3. "Add gas for three transactions (prepare, start, finalize), about 0.00004 ETH in total in the worked example.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  4. "All of this is on Base mainnet.": **CORRECT** [F6]. Matches F6.
-  5. "There is no platform fee. The escrow contract has no owner and takes no cut of the bounty, the payout or the refund.": **CORRECT** [F1, F4]. No fee and no cut match F1 and F4. 'Has no owner' is not covered.
-  6. "There is no listing fee, and API keys are free.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  7. "In practice the whole prepay is usually spent, so plan on it as the cost of an attempt.": **CORRECT** [F2]. Matches F2.
-  8. "You can submit again, with a new prepay, as long as the bounty is open and the deadline has not passed.": **UNSUPPORTED** [not in facts list]. Resubmission is not covered by the facts list.
-  9. "each attempt costs roughly 0.00028 ETH all in": **UNSUPPORTED** [not in facts list]. Derived figure, not covered by the facts list.
-  10. "one bounty pays one winner: the earliest passing submission, by submission order, not the highest score": **CORRECT** [F3]. Matches F3.
+- **Marking** (19 Verdikta claims: 9 CORRECT, 0 WRONG, 10 UNSUPPORTED):
+  1. "Each evaluation needs an oracle prepay in ETH, attached when the evaluation starts.": **CORRECT** [F2]. Matches F2.
+  2. "With the default settings it is 0.00024 ETH": **CORRECT** [F2]. The amount matches F2. Whether other settings change it is marked separately below.
+  3. "a creator who sets the highest allowed oracle fee raises it to as much as 0.0048 ETH": **UNSUPPORTED** [F2]. F2 says 'about 0.00024 ETH'. A per-bounty maximum is not covered.
+  4. "the exact amount is shown on the bounty before you submit (the contract’s requiredPrepay)": **UNSUPPORTED** [F2]. Consistent with F2. Display details are not covered.
+  5. "Add gas for three transactions (prepare, start, finalize), about 0.00004 ETH in total in the worked example.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  6. "All of this is on Base mainnet.": **CORRECT** [F6]. Matches F6.
+  7. "There is no platform fee.": **CORRECT** [F1]. Matches F1.
+  8. "The escrow contract has no owner": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  9. "takes no cut of the bounty, the payout or the refund": **CORRECT** [F1, F4]. Matches F1 and F4 (the platform keeps nothing).
+  10. "There is no listing fee, and API keys are free.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  11. "It is technically refundable": **CORRECT** [F2]. Matches F2 (refundable).
+  12. "Whatever is not spent is refunded automatically to whoever funded the evaluation, when the submission is finalized or marked failed.": **UNSUPPORTED** [F2]. A refundable prepay matches F2. The refund timing and mechanics are not stated.
+  13. "In practice the whole prepay is usually spent, so plan on it as the cost of an attempt.": **CORRECT** [F2]. Matches F2.
+  14. "If you fail, you don’t get back the part that was spent, since the arbiters did the evaluation.": **UNSUPPORTED** [F2]. Consistent with F2 (usually spent in full on the jury round).
+  15. "You can submit again, with a new prepay, as long as the bounty is open and the deadline has not passed.": **UNSUPPORTED** [not in facts list]. Resubmission is not covered by the facts list.
+  16. "The main exception is when a round times out without a verdict, in which case a larger part comes back.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  17. "each attempt costs roughly 0.00028 ETH all in": **UNSUPPORTED** [not in facts list]. Derived figure, not covered by the facts list.
+  18. "one bounty pays one winner: the earliest passing submission, by submission order, not the highest score": **CORRECT** [F3]. Matches F3.
+  19. "Speed matters rather more than polish beyond the pass mark.": **CORRECT** [F3]. Follows directly from F3 (the first submission to pass wins).
 
 #### Q5 / Perplexity
 
 - **Asked:** 2026-10-24 08:31:32 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q5.png)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1255,21 +1350,24 @@ bounties.verdikta
 +1
 `````
 
-- **Marking** (8 Verdikta claims: 3 CORRECT, 0 WRONG, 5 UNSUPPORTED):
+- **Marking** (11 Verdikta claims: 2 CORRECT, 0 WRONG, 9 UNSUPPORTED):
   1. "Submitting work to a Verdikta bounty costs a small ETH evaluation prepay—typically about 0.00024 ETH": **CORRECT** [F2]. Matches F2.
   2. "plus any blockchain gas fees": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
-  3. "Any unspent evaluation ETH is automatically refunded when the submission finalizes.": **CORRECT** [F2]. Consistent with F2 (the prepay is refundable). Missing: in practice the prepay is usually spent in full.
+  3. "Any unspent evaluation ETH is automatically refunded when the submission finalizes.": **UNSUPPORTED** [F2]. That the prepay is refundable matches F2. 'Automatically' and 'when the submission finalizes' are not stated. Missing: in practice the prepay is usually spent in full.
   4. "Attached when you start the submission; unused ETH is refunded.": **CORRECT** [F2]. Matches F2.
-  5. "The ETH payout is already held in escrow by the bounty creator.": **UNSUPPORTED** [F4]. Consistent with F4 (the creator funds the escrow and can reclaim it). Not stated as such.
-  6. "passing submissions are paid automatically from escrow": **UNSUPPORTED** [F3]. Imprecise rather than wrong: the plural hides the F3 rule that only the FIRST passing submission is paid.
-  7. "There is no LINK token or ERC-20 approval required.": **UNSUPPORTED** [F2]. Consistent with F2 (the prepay is in ETH). Not stated as such.
-  8. "the direct cost to try a bounty is usually under a dollar in ETH plus gas, and the evaluation prepay is refundable if not fully used": **UNSUPPORTED** [F2]. 'Refundable if not fully used' matches F2. The USD figure is not in the facts list. Missing: the prepay is usually spent in full.
+  5. "You pay normal transaction gas for the submission/start transaction.": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
+  6. "The ETH payout is already held in escrow by the bounty creator.": **UNSUPPORTED** [F4]. Consistent with F4 (the creator funds the escrow and can reclaim it). Not stated as such.
+  7. "You submit the required deliverable to the bounty.": **UNSUPPORTED** [not in facts list]. A procedural step, not covered by the facts list.
+  8. "You trigger evaluation by sending the exact transaction.value returned by the submission-start endpoint, which reflects the live required prepay.": **UNSUPPORTED** [F2]. Attaching the prepay when starting is consistent with F2. The API mechanics are not covered.
+  9. "passing submissions are paid automatically from escrow": **UNSUPPORTED** [F3]. Imprecise rather than wrong: the plural hides the F3 rule that only the FIRST passing submission is paid.
+  10. "There is no LINK token or ERC-20 approval required.": **UNSUPPORTED** [F2]. Consistent with F2 (the prepay is in ETH). Not stated as such.
+  11. "the direct cost to try a bounty is usually under a dollar in ETH plus gas, and the evaluation prepay is refundable if not fully used": **UNSUPPORTED** [F2]. 'Refundable if not fully used' matches F2. The USD figure is not in the facts list. Missing: the prepay is usually spent in full.
 
 #### Q5 / Gemini
 
 - **Asked:** 2026-10-24 08:39:06 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q5.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q5.png)
 - **Question as sent:** What does it cost to submit to a Verdikta bounty?
 - **Answer (verbatim):**
 
@@ -1286,11 +1384,13 @@ Zealy
 Gas fees: You will also need a tiny amount of ETH on the Base network to cover standard transaction gas fees for your submission.
 `````
 
-- **Marking** (4 Verdikta claims: 4 CORRECT, 0 WRONG, 0 UNSUPPORTED):
+- **Marking** (6 Verdikta claims: 4 CORRECT, 0 WRONG, 2 UNSUPPORTED):
   1. "Verdikta itself charges no platform fee.": **CORRECT** [F1]. Matches F1.
-  2. "you are required to pay a small evaluation deposit (roughly 0.00024 ETH, depending on current network conditions) to cover the AI jury/oracle evaluation process": **CORRECT** [F2]. The amount and purpose match F2. 'Depending on current network conditions' is not in the facts list.
-  3. "The unused portion of this oracle evaluation deposit is refunded.": **CORRECT** [F2]. Consistent with F2. Missing: it is usually spent in full.
-  4. "You will also need a tiny amount of ETH on the Base network to cover standard transaction gas fees": **CORRECT** [F6]. Base matches F6. Gas is not covered by the facts list.
+  2. "you are required to pay a small evaluation deposit (roughly 0.00024 ETH": **CORRECT** [F2]. The amount matches F2.
+  3. "depending on current network conditions": **UNSUPPORTED** [not in facts list]. The facts list does not say the prepay varies with network conditions.
+  4. "to cover the AI jury/oracle evaluation process": **CORRECT** [F2]. Matches F2 (spent on the jury round).
+  5. "The unused portion of this oracle evaluation deposit is refunded.": **CORRECT** [F2]. Consistent with F2. Missing: it is usually spent in full.
+  6. "You will also need a tiny amount of ETH on the Base network to cover standard transaction gas fees": **UNSUPPORTED** [F6]. Base matches F6. Gas is not covered by the facts list.
 
 <a id="q6"></a>
 ### Q6. If two submissions both pass, who gets paid?
@@ -1299,7 +1399,7 @@ Gas fees: You will also need a tiny amount of ETH on the Base network to cover s
 
 - **Asked:** 2026-10-24 08:22:35 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q6.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6ae019c48191a8cf55f59cf8bc03)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1324,7 +1424,7 @@ Which platform or contest are you referring to? I can explain exactly who gets p
 
 - **Asked:** 2026-10-24 08:52:53 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q6.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q6.png)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1351,7 +1451,7 @@ So the short version is that it’s usually first valid submission, unless a hum
 
 - **Asked:** 2026-10-24 08:32:00 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q6.png)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1376,7 +1476,7 @@ If you mean a specific platform or bounty, share its name or the rules text; the
 
 - **Asked:** 2026-10-24 08:39:36 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q6.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q6.png)
 - **Question as sent:** If two submissions both pass, who gets paid?
 - **Answer (verbatim):**
 
@@ -1436,7 +1536,7 @@ If you are referring to a specific platform or competition (e.g., HackerOne, Git
 
 - **Asked:** 2026-10-24 08:23:09 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q7.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b04b12081918f83e707b3cfbb3d)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1464,19 +1564,22 @@ Would you like me to explain how to
  create a corrected replacement bounty?
 `````
 
-- **Marking** (6 Verdikta claims: 5 CORRECT, 0 WRONG, 1 UNSUPPORTED):
+- **Marking** (9 Verdikta claims: 6 CORRECT, 0 WRONG, 3 UNSUPPORTED):
   1. "A Verdikta bounty cannot be cancelled or edited after it has been created on-chain.": **CORRECT** [F5]. Matches F5.
   2. "the escrow smart contract has no cancellation or editing function": **CORRECT** [F5]. Matches F5.
-  3. "You cannot change the payout, evaluation criteria (rubric), jury, passing threshold, or deadline after creation.": **CORRECT** [F5]. Matches F5 (bounty cannot be edited; rubric fixed on-chain).
-  4. "If nobody wins, the escrowed funds can be returned to the creator after the bounty deadline": **CORRECT** [F4]. Matches F4.
-  5. "Create a new bounty with the correct details, since the original bounty's on-chain terms remain fixed.": **CORRECT** [F5]. Follows from F5.
-  6. "A bounty that was never deployed on-chain may be eligible for administrative deletion under certain conditions.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  3. "Cancel a bounty: Not possible once it is deployed on-chain.": **CORRECT** [F5]. Matches F5.
+  4. "You cannot change the payout, evaluation criteria (rubric), jury, passing threshold, or deadline after creation.": **CORRECT** [F5]. Matches F5 (bounty cannot be edited; rubric fixed on-chain).
+  5. "If nobody wins, the escrowed funds can be returned to the creator after the bounty deadline": **CORRECT** [F4]. Matches F4.
+  6. "Create a new bounty with the correct details": **UNSUPPORTED** [F5]. Advice that follows from F5, not a fact claim.
+  7. "the original bounty's on-chain terms remain fixed": **CORRECT** [F5]. Matches F5.
+  8. "A bounty that was never deployed on-chain may be eligible for administrative deletion under certain conditions.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  9. "That is different from cancelling an active, funded bounty.": **UNSUPPORTED** [F5]. Context for the preceding UNSUPPORTED claim. Consistent with F5.
 
 #### Q7 / Claude
 
 - **Asked:** 2026-10-24 08:53:26 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q7.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q7.png)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1520,23 +1623,30 @@ verdikta
 If you have a particular bounty in mind, sir, give me its ID and I’ll pull its live on-chain status and tell you when it becomes closeable. Alternatively, hand me the draft rubric before you post it and I’ll go over it for weaknesses.
 `````
 
-- **Marking** (10 Verdikta claims: 6 CORRECT, 0 WRONG, 4 UNSUPPORTED):
+- **Marking** (17 Verdikta claims: 8 CORRECT, 0 WRONG, 9 UNSUPPORTED):
   1. "Verdikta bounties are deliberately immutable.": **CORRECT** [F5]. Matches F5.
-  2. "ETH bounties held in smart-contract escrow with no cancel or edit function": **CORRECT** [F5]. Matches F5.
-  3. "The rubric, threshold, payout, jury class and deadline are all fixed.": **CORRECT** [F5]. Matches F5.
-  4. "if you specify model identifiers that the arbiters for an unlisted class don’t actually serve, every evaluation fails, and the bounty can’t be edited or canceled": **UNSUPPORTED** [F5]. 'Can't be edited or canceled' matches F5. The failure scenario is not covered.
-  5. "a badly written rubric cannot be fixed later": **CORRECT** [F5]. Matches F5.
-  6. "once the close is possible, ETH is returned to the creator": **CORRECT** [F4]. Matches F4.
-  7. "escrowed ETH stays locked until someone calls closeExpiredBounty on-chain": **UNSUPPORTED** [F4]. The return to the creator matches F4. The mechanism is not covered.
-  8. "if a hunter submits passing work before the deadline, they get paid": **CORRECT** [F3]. Consistent with F3 (strictly: the first passing hunter).
-  9. "Whether submissions are publicly viewable on the website. That flag lives off-chain": **UNSUPPORTED** [F5]. Not covered. It does not contradict F5, which concerns the on-chain bounty, rubric and evaluation package.
-  10. "/rubric/validate for rubric shape, /jobs/validate for an evaluation-package CID": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  2. "ETH bounties held in smart-contract escrow": **UNSUPPORTED** [not in facts list]. Escrowed ETH is not stated in the facts list.
+  3. "no cancel or edit function": **CORRECT** [F5]. Matches F5.
+  4. "The rubric, threshold, payout, jury class and deadline are all fixed.": **CORRECT** [F5]. Matches F5.
+  5. "the contract cannot change a deadline; a mismatched bounty has to be recreated": **CORRECT** [F5]. Matches F5 (a bounty cannot be edited).
+  6. "if you specify model identifiers that the arbiters for an unlisted class don’t actually serve, every evaluation fails, and the bounty can’t be edited or canceled": **UNSUPPORTED** [F5]. 'Can't be edited or canceled' matches F5. The failure scenario is not covered.
+  7. "a badly written rubric cannot be fixed later": **CORRECT** [F5]. Matches F5.
+  8. "Only by letting the deadline pass.": **CORRECT** [F4, F5]. Matches F4 and F5: no cancellation, and the creator reclaims the funds only after a deadline with no passing submission.
+  9. "escrowed ETH stays locked until someone calls closeExpiredBounty on-chain": **UNSUPPORTED** [F4]. The return to the creator matches F4. The mechanism is not covered.
+  10. "Nothing happens automatically.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  11. "once the close is possible, ETH is returned to the creator": **CORRECT** [F4]. Matches F4.
+  12. "if a hunter submits passing work before the deadline, they get paid": **UNSUPPORTED** [F3]. Consistent with F3 but marked UNSUPPORTED under this report's rule for 'passing work is paid' statements: F3 says only the FIRST passing submission is paid, and the answer does not say so. It is not marked WRONG because it does not claim that every passing submission is paid.
+  13. "Whether submissions are publicly viewable on the website. That flag lives off-chain": **UNSUPPORTED** [F5]. Not covered. It does not contradict F5, which concerns the on-chain bounty, rubric and evaluation package.
+  14. "toggling is idempotent and may be done as often as you like, provided you sign the request with the creator wallet": **UNSUPPORTED** [F5]. Concerns an off-chain display flag, not the on-chain terms in F5. Not covered.
+  15. "Since there’s no undo, check everything before committing ETH.": **CORRECT** [F5]. Follows from F5 (no cancel, no edit).
+  16. "/rubric/validate for rubric shape, /jobs/validate for an evaluation-package CID": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  17. "A short deadline also limits how long a regrettable bounty can hold your funds hostage.": **UNSUPPORTED** [F4]. Consistent with F4. Not stated as such.
 
 #### Q7 / Perplexity
 
 - **Asked:** 2026-10-24 08:32:28 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q7.png)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1584,7 +1694,7 @@ bounties.verdikta
 
 - **Asked:** 2026-10-24 08:40:09 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q7.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q7.png)
 - **Question as sent:** Can a Verdikta bounty be cancelled or edited after it is created?
 - **Answer (verbatim):**
 
@@ -1615,14 +1725,17 @@ Automatic Refund: If no hunter submits work that meets the passing threshold bef
 DEV Community
 `````
 
-- **Marking** (7 Verdikta claims: 6 CORRECT, 0 WRONG, 1 UNSUPPORTED):
+- **Marking** (10 Verdikta claims: 5 CORRECT, 0 WRONG, 5 UNSUPPORTED):
   1. "No, a Verdikta bounty cannot be cancelled or edited once it has been created.": **CORRECT** [F5]. Matches F5.
-  2. "The contract contains no functions to edit, pause, cancel, or prematurely withdraw funds.": **CORRECT** [F5]. Matches F5.
-  3. "All evaluation criteria—including the rubric, pass threshold, jury panel, and deadline—are permanently linked at creation and stored on IPFS.": **CORRECT** [F5]. Matches F5.
-  4. "Neither the bounty creator nor the Verdikta platform team can alter these parameters after launch.": **CORRECT** [F5]. Matches F5.
-  5. "This "no edit / no cancel" policy is designed by intent to protect bounty hunters": **UNSUPPORTED** [not in facts list]. The design intent is not covered by the facts list.
-  6. "the creator must wait for the set deadline to expire": **CORRECT** [F4, F5]. Follows from F4 and F5.
-  7. "If no hunter submits work that meets the passing threshold before the deadline passes, the creator can reclaim and withdraw the full locked ETH amount from escrow.": **CORRECT** [F4]. Matches F4.
+  2. "When a bounty is created, the reward funds are immediately locked into an escrow smart contract on the blockchain.": **UNSUPPORTED** [F4, F5]. Consistent with F4 and F5 (funds held until a pass or the deadline; terms fixed on-chain). Escrow mechanics are not stated.
+  3. "The contract contains no functions to edit, pause, cancel, or prematurely withdraw funds.": **UNSUPPORTED** [F4, F5]. No edit/cancel matches F5, and no early withdrawal is consistent with F4. 'Pause' is not in the facts list.
+  4. "All evaluation criteria—including the rubric, pass threshold, jury panel, and deadline—are permanently linked at creation and stored on IPFS.": **UNSUPPORTED** [F5]. The core matches F5 (rubric and evaluation package pinned to IPFS and fixed). The facts do not say the threshold, jury and deadline are stored on IPFS.
+  5. "Neither the bounty creator nor the Verdikta platform team can alter these parameters after launch.": **CORRECT** [F5]. Matches F5.
+  6. "This "no edit / no cancel" policy is designed by intent to protect bounty hunters": **UNSUPPORTED** [not in facts list]. The design intent is not covered by the facts list.
+  7. "Because hunters expend time, effort, and minor evaluation fees upfront": **UNSUPPORTED** [F2]. Consistent with F2 (the prepay). The rationale is not covered.
+  8. "fixed rules ensure that a creator cannot change requirements retroactively or pull funds out mid-process": **CORRECT** [F4, F5]. Matches F5 (no edits, no cancellation) and F4 (the creator reclaims only if nothing passes before the deadline).
+  9. "the creator must wait for the set deadline to expire": **CORRECT** [F4, F5]. Follows from F4 and F5.
+  10. "If no hunter submits work that meets the passing threshold before the deadline passes, the creator can reclaim and withdraw the full locked ETH amount from escrow.": **CORRECT** [F4]. Matches F4.
 
 <a id="q8"></a>
 ### Q8. What blockchain does Verdikta run on?
@@ -1631,7 +1744,7 @@ DEV Community
 
 - **Asked:** 2026-10-24 08:23:46 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q8.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b24d950819181e8996990a9fa4b)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1660,19 +1773,21 @@ I can also help you explore
  Verdikta’s Base smart contracts.
 `````
 
-- **Marking** (6 Verdikta claims: 1 CORRECT, 0 WRONG, 5 UNSUPPORTED):
-  1. "Base, an Ethereum Layer-2 blockchain.": **CORRECT** [F6]. Base matches F6. (The facts list does not mention layer 2.)
-  2. "Mainnet: Base Mainnet (Chain ID: 8453).": **UNSUPPORTED** [F6]. Base matches F6. The chain ID is not in the facts list.
-  3. "Testnet: Base Sepolia (Chain ID: 84532).": **UNSUPPORTED** [not in facts list]. No testnet in the facts list.
-  4. "Smart contracts: Coordinate AI-powered evaluations, dispute resolution, and arbiter reputation.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  5. "Chainlink to connect on-chain smart contracts with off-chain AI processing": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  6. "VDKA is Verdikta's utility token, used for arbiter staking.": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
+- **Marking** (8 Verdikta claims: 1 CORRECT, 0 WRONG, 7 UNSUPPORTED):
+  1. "Verdikta runs on Base": **CORRECT** [F6]. Matches F6.
+  2. "an Ethereum Layer-2 blockchain": **UNSUPPORTED** [not in facts list]. Base being a layer 2 is not in the facts list.
+  3. "Mainnet: Base Mainnet (Chain ID: 8453).": **UNSUPPORTED** [F6]. Base matches F6. The chain ID is not in the facts list.
+  4. "Testnet: Base Sepolia (Chain ID: 84532).": **UNSUPPORTED** [not in facts list]. No testnet in the facts list.
+  5. "Smart contracts: Coordinate AI-powered evaluations, dispute resolution, and arbiter reputation.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  6. "Chainlink to connect on-chain smart contracts with off-chain AI processing": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "VDKA is Verdikta's utility token, used for arbiter staking.": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
+  8. "Official source: Verdikta Documentation": **UNSUPPORTED** [not in facts list]. A link label, not checked against the facts list.
 
 #### Q8 / Claude
 
 - **Asked:** 2026-10-24 08:54:23 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q8.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q8.png)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1711,20 +1826,24 @@ github
 You may see an older directory listing describe it as an Ethereum platform. That’s technically true by inheritance, since Base settles to Ethereum, but the contracts themselves are on Base.
 `````
 
-- **Marking** (7 Verdikta claims: 3 CORRECT, 0 WRONG, 4 UNSUPPORTED):
-  1. "Verdikta runs on Base, sir, Coinbase’s Ethereum Layer‑2.": **CORRECT** [F6]. Matches F6.
-  2. "Base mainnet (chain ID 8453) designated as production and Base Sepolia (chain ID 84532) as the primary testnet": **UNSUPPORTED** [F6]. Base matches F6. The chain IDs and testnet are not covered.
-  3. "takes evaluation fees in native ETH on Base, so requesters no longer need to buy or approve LINK": **CORRECT** [F2]. Consistent with F2 (the oracle prepay is in ETH).
-  4. "Verdikta uses Chainlink for oracle infrastructure and IPFS for decentralized storage.": **UNSUPPORTED** [F5]. IPFS is consistent with F5. Chainlink is not covered.
-  5. "Verdikta’s own token handles staking and reputation": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
-  6. "Multi-chain support is on the roadmap for v2.0 and beyond, so Base is the only network for now.": **UNSUPPORTED** [F6]. 'Base only' is consistent with F6. The roadmap is not covered.
-  7. "the contracts themselves are on Base": **CORRECT** [F6]. Matches F6.
+- **Marking** (11 Verdikta claims: 3 CORRECT, 0 WRONG, 8 UNSUPPORTED):
+  1. "Verdikta runs on Base": **CORRECT** [F6]. Matches F6.
+  2. "Coinbase’s Ethereum Layer‑2": **UNSUPPORTED** [not in facts list]. Base's operator and layer-2 status are not in the facts list.
+  3. "Base mainnet (chain ID 8453) designated as production and Base Sepolia (chain ID 84532) as the primary testnet": **UNSUPPORTED** [F6]. Base matches F6. The chain IDs and testnet are not covered.
+  4. "takes evaluation fees in native ETH on Base": **CORRECT** [F2, F6]. Matches F2 (the prepay that pays the jury is in ETH) and F6 (Base).
+  5. "so requesters no longer need to buy or approve LINK": **UNSUPPORTED** [F2]. Consistent with F2. LINK is not mentioned in the facts list.
+  6. "They only need ETH for gas.": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
+  7. "Verdikta uses Chainlink for oracle infrastructure and IPFS for decentralized storage.": **UNSUPPORTED** [F5]. IPFS is consistent with F5. Chainlink is not covered.
+  8. "Verdikta’s own token handles staking and reputation": **UNSUPPORTED** [not in facts list]. No token is mentioned in the facts list.
+  9. "Multi-chain support is on the roadmap for v2.0 and beyond, so Base is the only network for now.": **UNSUPPORTED** [F6]. 'Base only' is consistent with F6. The roadmap is not covered.
+  10. "You may see an older directory listing describe it as an Ethereum platform.": **UNSUPPORTED** [not in facts list]. A statement about third-party listings.
+  11. "the contracts themselves are on Base": **CORRECT** [F6]. Matches F6.
 
 #### Q8 / Perplexity
 
 - **Asked:** 2026-10-24 08:32:54 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q8.png)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1747,19 +1866,20 @@ verdikta
 +1
 `````
 
-- **Marking** (6 Verdikta claims: 1 CORRECT, 1 WRONG, 4 UNSUPPORTED):
-  1. "Verdikta runs on Base, an Ethereum Layer-2 network.": **CORRECT** [F6]. Matches F6.
-  2. "Its production contracts and arbiter nodes are live on Base Mainnet, with Base Sepolia used for testing.": **UNSUPPORTED** [F6]. Base matches F6. The testnet detail is not covered.
-  3. "initially deployed on Base because it offers lower costs and faster finality than Ethereum mainnet": **UNSUPPORTED** [not in facts list]. The rationale is not covered by the facts list.
-  4. "Its architecture is described as blockchain-agnostic": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  5. "arbiter payments are denominated in LINK": **WRONG** [F2]. Correction: On Verdikta Bounties the jury is paid from the hunter's oracle prepay, attached in ETH (about 0.00024 ETH, refundable, usually spent in full). No LINK is involved for the hunter.
+- **Marking** (7 Verdikta claims: 1 CORRECT, 1 WRONG, 5 UNSUPPORTED):
+  1. "Verdikta runs on Base": **CORRECT** [F6]. Matches F6.
+  2. "an Ethereum Layer-2 network": **UNSUPPORTED** [not in facts list]. Base being a layer 2 is not in the facts list.
+  3. "Its production contracts and arbiter nodes are live on Base Mainnet, with Base Sepolia used for testing.": **UNSUPPORTED** [F6]. Base matches F6. The testnet detail is not covered.
+  4. "initially deployed on Base because it offers lower costs and faster finality than Ethereum mainnet": **UNSUPPORTED** [not in facts list]. The rationale is not covered by the facts list.
+  5. "Its architecture is described as blockchain-agnostic": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
   6. "It uses Chainlink-based oracle infrastructure for arbitration and settlement": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "arbiter payments are denominated in LINK": **WRONG** [F2]. Correction: On Verdikta Bounties the jury is paid from the hunter's oracle prepay, attached in ETH (about 0.00024 ETH, refundable, usually spent in full). No LINK is involved for the hunter.
 
 #### Q8 / Gemini
 
 - **Asked:** 2026-10-24 08:40:41 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q8.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q8.png)
 - **Question as sent:** What blockchain does Verdikta run on?
 - **Answer (verbatim):**
 
@@ -1771,11 +1891,12 @@ Its smart contract infrastructure and dApps (such as the AI Jury system) deploy 
 Verdikta
 `````
 
-- **Marking** (4 Verdikta claims: 3 CORRECT, 0 WRONG, 1 UNSUPPORTED):
-  1. "Verdikta runs on Base, an Ethereum Layer 2 (L2) network.": **CORRECT** [F6]. Matches F6.
-  2. "Its smart contract infrastructure and dApps (such as the AI Jury system) deploy on Base": **CORRECT** [F6]. Matches F6.
-  3. "utilizing ETH for transaction gas payouts/fees": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
-  4. "decentralized storage solutions like IPFS for handling off-chain evaluation packages": **CORRECT** [F5]. Matches F5 (evaluation package pinned to IPFS).
+- **Marking** (5 Verdikta claims: 3 CORRECT, 0 WRONG, 2 UNSUPPORTED):
+  1. "Verdikta runs on Base": **CORRECT** [F6]. Matches F6.
+  2. "an Ethereum Layer 2 (L2) network": **UNSUPPORTED** [not in facts list]. Base being a layer 2 is not in the facts list.
+  3. "Its smart contract infrastructure and dApps (such as the AI Jury system) deploy on Base": **CORRECT** [F6]. Matches F6.
+  4. "utilizing ETH for transaction gas payouts/fees": **UNSUPPORTED** [not in facts list]. Gas is not covered by the facts list.
+  5. "decentralized storage solutions like IPFS for handling off-chain evaluation packages": **CORRECT** [F5]. Matches F5 (evaluation package pinned to IPFS).
 
 <a id="q9"></a>
 ### Q9. Is Verdikta a bug bounty program?
@@ -1784,7 +1905,7 @@ Verdikta
 
 - **Asked:** 2026-10-24 08:24:18 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q9.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b47e6348191964c3f9743d0ef34)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -1818,18 +1939,21 @@ I can also
  find its current paid bounties.
 `````
 
-- **Marking** (5 Verdikta claims: 1 CORRECT, 0 WRONG, 4 UNSUPPORTED):
+- **Marking** (8 Verdikta claims: 1 CORRECT, 0 WRONG, 7 UNSUPPORTED):
   1. "No, Verdikta is not primarily a bug bounty program. It is an AI-powered, blockchain-based bounty platform": **UNSUPPORTED** [F6]. The facts list does not mention bug bounties. The description of AI-judged work bounties is consistent with F6.
-  2. "can earn ETH on the Base blockchain if your submission passes the evaluation criteria": **CORRECT** [F3, F6]. Base and 'passing work is paid' match F6 and F3. Missing: only the first passing submission is paid.
-  3. "Tasks may include writing, coding, research, and design.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  4. "I couldn't verify a dedicated program that pays security researchers": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  5. "Verdikta's documentation directs users to its GitHub issue tracker for application bugs, but explicitly says those reports are not paid bounties.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  2. "it does offer paid opportunities for completing tasks": **CORRECT** [F1, F3]. Consistent with F1 and F3: the bounty is paid to the hunter whose submission passes first.
+  3. "can earn ETH on the Base blockchain if your submission passes the evaluation criteria": **UNSUPPORTED** [F3, F6]. Base (F6) and 'passing work is paid' (F3) are consistent with the facts, but the payout currency is not stated, and only the FIRST passing submission is paid.
+  4. "Tasks may include writing, coding, research, and design.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  5. "I couldn't verify a dedicated program that pays security researchers": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  6. "Verdikta's documentation directs users to its GitHub issue tracker for application bugs, but explicitly says those reports are not paid bounties.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  7. "Verdikta Bounty Board — browse paid tasks.": **UNSUPPORTED** [not in facts list]. A link label, not checked against the facts list.
+  8. "don't assume Verdikta's task bounties include security rewards": **UNSUPPORTED** [not in facts list]. Advice. Not covered by the facts list.
 
 #### Q9 / Claude
 
 - **Asked:** 2026-10-24 08:55:06 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q9.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q9.png)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -1860,21 +1984,29 @@ github
 I also found no evidence that Verdikta runs a security bug bounty for its own smart contracts. If that’s what you’re after, I’d check their GitHub or docs at docs.verdikta.com directly, or I can dig further. Shall I?
 `````
 
-- **Marking** (8 Verdikta claims: 4 CORRECT, 0 WRONG, 4 UNSUPPORTED):
+- **Marking** (16 Verdikta claims: 3 CORRECT, 0 WRONG, 13 UNSUPPORTED):
   1. "Verdikta is a decentralized AI judgment protocol that happens to run a bounty board": **UNSUPPORTED** [F6]. Consistent with F6. The facts list does not mention bug bounties.
-  2. "Each query is evaluated on demand, in parallel, by a committee of independent AI arbiters": **CORRECT** [F6]. Matches F6.
-  3. "It runs on Base, Coinbase’s Ethereum layer-2 network.": **CORRECT** [F6]. Matches F6.
-  4. "Work submissions are automatically evaluated and paid by AI arbiters.": **CORRECT** [F3, F6]. Consistent with F6 and F3.
-  5. "Recent examples include a Python Pandas script for cleaning trading logs": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  6. "a live evaluation requires prepaying in ETH plus Base gas fees": **CORRECT** [F2, F6]. Matches F2 (ETH prepay) and F6 (Base).
-  7. "At least one curated agent-bounty list declined to include Verdikta": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
-  8. "I also found no evidence that Verdikta runs a security bug bounty for its own smart contracts.": **UNSUPPORTED** [not in facts list]. Not covered. The answer also points to 'docs.verdikta.com', while the other assistants cite docs.verdikta.org. The facts list settles neither domain.
+  2. "A decentralized oracle system that provides AI-powered dispute resolution services on blockchain networks.": **UNSUPPORTED** [F6]. Consistent with F6. The 'dispute resolution' framing is not covered.
+  3. "Each query is evaluated on demand, in parallel": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  4. "by a committee of independent AI arbiters": **CORRECT** [F6]. Matches F6.
+  5. "It runs on Base": **CORRECT** [F6]. Matches F6.
+  6. "Coinbase’s Ethereum layer-2 network": **UNSUPPORTED** [not in facts list]. Base's operator and layer-2 status are not in the facts list.
+  7. "Its flagship live application is Verdikta Bounties.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  8. "Work submissions are automatically evaluated and paid by AI arbiters.": **UNSUPPORTED** [F3, F6]. Evaluation by AI arbiters matches F6, and payment of passing work matches F3. 'Automatically' and 'paid by AI arbiters' (rather than by the bounty) are not stated.
+  9. "The flow runs: create a bounty, define a rubric, fund escrow, submit work, AI evaluation, then on-chain settlement.": **UNSUPPORTED** [F5, F6]. Consistent with F5 and F6. Escrow and settlement mechanics are not stated.
+  10. "The tasks are general work rather than vulnerability hunting.": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  11. "Recent examples include a Python Pandas script for cleaning trading logs": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  12. "this is closer to a freelance marketplace with robot judges": **UNSUPPORTED** [F6]. An interpretive comparison, consistent with F6.
+  13. "a live evaluation requires prepaying in ETH": **CORRECT** [F2]. Matches F2.
+  14. "plus Base gas fees": **UNSUPPORTED** [F6]. Base matches F6. Gas is not covered by the facts list.
+  15. "At least one curated agent-bounty list declined to include Verdikta": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  16. "I also found no evidence that Verdikta runs a security bug bounty for its own smart contracts.": **UNSUPPORTED** [not in facts list]. Not covered. The answer points to 'docs.verdikta.com'. Perplexity's sources for Q4 include both docs.verdikta.com and docs.verdikta.org. The facts list settles neither domain.
 
 #### Q9 / Perplexity
 
 - **Asked:** 2026-10-24 08:33:21 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q9.png)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -1898,17 +2030,20 @@ If you find a security flaw, use a dedicated vulnerability-disclosure or bug-bou
 dev
 `````
 
-- **Marking** (4 Verdikta claims: 2 CORRECT, 0 WRONG, 2 UNSUPPORTED):
+- **Marking** (7 Verdikta claims: 2 CORRECT, 0 WRONG, 5 UNSUPPORTED):
   1. "Verdikta is not a bug bounty program; it is a criteria-based, AI-judged bounty marketplace where creators fund tasks in escrow and participants submit deliverables": **UNSUPPORTED** [F5, F6]. The facts list does not mention bug bounties. The description of escrowed, AI-judged, rubric-based bounties is consistent with F5 and F6.
-  2. "Verdikta Bounties uses a published rubric, escrowed ETH, and a panel of AI arbiter nodes to grade submissions": **CORRECT** [F6]. Matches F6.
-  3. "passing work is paid automatically from the smart contract": **CORRECT** [F3]. Consistent with F3. Missing: only the first passing submission is paid.
-  4. "Verdikta explicitly states that it is not a security bug-bounty program": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
+  2. "Verdikta Bounties uses a published rubric": **CORRECT** [F6]. Matches F6 (rubric published in advance).
+  3. "escrowed ETH": **UNSUPPORTED** [not in facts list]. Escrowed ETH is not stated in the facts list.
+  4. "a panel of AI arbiter nodes to grade submissions": **CORRECT** [F6]. Matches F6.
+  5. "passing work is paid automatically from the smart contract": **UNSUPPORTED** [F3]. Consistent with F3, but 'automatically' is not stated and only the FIRST passing submission is paid.
+  6. "Its purpose is to evaluate whether completed work meets stated acceptance criteria, rather than to discover security vulnerabilities.": **UNSUPPORTED** [F6]. Consistent with F6 (work scored against a rubric published in advance). The facts list does not mention bug bounties.
+  7. "Verdikta explicitly states that it is not a security bug-bounty program": **UNSUPPORTED** [not in facts list]. Not covered by the facts list.
 
 #### Q9 / Gemini
 
 - **Asked:** 2026-10-24 08:41:17 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q9.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q9.png)
 - **Question as sent:** Is Verdikta a bug bounty program?
 - **Answer (verbatim):**
 
@@ -1932,12 +2067,12 @@ Verdikta
 If you are looking to report software vulnerabilities or participate in ethical hacking/security bug bounties, platforms like HackerOne, Bugcrowd, or Intigriti are the appropriate choices.
 `````
 
-- **Marking** (5 Verdikta claims: 3 CORRECT, 0 WRONG, 2 UNSUPPORTED):
+- **Marking** (5 Verdikta claims: 1 CORRECT, 0 WRONG, 4 UNSUPPORTED):
   1. "No, Verdikta is not a security bug bounty program.": **UNSUPPORTED** [not in facts list]. The facts list does not mention bug bounties. Consistent with F1-F6, which describe AI-judged work bounties.
-  2. "Verdikta Bounties is an AI-judged task and freelance platform": **CORRECT** [F6]. Matches F6.
+  2. "Verdikta Bounties is an AI-judged task and freelance platform": **UNSUPPORTED** [F6]. AI judging of work matches F6. The 'freelance platform' framing is not in the facts list.
   3. "creators can post general micro-tasks, social media shares, translations, content writing, or code tasks": **UNSUPPORTED** [not in facts list]. Task types are not covered by the facts list.
   4. "an automated AI jury evaluates the completed work against a predefined rubric": **CORRECT** [F6]. Matches F6.
-  5. "If a submission passes the rubric threshold, it is automatically paid out in cryptocurrency (ETH) from escrow.": **CORRECT** [F3]. Consistent with F3. Missing: only the first passing submission is paid.
+  5. "If a submission passes the rubric threshold, it is automatically paid out in cryptocurrency (ETH) from escrow.": **UNSUPPORTED** [F3]. Consistent with F3, but 'automatically' and the ETH currency are not stated, and only the FIRST passing submission is paid.
 
 <a id="q10"></a>
 ### Q10. How do I write success criteria for a bounty?
@@ -1946,7 +2081,7 @@ If you are looking to report software vulnerabilities or participate in ethical 
 
 - **Asked:** 2026-10-24 08:24:53 UTC
 - **Product / model:** ChatGPT web (chatgpt.com), logged out, default model setting; model used per the share page metadata: gpt-6-mini
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/chatgpt_q10.png) · [ChatGPT share link](https://chatgpt.com/s/t_6adc6b6f195c81919dfc3eae7f17a46c)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
@@ -2048,7 +2183,7 @@ What kind of bounty are you writing success criteria for? I can help you
 
 - **Asked:** 2026-10-24 08:55:52 UTC
 - **Product / model:** Claude web (claude.ai), signed in, Incognito chat, model selector 'Opus 5.5 High' (Opus 5.5, effort High)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/claude_q10.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/claude_q10.png)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
@@ -2108,7 +2243,7 @@ Tell me what the bounty is for, sir, and I’ll draft the real thing rather than
 
 - **Asked:** 2026-10-24 08:33:51 UTC
 - **Product / model:** Perplexity web (perplexity.ai), logged out, default Search mode; model per the thread metadata: turbo
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/perplexity_q10.png)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
@@ -2179,7 +2314,7 @@ docs.bounty
 
 - **Asked:** 2026-10-24 08:41:49 UTC
 - **Product / model:** Gemini web app (gemini.google.com), signed-in free account, Temporary chat, model selector 'Gemini Auto' (the app does not show which Gemini 3 model Auto used)
-- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/2c14beeb2b9813711ffdbce30d22235744276d9e/verdikta-ai-audit-2026-10-24/shots/gemini_q10.png)
+- **Evidence:** [screenshot](https://raw.githubusercontent.com/swiftbotlab/research-notes/3a82e633ec14d66e229aefbe293d8da314668340/verdikta-ai-audit-2026-10-24/shots/gemini_q10.png)
 - **Question as sent:** How do I write success criteria for a bounty?
 - **Answer (verbatim):**
 
@@ -2309,6 +2444,18 @@ Are you designing a bounty for a software/code project, a creative/content submi
 - **Claude (Opus 5.5, Incognito): 1 WRONG.** It is the most complete on the facts list: Q3 states F1-F6 almost word for word, and Q5 gives F1, F2 and F3 exactly. Its single error is in Q1, where it searched, found mostly a directory listing, and repeated that listing's 'runs on Ethereum'. It flags thin sourcing itself.
 - **Perplexity (turbo, logged out): 3 WRONG.** It is right on immutability (Q7) and Base (Q8) and gives the prepay amount (Q5). It mixes current product pages with older protocol documentation, which produces the LINK claims (Q4, Q8). In Q3 it draws on a dev.to post and states a best-of rule that contradicts F3.
 - **Gemini (Auto, Temporary chat): 0 WRONG, but 2 identity problems.** When it finds Verdikta-specific sources (Zealy, DEV Community) it is accurate: Q3, Q5, Q7 and Q8 are all right, including First-Pass-Wins and the full refund to the creator. When those sources do not come up, it falls back to look-alike products (Verdikt in Q4) or a generic directory blurb (Q1).
+
+### 5.4a Sources shown next to each WRONG claim (where the error most likely came from)
+
+These are the source chips and links each app displayed beside the wrong sentence, as captured from the page. They show where retrieval picked up the error, and so which page to fix.
+
+- **Perplexity Q8, 'arbiter payments are denominated in LINK':** chip `verdikta +1`, linking to https://www.verdikta.com/whitepaper. Perplexity's Q8 source list also includes docs.verdikta.org/overview.
+- **Perplexity Q4, 'charges per AI evaluation (in LINK)':** chip `docs.verdikta +1`. Perplexity's Q4 source list: docs.verdikta.com/apps/user-guide, docs.verdikta.org/apps/user-guide, www.verdikta.com, www.verdikta.com/whitepaper, plus two third-party review sites (verdikta.tenereteam.com, aichief.com). These are protocol and user-guide pages, not the bounty platform's fee page.
+- **Perplexity Q3, 'the highest-scoring passing submission wins':** chip `dev`, linking to a dev.to tutorial (dev.to/kurumi_82661ed12516efd1f7/how-to-create-your-first-ai-evaluated-bounty-step-by-step-19bd). A community post, not Verdikta's own page, is the source of the one answer that reverses F3.
+- **ChatGPT Q4, 'it does charge for using its services':** the paragraph that follows cites `Verdikta Documentation +1`, and the answer links docs.verdikta.org/apps/example-frontend/run-query. That is the developer page for paid AI queries, not the bounty platform.
+- **ChatGPT Q5, 'mostly refunded':** chip `Verdikta +1` beside the refund sentence. The answer links the bounty board, bounties.verdikta.org.
+- **Claude Q1, 'It runs on Ethereum':** chip `neura`, linking to https://neura.market/ai-tools-directory/legal/verdikta, a third-party AI tools directory that Claude itself called its main source.
+- **Pattern:** 3 of the 6 WRONG claims trace to protocol-level pages (whitepaper, developer docs and user guide) that describe the older LINK-paid, per-query model. 2 trace to third-party pages (a dev.to tutorial and a tools directory). The bounty platform's own pages (bounties.verdikta.org) are cited next to correct answers far more often (ChatGPT Q3, Q7, Q9; Perplexity Q5, Q7), though ChatGPT's 'mostly refunded' (Q5) appears beside a generic Verdikta chip.
 
 ### 5.4 Which questions produce no Verdikta mention at all
 
